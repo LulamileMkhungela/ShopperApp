@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">EaziBuy</string>
+    <string name="splash_app_name">EaziBuy App</string>
+    <string name="todo">TODO</string>
+    <string name="intro_skip">Skip</string>
+    <string name="intro_get_started">Get Started</string>
+    <string name="intro_next">Next</string>
+    <string name="sub_text">TextView</string>
+    <string name="heading_textview">TextView</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="continue_txt">Continue</string>
+    <string name="login_swipe">Log In</string>
+    <string name="register_swipe">Register</string>
+
+</resources>
