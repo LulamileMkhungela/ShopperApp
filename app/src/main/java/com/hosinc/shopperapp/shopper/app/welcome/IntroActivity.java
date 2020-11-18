@@ -15,6 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.tabs.TabLayout;
+import com.hosinc.shopperapp.shopper.app.ChooseInterests;
 import com.hosinc.shopperapp.shopper.app.R;
 import com.hosinc.shopperapp.shopper.app.Register;
 
@@ -48,10 +49,9 @@ public class IntroActivity extends AppCompatActivity {
 
         if (restorePrefData()) {
 
-            Intent mainActivity = new Intent(getApplicationContext(), Register.class );
+            Intent mainActivity = new Intent(getApplicationContext(), ChooseInterests.class );
             startActivity(mainActivity);
             finish();
-
 
         }
 
@@ -96,7 +96,6 @@ public class IntroActivity extends AppCompatActivity {
                     position++;
                     screenPager.setCurrentItem(position);
 
-
                 }
 
                 if (position == mList.size()-1) { // when we reach to the last screen
@@ -105,10 +104,7 @@ public class IntroActivity extends AppCompatActivity {
 
                     loaddLastScreen();
 
-
                 }
-
-
 
             }
         });
@@ -125,8 +121,6 @@ public class IntroActivity extends AppCompatActivity {
                     loaddLastScreen();
 
                 }
-
-
             }
 
             @Override
@@ -139,8 +133,6 @@ public class IntroActivity extends AppCompatActivity {
 
             }
         });
-
-
 
         // Get Started button click listener
 

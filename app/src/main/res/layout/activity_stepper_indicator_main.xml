@@ -18,6 +18,6 @@
         app:stpi_labelColor="@color/white"
         app:stpi_lineColor="@color/white"
         app:stpi_showLabels="true"
-        app:stpi_stepCount="4" />
+        app:stpi_stepCount="3" />
 
 </RelativeLayout>
