@@ -104,7 +104,7 @@
     <dimen name="nav_header_height">176dp</dimen>
 
 
-<!--    extras-->
+    <!--    extras-->
     <dimen name="first_card_width">176dp</dimen>
     <dimen name="first_card_height">36dp</dimen>
     <dimen name="first_card_radius">18dp</dimen>

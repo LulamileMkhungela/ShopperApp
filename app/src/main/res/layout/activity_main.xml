@@ -3,29 +3,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:layout_gravity="center"
     android:background="@drawable/btn_gradient_style"
     android:gravity="center"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/splashImage"
         android:layout_width="300dp"
         android:layout_height="250dp"
-        android:src="@drawable/logo"
-        android:contentDescription="@string/todo" />
+        android:contentDescription="@string/todo"
+        android:src="@mipmap/wolflogo" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
+        android:gravity="center_horizontal"
         android:text="@string/splash_app_name"
         android:textAlignment="center"
-        android:textColor="@color/black_bottom"
+        android:textColor="@color/white"
         android:textSize="50sp"
-        android:textStyle="bold"
-        android:gravity="center_horizontal" />
+        android:textStyle="bold" />
 
 
 </LinearLayout>

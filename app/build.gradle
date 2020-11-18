@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "com.hosinc.shopperapp.shopper.app"
-        minSdkVersion 16
+        minSdkVersion 17
         targetSdkVersion 30
         multiDexEnabled true
         versionCode 1
@@ -64,6 +64,8 @@ dependencies {
     implementation 'com.etebarian:meow-bottom-navigation:1.1.0'
 //extras
     implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.github.rakshakhegde:stepper-indicator:2.0.0-alpha'
+    implementation 'com.github.JakeWharton:ViewPagerIndicator:2.4.1'
 
     implementation 'com.android.support:recyclerview-v7:29.0.0'
     implementation 'com.android.support:design:29.0.0'

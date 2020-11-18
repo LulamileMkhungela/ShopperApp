@@ -53,8 +53,8 @@
                         android:layout_width="80dp"
                         android:layout_height="100dp"
                         android:layout_gravity="center_horizontal"
-                        android:scaleType="centerCrop"
                         android:padding="10dp"
+                        android:scaleType="centerCrop"
                         android:src="@drawable/default_profile_picture"
                         android:tint="@color/white"
                         app:civ_border_color="@color/white"
@@ -94,11 +94,11 @@
                         android:id="@+id/et_fullname_get_started"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:hint="fullnames"
+                        android:importantForAutofill="no"
                         android:inputType="text"
                         android:maxLength="25"
-                        android:hint="fullnames"
                         android:textColor="@color/white"
-                        android:importantForAutofill="no"
                         android:textColorHint="@color/white" />
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -115,12 +115,12 @@
                         android:id="@+id/et_date_of_birth_get_started"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:hint="date_of_birth"
+                        android:importantForAutofill="no"
                         android:inputType="date"
                         android:maxLength="25"
-                        android:hint="date_of_birth"
                         android:textColor="@color/white"
-                        android:textColorHint="@color/white"
-                        android:importantForAutofill="no" />
+                        android:textColorHint="@color/white" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -138,8 +138,8 @@
                         android:layout_height="wrap_content"
                         android:hint="cell_number"
                         android:importantForAutofill="no"
-                        android:textColor="@color/white"
                         android:inputType="number"
+                        android:textColor="@color/white"
                         android:textColorHint="@color/white" />
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -158,8 +158,8 @@
                         android:layout_height="wrap_content"
                         android:hint="location"
                         android:importantForAutofill="no"
-                        android:textColor="@color/white"
                         android:inputType="textCapWords"
+                        android:textColor="@color/white"
                         android:textColorHint="@color/white" />
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -209,13 +209,13 @@
                         android:layout_marginEnd="8dp"
                         android:layout_marginRight="8dp"
                         android:background="@drawable/et_ui"
+                        android:onClick="onClickTerms"
                         android:paddingStart="8dp"
                         android:paddingLeft="8dp"
-                        android:onClick="onClickTerms"
+                        android:paddingRight="8dp"
                         android:text="terms_amp_conditions_settings"
                         android:textAllCaps="false"
                         android:textColor="@color/white"
-                        android:paddingRight="8dp"
                         android:textSize="16sp" />
 
                     <TextView
@@ -233,13 +233,13 @@
                         android:layout_marginStart="8dp"
                         android:layout_marginLeft="8dp"
                         android:background="@drawable/et_ui"
+                        android:onClick="buttonGetStartedPrivacyPolicy"
                         android:paddingStart="8dp"
                         android:paddingLeft="8dp"
-                        android:onClick="buttonGetStartedPrivacyPolicy"
+                        android:paddingRight="8dp"
                         android:text="user_privacy_policy"
                         android:textAllCaps="false"
                         android:textColor="@color/white"
-                        android:paddingRight="8dp"
                         android:textSize="16sp" />
 
                 </LinearLayout>

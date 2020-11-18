@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!--    Default  colors-->
-    <color name="colorPrimary">#5093FF</color>
-    <color name="colorPrimaryDark">#4c84ff</color>
-    <color name="colorAccent">#032B3F</color>
+    <color name="colorPrimaryy">#2575FC</color>
+    <color name="colorPrimaryDarkk">#00EAFF</color>
+    <color name="colorAccentt">#43E97B</color>
+
+    <color name="appColor">#00EAFF</color>
+
+
+    <color name="colorPrimary">#212121</color>
+    <color name="colorPrimaryDark">#1a1a1a</color>
+    <color name="colorAccent">#212121</color>
 
     <color name="green_top">#388E3C</color>
     <color name="green_bottom">#4CAF50</color>
@@ -15,55 +21,4 @@
     <color name="colorBackground">#f9f9fa</color>
     <color name="colorTextSubtitle">#4e4e4e</color>
     <color name="colorTextTitle">#262626</color>
-
-    <!--    Register  colors-->
-
-
-    <color name="colorTransparentPink">#FF9EA1</color>
-    <color name="colorWhite">#FFFFFF</color>
-    <color name="colorTransparentWhite">#cccccc</color>
-    <color name="colorStandardBlack">#262626</color>
-    <color name="colorDarkBlue">#001621</color>
-    <color name="colorCyanBlue">#0B9BE2</color>
-    <color name="colorMidBlue">#032B3F</color>
-    <color name="colorCoinBackground">#01242b</color>
-    <color name="backgroundEditText">#5cffffff</color>
-
-    <!--    On-Boarding  colors-->
-
-    <!-- colors for button style -->
-
-    <color name="gradient_start_color">#4c84ff</color>
-    <color name="gradient_end_color">#18a3fe</color>
-
-
-    <!-- colors for tab and screent text -->
-
-    <color name="tab_indicator_gray">#c0c0c0</color>
-    <color name="intro_title_color">#000000</color>
-    <color name="intro_description_color">#656565</color>
-
-    <!--    icons colors-->
-    <color name="iconsborderColor">#FF2E7979</color>
-    <color name="colorAccents">#96ffffff</color>
-    <color name="buttonsigninColor">#35495e</color>
-    <color name="textColor">#414141</color>
-    <color name="dummyColor">#f5f5f5</color>
-    <color name="login_form_details_light">#1affffff</color>
-    <color name="gray">#8B8B8B</color>
-    <color name="lightGray">#F8F8F8</color>
-    <color name="black">#000000</color>
-    <color name="color_log_in">#94019c8f</color>
-    <color name="color_sign_up">#93303f9f</color>
-
-
-    <color name="color_logo_log_in">#b4faf5</color>
-    <color name="color_logo_sign_up">#bbc4fd</color>
-
-    <color name="color_label">#ededed</color>
-    <color name="white_transparent">#fafafa</color>
-
-    <color name="color_input_hint">#FFF</color>
-    <color name="color_text_highlight">#fafafa</color>
-    <color name="color_text">#FFF</color>
 </resources>

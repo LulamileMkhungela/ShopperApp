@@ -3,13 +3,15 @@
     package="com.hosinc.shopperapp.shopper.app">
 
     <application
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/wolflogo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/wolflogo"
+        android:screenOrientation="portrait"
+        android:usesCleartextTraffic="true"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ShopperApp">
-        <activity android:name=".ActivityForgotPassword"></activity>
+        android:theme="@style/AppTheme"
+        >
+        <activity android:name=".ActivityForgotPassword" />
         <activity android:name=".ChooseInterests" />
         <activity
             android:name=".MainActivity"

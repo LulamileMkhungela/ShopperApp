@@ -16,7 +16,6 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.tabs.TabLayout;
 import com.hosinc.shopperapp.shopper.app.R;
-import com.hosinc.shopperapp.shopper.app.HomeNavigation;
 import com.hosinc.shopperapp.shopper.app.Register;
 
 import java.util.ArrayList;
@@ -60,7 +59,7 @@ public class IntroActivity extends AppCompatActivity {
 
         // hide the action bar
 
-        getSupportActionBar().hide();
+//        getSupportActionBar().hide();
 
         // ini views
         btnNext = findViewById(R.id.btn_next);

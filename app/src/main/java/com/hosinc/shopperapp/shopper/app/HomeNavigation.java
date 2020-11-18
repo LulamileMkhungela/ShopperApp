@@ -6,13 +6,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation;
 
+import java.util.Objects;
+
 public class HomeNavigation extends AppCompatActivity {
 MeowBottomNavigation bottomNavigation;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_navigation);
-        getSupportActionBar().hide();
+        Objects.requireNonNull(getSupportActionBar()).hide();
 
         bottomNavigation = findViewById(R.id.bottomNavigation);
         bottomNavigation.add(new MeowBottomNavigation.Model(1, R.drawable.ic_baseline_home_24));

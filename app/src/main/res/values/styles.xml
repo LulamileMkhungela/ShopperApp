@@ -1,16 +1,54 @@
 <resources>
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccents</item>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">#2196F3</item>
+        <item name="colorPrimaryDark">#039BE6</item>
+        <item name="colorAccent">@color/colorAccentt</item>
+        <item name="dialogSheetAccent">@color/colorAccentt</item>
+        <item name="actionBarPopupTheme">@style/AppTheme.PopupOverlay</item>
     </style>
 
-<!--    <style name="Widget.MaterialComponents.TextInputLayout.OutlinedBox" parent="Base.Widget.MaterialComponents.TextInputLayout">-->
-<!--        <item name="android:theme">-->
-<!--            @style/ThemeOverlay.MaterialComponents.TextInputEditText.OutlinedBox-->
-<!--        </item>-->
-<!--    </style>-->
+    <style name="AppTheme2" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">#3F51B5</item>
+        <item name="colorAccent">@color/colorAccentt</item>
+        <item name="dialogSheetAccent">@color/colorAccentt</item>
+        <item name="actionBarPopupTheme">@style/AppTheme.PopupOverlay</item>
+    </style>
 
-    </resources>
+    <style name="BottomNavigationBarTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorAccentt</item>
+        <item name="colorPrimaryDark">#3E3B3B</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="dialogSheetAccent">@color/colorAccentt</item>
+    </style>
+
+
+    <style name="LoginAppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">#C55555</item>
+        <item name="dialogSheetAccent">@color/colorAccentt</item>
+        <item name="colorAccent">@color/colorAccentt</item>
+    </style>
+
+
+    <style name="UpdateAppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">#571313</item>
+        <item name="colorPrimaryDark">#FF5722</item>
+        <item name="dialogSheetAccent">@color/colorAccentt</item>
+        <item name="colorAccent">@color/colorAccentt</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
+
+    <style name="SplashAppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">#3A4C48</item>
+        <item name="colorPrimaryDark">#F44336</item>
+        <item name="colorAccent">@color/colorAccentt</item>
+        <item name="android:windowBackground">@drawable/wolflogo</item>
+        <item name="dialogSheetAccent">@color/colorAccentt</item>
+    </style>
+
+</resources>
