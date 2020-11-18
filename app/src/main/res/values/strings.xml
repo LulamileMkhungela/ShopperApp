@@ -13,5 +13,6 @@
     <string name="continue_txt">Continue</string>
     <string name="login_swipe">Log In</string>
     <string name="register_swipe">Register</string>
+    <string name="company_name">Company Name</string>
 
 </resources>
