@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d4e9fc"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_back_button_"
+                android:layout_width="38dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:elevation="8dp"
+                android:padding="-8dp"
+                android:paddingTop="6dp"
+                android:tint="@color/colorPrimaryDark"
+                app:srcCompat="@drawable/arrow_back"
+                app:tint="@color/colorPrimaryDark"
+                tools:ignore="ContentDescription,MissingConstraints,UnusedAttribute" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:elevation="3.5dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/gradient_5"
+                tools:ignore="ContentDescription,MissingConstraints,UnusedAttribute" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_other_users_photo_profile"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:elevation="4dp"
+                android:src="@drawable/default_profile_picture"
+                android:tint="@color/white"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="1.5dp"
+                tools:targetApi="lollipop" />
+
+            <TextView
+                android:id="@+id/txt_username_profile_other_users"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_other_users_photo_profile"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:text="Username"
+                android:textColor="@color/textColor"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/layout_buttons__other_users"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_username_profile_other_users"
+                android:layout_marginTop="28dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_username_profile_other_users">
+
+                <LinearLayout
+                    android:id="@+id/edit_layout_profile"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/img_ic_edit_profile_others_profile"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:drawableTint="@color/colorPrimaryDark"
+                        android:elevation="4dp"
+                        android:tint="@color/textColor"
+                        app:srcCompat="@drawable/edit_pencil"
+                        tools:ignore="ContentDescription,UnusedAttribute" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center_horizontal"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.TextView.SpinnerItem"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="@id/img_ic_edit_profile_others_profile"
+                        app:layout_constraintStart_toStartOf="@id/img_ic_edit_profile_others_profile"
+                        android:text="profile"
+                        app:layout_constraintTop_toBottomOf="@id/img_ic_edit_profile_others_profile" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:drawableTint="@color/colorPrimaryDark"
+                        android:elevation="4dp"
+                        android:tint="@color/textColor"
+                        app:srcCompat="@drawable/check_decagram"
+                        tools:ignore="ContentDescription,UnusedAttribute" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
+                        android:text="Gallery"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.TextView.SpinnerItem"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:drawableTint="@color/colorPrimaryDark"
+                        android:elevation="4dp"
+                        android:tint="@color/textColor"
+                        app:srcCompat="@drawable/ic_check_black_24dp"
+                        tools:ignore="ContentDescription,UnusedAttribute" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
+                        android:text="Products"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.TextView.SpinnerItem"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/chat_layout__other_users"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:drawableTint="@color/colorPrimaryDark"
+                        android:elevation="4dp"
+                        android:tint="@color/textColor"
+                        app:srcCompat="@drawable/arrow_back"
+                        tools:ignore="ContentDescription,UnusedAttribute" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
+                        android:text="chat"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Widget.TextView.SpinnerItem"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progress_bar_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_buttons__other_users"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="22dp"
+                android:elevation="12dp"
+                android:indeterminateTint="@color/colorPrimaryDark"
+                tools:ignore="UnusedAttribute" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_buttons__other_users"
+                android:layout_margin="10dp"
+                android:background="?selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardBackgroundColor="@color/transparent"
+                app:cardCornerRadius="4dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Base.TextAppearance.AppCompat.Title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:gravity="center_horizontal"
+                        android:text="Account Details"
+                        android:textColor="@color/textColor"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/email_other_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/txt_email_profile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:drawableStart="@drawable/ic_exit_to_app_black_24dp"
+                            android:drawableLeft="@drawable/ic_exit_to_app_black_24dp"
+                            android:drawablePadding="10dp"
+                            android:drawableTint="@color/colorPrimaryDark"
+                            android:gravity="center_vertical"
+                            android:text="email_address"
+                            android:textColor="@color/textColor"
+                            android:tint="@color/textColor"
+                            tools:ignore="UnusedAttribute" />
+
+                        <TextView
+                            android:id="@+id/txt_location_profile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:drawableStart="@drawable/ic_exit_to_app_black_24dp"
+                            android:drawableLeft="@drawable/ic_exit_to_app_black_24dp"
+                            android:drawablePadding="10dp"
+                            android:drawableTint="@color/colorPrimaryDark"
+                            android:gravity="center_vertical"
+                            android:text="profile_load"
+                            android:textColor="@color/textColor"
+                            android:tint="@color/textColor"
+                            tools:ignore="UnusedAttribute" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/btn_layout_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-16dp"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/txt_date_of_birth_profile_other_users"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:drawableStart="@drawable/ic_exit_to_app_black_24dp"
+                            android:drawableLeft="@drawable/ic_exit_to_app_black_24dp"
+                            android:drawablePadding="10dp"
+                            android:drawableTint="@color/colorPrimaryDark"
+                            android:gravity="center_vertical"
+                            android:text="DOB"
+                            android:textColor="@color/textColor"
+                            android:tint="@color/textColor"
+                            tools:ignore="UnusedAttribute" />
+
+                        <TextView
+                            android:id="@+id/txt_gender_profile_other_users"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:drawableStart="@drawable/ic_exit_to_app_black_24dp"
+                            android:drawableLeft="@drawable/ic_exit_to_app_black_24dp"
+                            android:drawablePadding="10dp"
+                            android:drawableTint="@color/colorPrimaryDark"
+                            android:gravity="center_vertical"
+                            android:text="gender"
+                            android:textColor="@color/textColor"
+                            android:tint="@color/textColor"
+                            tools:ignore="UnusedAttribute" />
+
+                        <TextView
+                            android:id="@+id/txt_cell_number_other_users"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:drawableStart="@drawable/ic_exit_to_app_black_24dp"
+                            android:drawableLeft="@drawable/ic_exit_to_app_black_24dp"
+                            android:drawablePadding="10dp"
+                            android:drawableTint="@color/colorPrimaryDark"
+                            android:gravity="center_vertical"
+                            android:text="Cell_number"
+                            android:textColor="@color/textColor"
+                            android:tint="@color/textColor"
+                            tools:ignore="UnusedAttribute" />
+
+                        <TextView
+                            android:id="@+id/txt_email_other_users"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:drawableStart="@drawable/ic_exit_to_app_black_24dp"
+                            android:drawableLeft="@drawable/ic_exit_to_app_black_24dp"
+                            android:drawablePadding="10dp"
+                            android:drawableTint="@color/colorPrimaryDark"
+                            android:gravity="center_vertical"
+                            android:text="email"
+                            android:textColor="@color/textColor"
+                            android:tint="@color/textColor"
+                            tools:ignore="UnusedAttribute" />
+
+                        <TextView
+                            android:id="@+id/txt_location_other_users"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:drawableStart="@drawable/ic_exit_to_app_black_24dp"
+                            android:drawableLeft="@drawable/ic_exit_to_app_black_24dp"
+                            android:drawablePadding="10dp"
+                            android:drawableTint="@color/colorPrimaryDark"
+                            android:gravity="center_vertical"
+                            android:text="location"
+                            android:textColor="@color/textColor"
+                            android:tint="@color/textColor"
+                            tools:ignore="UnusedAttribute" />
+
+                        <TextView
+                            android:id="@+id/txt_invite_friend_profile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:drawableStart="@drawable/ic_exit_to_app_black_24dp"
+                            android:drawableLeft="@drawable/ic_exit_to_app_black_24dp"
+                            android:drawablePadding="10dp"
+                            android:drawableTint="@color/colorPrimaryDark"
+                            android:gravity="center_vertical"
+                            android:text="working hours"
+                            android:textColor="@color/textColor"
+                            android:tint="@color/textColor"
+                            tools:ignore="UnusedAttribute" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

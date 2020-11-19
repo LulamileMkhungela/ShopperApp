@@ -352,7 +352,36 @@
                     </LinearLayout>
 
                 </LinearLayout>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/flag_transparent"
+                    android:baselineAligned="false"
+                    android:gravity="center"
+                    android:onClick="expandableAbout"
+                    android:paddingLeft="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingRight="10dp"
+                    android:text="About EaziBuy"
+                    android:textColor="#fff" />
 
+                <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                    android:id="@+id/layout_expandableAbout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/minimal_black"
+                    android:padding="16dp"
+                    app:ael_duration="400"
+                    app:ael_expanded="false"
+                    app:ael_interpolator="bounce"
+                    app:ael_orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="settings"
+                        android:textColor="@color/minimal_black" />
+                </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>

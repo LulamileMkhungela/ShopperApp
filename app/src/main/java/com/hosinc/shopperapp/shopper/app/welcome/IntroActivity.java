@@ -49,7 +49,7 @@ public class IntroActivity extends AppCompatActivity {
 
         if (restorePrefData()) {
 
-            Intent mainActivity = new Intent(getApplicationContext(), ChooseInterests.class );
+            Intent mainActivity = new Intent(getApplicationContext(), Register.class );
             startActivity(mainActivity);
             finish();
 

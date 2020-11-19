@@ -1,281 +1,294 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@drawable/login_background"
     tools:ignore="ResourceName">
 
-    <ScrollView
+
+    <TextView
+        android:id="@+id/select_interest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:paddingTop="16dp"
+        android:shadowColor="@color/pressed_bg"
+        android:shadowDx="20"
+        android:shadowDy="20"
+        android:shadowRadius="15"
+        android:text="Choose what interests you"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp">
+        android:layout_centerVertical="true">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/goods_promotions"
+            android:layout_width="92dp"
+            android:layout_height="92dp"
+            android:layout_alignBottom="@+id/self_help_img_interests"
+            android:layout_toStartOf="@+id/self_help_img_interests"
+            android:src="@drawable/wolflogo"
+            app:civ_border_color="#e7e7e7"
+            app:civ_border_width="1.5dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/buying_goods_service"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingBottom="45dp">
+            android:layout_alignStart="@+id/goods_promotions"
+            android:layout_alignTop="@+id/goods_promotions"
+            android:layout_alignEnd="@+id/goods_promotions"
+            android:layout_alignBottom="@+id/goods_promotions"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/thumb_background"
+            android:padding="22dp"
+            android:src="@drawable/ic_thumbs_up"
+            android:visibility="gone"
+            tools:ignore="ContentDescription" />
 
-            <TextView
-                android:id="@+id/select_interest"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
-                android:paddingTop="16dp"
-                android:text="choose_what_interests_you"
-                android:textSize="20sp"
-                android:textColor="@color/white"
-                android:textStyle="bold" />
+        <TextView
+            android:id="@+id/get_customers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/goods_promotions"
+            android:layout_alignStart="@+id/goods_promotions"
+            android:layout_alignEnd="@+id/goods_promotions"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/gotham"
+            android:gravity="center_horizontal"
+            android:text="Thriller"
+            android:textColor="@color/white" />
 
-            <TextView
-                android:id="@+id/interests_text_view_two"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/select_interest"
-                android:layout_centerHorizontal="true"
-                android:textColor="@color/white"
-                android:text="interests_string" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/self_help_img_interests"
+            android:layout_width="92dp"
+            android:layout_height="92dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/wolflogo"
+            app:civ_border_color="#e7e7e7"
+            app:civ_border_width="1.5dp" />
 
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/computer_img_interests"
-                android:layout_width="92dp"
-                android:layout_height="92dp"
-                android:layout_alignBottom="@+id/self_help_img_interests"
-                android:layout_toStartOf="@+id/self_help_img_interests"
-                android:src="@drawable/wolflogo" />
+        <ImageView
+            android:id="@+id/self_help_thumb_interests"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/self_help_img_interests"
+            android:layout_alignTop="@+id/self_help_img_interests"
+            android:layout_alignEnd="@+id/self_help_img_interests"
+            android:layout_alignBottom="@+id/self_help_img_interests"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/thumb_background"
+            android:padding="22dp"
+            android:src="@drawable/ic_thumbs_up"
+            android:visibility="visible"
+            tools:ignore="ContentDescription" />
 
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/fiction_thumb_interests"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/computer_img_interests"
-                android:layout_alignTop="@+id/computer_img_interests"
-                android:layout_alignEnd="@+id/computer_img_interests"
-                android:layout_alignBottom="@+id/computer_img_interests"
-                android:layout_marginTop="0dp"
-                android:padding="22dp"
-                android:background="@drawable/thumb_background"
-                android:src="@drawable/ic_thumbs_up"
-                android:visibility="gone"
-                tools:ignore="ContentDescription" />
+        <TextView
+            android:id="@+id/human_science_text_interests"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/self_help_img_interests"
+            android:layout_alignEnd="@+id/self_help_img_interests"
+            android:layout_alignBottom="@+id/get_customers"
+            android:fontFamily="@font/gotham"
+            android:gravity="center_horizontal"
+            android:text="Self help"
 
-            <TextView
-                android:id="@+id/computer_text_interests"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/computer_img_interests"
-                android:layout_alignStart="@+id/computer_img_interests"
-                android:layout_alignEnd="@+id/computer_img_interests"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="16dp"
-                android:gravity="center_horizontal"
-                android:textColor="@color/white"
-                android:text="Thriller"/>
+            android:textColor="@color/white" />
 
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/self_help_img_interests"
-                android:layout_width="92dp"
-                android:layout_height="92dp"
-                android:layout_below="@+id/interests_text_view_two"
-                android:layout_centerHorizontal="true"
-                android:layout_marginStart="25dp"
-                android:layout_marginTop="16dp"
-                android:src="@drawable/wolflogo" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/life_style_img_interests"
+            android:layout_width="92dp"
+            android:layout_height="92dp"
+            android:layout_alignTop="@+id/self_help_img_interests"
+            android:layout_alignBottom="@+id/self_help_img_interests"
+            android:layout_marginStart="25dp"
+            android:layout_toEndOf="@+id/self_help_img_interests"
+            android:src="@drawable/wolflogo"
+            app:civ_border_color="#e7e7e7"
+            app:civ_border_width="1.5dp" />
 
-            <ImageView
-                android:id="@+id/self_help_thumb_interests"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/self_help_img_interests"
-                android:layout_alignTop="@+id/self_help_img_interests"
-                android:layout_alignEnd="@+id/self_help_img_interests"
-                android:layout_alignBottom="@+id/self_help_img_interests"
-                android:layout_marginTop="0dp"
-                android:background="@drawable/thumb_background"
-                android:padding="22dp"
-                android:src="@drawable/ic_thumbs_up"
-                android:visibility="gone"
-                tools:ignore="ContentDescription" />
+        <ImageView
+            android:id="@+id/life_style_thumb_interests"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/life_style_img_interests"
+            android:layout_alignTop="@+id/life_style_img_interests"
+            android:layout_alignEnd="@+id/life_style_img_interests"
+            android:layout_alignBottom="@+id/life_style_img_interests"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/thumb_background"
+            android:padding="22dp"
+            android:src="@drawable/ic_thumbs_up"
+            android:visibility="gone"
+            tools:ignore="ContentDescription" />
 
-            <TextView
-                android:id="@+id/human_science_text_interests"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/self_help_img_interests"
-                android:layout_alignEnd="@+id/self_help_img_interests"
-                android:layout_alignBottom="@+id/computer_text_interests"
-                android:gravity="center_horizontal"
-                android:textColor="@color/white"
-                android:text="Self_help" />
+        <TextView
+            android:id="@+id/trade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/life_style_img_interests"
+            android:layout_alignEnd="@+id/life_style_img_interests"
+            android:layout_alignBottom="@+id/human_science_text_interests"
+            android:fontFamily="@font/gotham"
+            android:gravity="center_horizontal"
+            android:text="Lifestyle"
 
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/life_style_img_interests"
-                android:layout_width="92dp"
-                android:layout_height="92dp"
-                android:layout_alignTop="@+id/self_help_img_interests"
-                android:layout_alignBottom="@+id/self_help_img_interests"
-                android:layout_marginStart="25dp"
-                android:layout_toEndOf="@+id/self_help_img_interests"
-                android:src="@drawable/wolflogo" />
+            android:textColor="@color/white" />
 
-            <ImageView
-                android:id="@+id/life_style_thumb_interests"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/life_style_img_interests"
-                android:layout_alignTop="@+id/life_style_img_interests"
-                android:layout_alignEnd="@+id/life_style_img_interests"
-                android:layout_alignBottom="@+id/life_style_img_interests"
-                android:layout_marginTop="0dp"
-                android:background="@drawable/thumb_background"
-                android:padding="22dp"
-                android:src="@drawable/ic_thumbs_up"
-                android:visibility="gone"
-                tools:ignore="ContentDescription" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/render_service"
+            android:layout_width="92dp"
+            android:layout_height="92dp"
+            android:layout_below="@+id/get_customers"
+            android:layout_alignEnd="@+id/goods_promotions"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/wolflogo"
+            app:civ_border_color="#e7e7e7"
+            app:civ_border_width="1.5dp" />
 
-            <TextView
-                android:id="@+id/economics_text_interests"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/life_style_img_interests"
-                android:layout_alignEnd="@+id/life_style_img_interests"
-                android:layout_alignBottom="@+id/human_science_text_interests"
-                android:gravity="center_horizontal"
-                android:textColor="@color/white"
-                android:text="Lifestyle" />
+        <ImageView
+            android:id="@+id/deliver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/render_service"
+            android:layout_alignTop="@+id/render_service"
+            android:layout_alignEnd="@+id/render_service"
+            android:layout_alignBottom="@+id/render_service"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/thumb_background"
+            android:padding="22dp"
+            android:src="@drawable/ic_thumbs_up"
+            android:visibility="visible"
+            tools:ignore="ContentDescription" />
 
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/law_img_interests"
-                android:layout_width="92dp"
-                android:layout_height="92dp"
-                android:layout_below="@+id/computer_text_interests"
-                android:layout_alignEnd="@+id/computer_img_interests"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
-                android:src="@drawable/wolflogo" />
+        <TextView
+            android:id="@+id/deliver_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/render_service"
+            android:layout_alignStart="@+id/render_service"
+            android:layout_alignEnd="@+id/render_service"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/gotham"
 
-            <ImageView
-                android:id="@+id/thriller_thumb_interests"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/law_img_interests"
-                android:layout_alignTop="@+id/law_img_interests"
-                android:layout_alignEnd="@+id/law_img_interests"
-                android:layout_alignBottom="@+id/law_img_interests"
-                android:layout_marginTop="0dp"
-                android:background="@drawable/thumb_background"
-                android:padding="22dp"
-                android:src="@drawable/ic_thumbs_up"
-                android:visibility="gone"
-                tools:ignore="ContentDescription" />
-
-            <TextView
-                android:id="@+id/law_text_interests"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/law_img_interests"
-                android:layout_alignStart="@+id/law_img_interests"
-                android:layout_alignEnd="@+id/law_img_interests"
-                android:gravity="center_horizontal"
-                android:layout_marginTop="8dp"
-                android:textColor="@color/white"
-                android:layout_marginBottom="16dp"
-                android:text="Fiction" />
+            android:gravity="center_horizontal"
+            android:text="Fiction"
+            android:textColor="@color/white" />
 
 
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/non_fiction_img_interests"
-                android:layout_width="92dp"
-                android:layout_height="92dp"
-                android:layout_alignTop="@+id/law_img_interests"
-                android:layout_alignEnd="@+id/self_help_img_interests"
-                android:layout_alignBottom="@+id/law_img_interests"
-                android:layout_marginStart="8dp"
-                android:src="@drawable/wolflogo" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/non_fiction_img_interests"
+            android:layout_width="92dp"
+            android:layout_height="92dp"
+            android:layout_alignTop="@+id/render_service"
+            android:layout_alignEnd="@+id/self_help_img_interests"
+            android:layout_alignBottom="@+id/render_service"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/wolflogo"
+            app:civ_border_color="#e7e7e7"
+            app:civ_border_width="1.5dp" />
 
-            <ImageView
-                android:id="@+id/non_fiction_thumb_interests"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/non_fiction_img_interests"
-                android:layout_alignTop="@+id/non_fiction_img_interests"
-                android:layout_alignEnd="@+id/non_fiction_img_interests"
-                android:layout_alignBottom="@+id/non_fiction_img_interests"
-                android:layout_marginTop="0dp"
-                android:background="@drawable/thumb_background"
-                android:padding="22dp"
-                android:src="@drawable/ic_thumbs_up"
-                android:visibility="gone"
-                tools:ignore="ContentDescription" />
+        <ImageView
+            android:id="@+id/non_fiction_thumb_interests"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/non_fiction_img_interests"
+            android:layout_alignTop="@+id/non_fiction_img_interests"
+            android:layout_alignEnd="@+id/non_fiction_img_interests"
+            android:layout_alignBottom="@+id/non_fiction_img_interests"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/thumb_background"
+            android:padding="22dp"
+            android:src="@drawable/ic_thumbs_up"
+            android:visibility="visible"
+            tools:ignore="ContentDescription" />
 
-            <TextView
-                android:id="@+id/physics_text_interests"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/non_fiction_img_interests"
-                android:layout_alignEnd="@+id/non_fiction_img_interests"
-                android:layout_alignBottom="@+id/law_text_interests"
-                android:gravity="center_horizontal"
-                android:textColor="@color/white"
-                android:text="Fiction" />
+        <TextView
+            android:id="@+id/physics_text_interests"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/non_fiction_img_interests"
+            android:layout_alignEnd="@+id/non_fiction_img_interests"
+            android:layout_alignBottom="@+id/deliver_text"
+            android:fontFamily="@font/gotham"
+            android:gravity="center_horizontal"
+            android:text="Fiction"
 
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/kids_img_interests"
-                android:layout_width="92dp"
-                android:layout_height="92dp"
-                android:layout_alignTop="@+id/non_fiction_img_interests"
-                android:layout_alignEnd="@+id/life_style_img_interests"
-                android:layout_alignBottom="@+id/non_fiction_img_interests"
-                android:layout_marginStart="8dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/wolflogo" />
+            android:textColor="@color/white" />
 
-            <ImageView
-                android:id="@+id/kids_thumb_interests"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/kids_img_interests"
-                android:layout_alignTop="@+id/kids_img_interests"
-                android:layout_alignEnd="@+id/kids_img_interests"
-                android:layout_alignBottom="@+id/kids_img_interests"
-                android:layout_marginTop="0dp"
-                android:background="@drawable/thumb_background"
-                android:padding="22dp"
-                android:src="@drawable/ic_thumbs_up"
-                android:visibility="gone"
-                tools:ignore="ContentDescription" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/manufacture"
+            android:layout_width="92dp"
+            android:layout_height="92dp"
+            android:layout_alignTop="@+id/non_fiction_img_interests"
+            android:layout_alignEnd="@+id/life_style_img_interests"
+            android:layout_alignBottom="@+id/non_fiction_img_interests"
+            android:layout_marginStart="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/wolflogo"
+            app:civ_border_color="#e7e7e7"
+            app:civ_border_width="1.5dp" />
+
+        <ImageView
+            android:id="@+id/text_manufacture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/manufacture"
+            android:layout_alignTop="@+id/manufacture"
+            android:layout_alignEnd="@+id/manufacture"
+            android:layout_alignBottom="@+id/manufacture"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/thumb_background"
+            android:padding="22dp"
+            android:src="@drawable/ic_thumbs_up"
+            android:visibility="gone"
+            tools:ignore="ContentDescription" />
 
 
-            <TextView
-                android:id="@+id/mathematics_text_interests"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/kids_img_interests"
-                android:layout_alignEnd="@+id/kids_img_interests"
-                android:layout_alignBottom="@+id/physics_text_interests"
-                android:gravity="center_horizontal"
-                android:textColor="@color/white"
-                android:text="Kids" />
-        </RelativeLayout>
-    </ScrollView>
+        <TextView
+            android:id="@+id/dummy_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/manufacture"
+            android:layout_alignEnd="@+id/manufacture"
+            android:layout_alignBottom="@+id/physics_text_interests"
+            android:fontFamily="@font/gotham"
+            android:gravity="center_horizontal"
+
+            android:text="Kids"
+            android:textColor="@color/white" />
+    </RelativeLayout>
 
     <Button
         android:id="@+id/fab_next_interests"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="12dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/textview_tab_style_blue"
-        android:text="next"
-        android:textColor="@color/white" />
+        android:background="@drawable/button_blue"
+        android:focusable="true"
+        android:fontFamily="@font/gotham"
+        android:shadowColor="@color/pressed_bg"
+        android:shadowDx="15"
+        android:shadowDy="15"
+        android:shadowRadius="15"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
 
-    <ProgressBar
-        android:id="@+id/progress_interests"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:visibility="gone"/>
+
 </RelativeLayout>

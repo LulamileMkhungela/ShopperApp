@@ -6,6 +6,38 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/connect_bg"
+        app:tabBackground="@drawable/login_background"
+        app:tabIndicator="@drawable/btn_gradient_style"
+        app:tabRippleColor="@null"
+        app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+        app:tabTextColor="@color/white">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gotham"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:textColor="@color/minimal_black"
+            android:textSize="16sp" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gotham"
+            android:text="Log In"
+            android:textAllCaps="false"
+            android:textColor="@color/minimal_black"
+            android:textSize="16sp" />
+
+
+    </com.google.android.material.tabs.TabLayout>
+
     <ImageView
         android:id="@+id/header"
         android:layout_width="match_parent"
@@ -26,6 +58,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="20dp"
             android:orientation="vertical"
             android:paddingTop="20dp">
@@ -55,13 +88,19 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="10dp"
-                android:hint="Email">
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="Email"
+                android:maxLines="1">
 
                 <EditText
                     android:id="@+id/email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textEmailAddress" />
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -71,15 +110,22 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
                 android:hint="Password"
-                app:passwordToggleEnabled="true">
+                android:maxLines="1"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="#c2c3c8">
 
                 <EditText
                     android:id="@+id/password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/email_holder"
-                    android:inputType="textPassword" />
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:inputType="textPassword"
+                    android:maxLines="1" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -89,6 +135,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:focusable="true"
+                android:fontFamily="@font/gotham"
                 android:onClick="onForgotPassword"
                 android:text="Forgot your Password ?"
                 android:textAllCaps="false"
@@ -102,12 +150,15 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                android:onClick="onLogin"
                 android:background="@drawable/textview_tab_style_blue"
+                android:focusable="true"
+                android:fontFamily="@font/gotham"
+                android:onClick="onLogin"
                 android:padding="10dp"
                 android:text="Sign In"
-                android:textAllCaps="false"
-                android:textSize="16sp" />
+                android:textAllCaps="true"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
             <ProgressBar
                 android:id="@+id/progressBar2"
@@ -127,8 +178,10 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|center"
         android:layout_marginBottom="20dp"
+        android:focusable="true"
+        android:fontFamily="@font/gotham"
         android:onClick="onRegister"
-        android:text="New here ? Sign Up instead"
+        android:text="New here ! Sign Up instead"
         android:textAllCaps="false"
         android:textColor="#989898"
         android:textSize="16sp" />
