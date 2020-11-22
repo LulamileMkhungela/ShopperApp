@@ -15,6 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.tabs.TabLayout;
+import com.hosinc.shopperapp.shopper.app.BsHomePage;
 import com.hosinc.shopperapp.shopper.app.ChooseInterests;
 import com.hosinc.shopperapp.shopper.app.HomeNavigation;
 import com.hosinc.shopperapp.shopper.app.R;
@@ -50,7 +51,7 @@ public class IntroActivity extends AppCompatActivity {
 
         if (restorePrefData()) {
 
-            Intent mainActivity = new Intent(getApplicationContext(), HomeNavigation.class );
+            Intent mainActivity = new Intent(getApplicationContext(), BsHomePage.class );
             startActivity(mainActivity);
             finish();
 
@@ -144,7 +145,7 @@ public class IntroActivity extends AppCompatActivity {
 
                 //open main activity
 
-                Intent mainActivity = new Intent(getApplicationContext(), HomeNavigation.class);
+                Intent mainActivity = new Intent(getApplicationContext(), BsHomePage.class);
                 startActivity(mainActivity);
                 // also we need to save a boolean value to storage so next time when the user run the app
                 // we could know that he is already checked the intro screen activity

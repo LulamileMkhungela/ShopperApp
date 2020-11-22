@@ -10,6 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
+        <activity android:name=".BsSellActivity"></activity>
+        <activity android:name=".BsChatActivity" />
+        <activity android:name=".RegisterVerifyProcess" />
+        <activity android:name=".BsUpdateProfile" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".BsProductDetail" />
+        <activity android:name=".BsMyProduct" />
+        <activity android:name=".BsHomePage" />
         <activity android:name=".ActivityForgotPassword" />
         <activity android:name=".ChooseInterests" />
         <activity
