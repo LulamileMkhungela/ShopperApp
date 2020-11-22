@@ -117,4 +117,39 @@
 
     <dimen name="dots_height">30dp</dimen>
     <dimen name="dots_margin_bottom">20dp</dimen>
+
+<!--    extra dimens2-->
+    <dimen name="medium">16dp</dimen>
+    <dimen name="small">8dp</dimen>
+    <dimen name="xsmall">4dp</dimen>
+
+<!--    more extras-->
+    <dimen name="text_size_xsmall">8dp</dimen>
+    <dimen name="text_size_small">10dp</dimen>
+    <dimen name="text_size_medium">12dp</dimen>
+    <dimen name="text_size_xmedium">14dp</dimen>
+    <dimen name="text_size_large">16dp</dimen>
+    <dimen name="view_width_small">1dp</dimen>
+    <dimen name="view_width_xsmall">0.5dp</dimen>
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_medium">8dp</dimen>
+
+    <dimen name="img_width_height">120dp</dimen>
+    <dimen name="slide_title">30dp</dimen>
+    <dimen name="slide_desc">16dp</dimen>
+    <dimen name="desc_padding">40dp</dimen>
+
+<!--    bsh-->
+    <dimen name="shr_product_grid_reveal_height">200dp</dimen>
+
+    <!-- Dimens for staggered asymmetric grid layout cards-->
+    <dimen name="shr_staggered_product_grid_spacing_large">30dp</dimen>
+    <dimen name="shr_staggered_product_grid_spacing_small">26dp</dimen>
+    <dimen name="shr_staggered_product_grid_margin_top_first">72dp</dimen>
+    <dimen name="shr_staggered_product_grid_margin_top_second">56dp</dimen>
+    <dimen name="shr_staggered_product_grid_margin_top_third">152dp</dimen>
+    <dimen name="shr_staggered_product_grid_card_width_portrait">165dp</dimen>
+    <dimen name="shr_staggered_product_grid_card_height_portrait">247dp</dimen>
+    <dimen name="shr_staggered_product_grid_card_width_landscape">188dp</dimen>
+    <dimen name="shr_staggered_product_grid_card_height_landscape">140dp</dimen>
 </resources>

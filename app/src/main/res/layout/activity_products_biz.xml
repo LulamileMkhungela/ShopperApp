@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#d4e9fc"
     android:scrollbars="none">
 
     <LinearLayout
@@ -36,11 +35,11 @@
                 android:layout_height="120dp"
                 android:elevation="3.5dp"
                 android:scaleType="centerCrop"
-                app:srcCompat="@drawable/gradient_5"
+                app:srcCompat="@color/colorPrimary"
                 tools:ignore="ContentDescription,MissingConstraints,UnusedAttribute" />
 
             <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/img_other_users_photo_profile"
+                android:id="@+id/bz_profile_pic"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_alignParentTop="true"
@@ -49,15 +48,15 @@
                 android:elevation="4dp"
                 android:src="@drawable/default_profile_picture"
                 android:tint="@color/white"
-                app:civ_border_color="@color/white"
+                app:civ_border_color="@color/colorPrimaryDark"
                 app:civ_border_width="1.5dp"
                 tools:targetApi="lollipop" />
 
             <TextView
-                android:id="@+id/txt_username_profile_other_users"
+                android:id="@+id/bz_txt_username_profile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/img_other_users_photo_profile"
+                android:layout_below="@+id/bz_profile_pic"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
                 android:gravity="center_horizontal"
@@ -67,15 +66,15 @@
                 android:textStyle="bold" />
 
             <LinearLayout
-                android:id="@+id/layout_buttons__other_users"
+                android:id="@+id/bs_layout_buttons"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/txt_username_profile_other_users"
+                android:layout_below="@+id/bz_txt_username_profile"
                 android:layout_marginTop="28dp"
                 android:baselineAligned="false"
                 android:orientation="horizontal"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/txt_username_profile_other_users">
+                app:layout_constraintTop_toBottomOf="@id/bz_txt_username_profile">
 
                 <LinearLayout
                     android:id="@+id/edit_layout_profile"
@@ -103,11 +102,11 @@
                         android:layout_marginLeft="4dp"
                         android:layout_marginTop="12dp"
                         android:gravity="center_horizontal"
+                        android:text="profile"
                         android:textAppearance="@style/TextAppearance.AppCompat.Widget.TextView.SpinnerItem"
                         android:textSize="14sp"
                         app:layout_constraintEnd_toEndOf="@id/img_ic_edit_profile_others_profile"
                         app:layout_constraintStart_toStartOf="@id/img_ic_edit_profile_others_profile"
-                        android:text="profile"
                         app:layout_constraintTop_toBottomOf="@id/img_ic_edit_profile_others_profile" />
 
                 </LinearLayout>
@@ -205,7 +204,7 @@
                 android:id="@+id/progress_bar_profile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/layout_buttons__other_users"
+                android:layout_below="@+id/bs_layout_buttons"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="22dp"
                 android:elevation="12dp"
@@ -215,7 +214,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/layout_buttons__other_users"
+                android:layout_below="@+id/bs_layout_buttons"
                 android:layout_margin="10dp"
                 android:background="?selectableItemBackground"
                 android:clickable="true"

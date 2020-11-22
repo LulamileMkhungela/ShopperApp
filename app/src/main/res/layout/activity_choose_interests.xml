@@ -105,7 +105,6 @@
             android:fontFamily="@font/gotham"
             android:gravity="center_horizontal"
             android:text="Self help"
-
             android:textColor="@color/white" />
 
         <de.hdodenhof.circleimageview.CircleImageView
@@ -145,7 +144,6 @@
             android:fontFamily="@font/gotham"
             android:gravity="center_horizontal"
             android:text="Lifestyle"
-
             android:textColor="@color/white" />
 
         <de.hdodenhof.circleimageview.CircleImageView
@@ -185,7 +183,6 @@
             android:layout_marginTop="8dp"
             android:layout_marginBottom="16dp"
             android:fontFamily="@font/gotham"
-
             android:gravity="center_horizontal"
             android:text="Fiction"
             android:textColor="@color/white" />
@@ -269,7 +266,6 @@
             android:layout_alignBottom="@+id/physics_text_interests"
             android:fontFamily="@font/gotham"
             android:gravity="center_horizontal"
-
             android:text="Kids"
             android:textColor="@color/white" />
     </RelativeLayout>

@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="?colorPrimaryDark">
+    android:layout_height="match_parent">
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/refreshLayout"
@@ -34,7 +33,7 @@
                     android:layout_height="100dp"
                     android:layout_marginBottom="5dp"
                     app:srcCompat="@drawable/ic_sentiment_dissatisfied_black_24dp"
-                    app:tint="#FF5722" />
+                    app:tint="@color/colorPrimaryDark" />
 
                 <TextView
                     android:id="@+id/default_title"
@@ -42,7 +41,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="No friends found"
+                    android:text="No Notifications found"
                     android:textColor="?android:textColorPrimary"
                     android:textSize="19sp"
                     tools:ignore="MissingPrefix" />
@@ -54,7 +53,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginEnd="10dp"
                     android:gravity="center"
-                    android:text="Add some friends to send them messages" />
+                    android:text="Please visit again maybe you wil have messages" />
 
             </LinearLayout>
 

@@ -1,42 +1,37 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
-        <item name="colorPrimary">#2196F3</item>
-        <item name="colorPrimaryDark">#039BE6</item>
-        <item name="colorAccent">@color/colorAccentt</item>
-        <item name="dialogSheetAccent">@color/colorAccentt</item>
+        <item name="colorPrimary">#E0E0E0</item>
+        <item name="colorPrimaryDark">#FBB8AC</item>
+        <item name="colorAccent">#FEDBD0</item>
         <item name="actionBarPopupTheme">@style/AppTheme.PopupOverlay</item>
     </style>
 
     <style name="AppTheme2" parent="Theme.MaterialComponents.Light.NoActionBar">
-        <item name="colorPrimary">@color/colorPrimaryDark</item>
-        <item name="colorPrimaryDark">#3F51B5</item>
-        <item name="colorAccent">@color/colorAccentt</item>
-        <item name="dialogSheetAccent">@color/colorAccentt</item>
+        <item name="colorPrimary">#E0E0E0</item>
+        <item name="colorPrimaryDark">#FBB8AC</item>
+        <item name="colorAccent">#FEDBD0</item>
         <item name="actionBarPopupTheme">@style/AppTheme.PopupOverlay</item>
     </style>
 
     <style name="BottomNavigationBarTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
-        <item name="colorPrimary">@color/colorAccentt</item>
-        <item name="colorPrimaryDark">#3E3B3B</item>
-        <item name="colorAccent">@color/colorPrimary</item>
-        <item name="dialogSheetAccent">@color/colorAccentt</item>
+        <item name="colorPrimary">#E0E0E0</item>
+        <item name="colorPrimaryDark">#FBB8AC</item>
+        <item name="colorAccent">#FEDBD0</item>
     </style>
 
 
     <style name="LoginAppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
-        <item name="colorPrimary">@color/colorPrimaryDark</item>
-        <item name="colorPrimaryDark">#C55555</item>
-        <item name="dialogSheetAccent">@color/colorAccentt</item>
-        <item name="colorAccent">@color/colorAccentt</item>
+        <item name="colorPrimary">#E0E0E0</item>
+        <item name="colorPrimaryDark">#FBB8AC</item>
+        <item name="colorAccent">#FEDBD0</item>
     </style>
 
 
     <style name="UpdateAppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
-        <item name="colorPrimary">#571313</item>
-        <item name="colorPrimaryDark">#FF5722</item>
-        <item name="dialogSheetAccent">@color/colorAccentt</item>
-        <item name="colorAccent">@color/colorAccentt</item>
+        <item name="colorPrimary">#E0E0E0</item>
+        <item name="colorPrimaryDark">#FBB8AC</item>
+        <item name="colorAccent">#FEDBD0</item>
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar" />
@@ -44,11 +39,25 @@
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
 
     <style name="SplashAppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
-        <item name="colorPrimary">#3A4C48</item>
-        <item name="colorPrimaryDark">#F44336</item>
-        <item name="colorAccent">@color/colorAccentt</item>
+        <item name="colorPrimary">#E0E0E0</item>
+        <item name="colorPrimaryDark">#FBB8AC</item>
+        <item name="colorAccent">#FEDBD0</item>
         <item name="android:windowBackground">@drawable/wolflogo</item>
-        <item name="dialogSheetAccent">@color/colorAccentt</item>
+    </style>
+<!--heading -->
+    <style name="headingfonts">
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">20sp</item>
     </style>
 
+<!--    new style of  button-->
+    <style name="Widget.Shrine.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="backgroundTint">#FBB8AC</item>
+        <item name="android:stateListAnimator" tools:ignore="NewApi">
+            @anim/shr_next_button_state_list_anim
+        </item>
+
+
+    </style>
 </resources>

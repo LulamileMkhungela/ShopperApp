@@ -34,19 +34,29 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/gotham"
+            android:shadowColor="@color/pressed_bg"
+            android:shadowDx="20"
+            android:shadowDy="20"
+            android:shadowRadius="15"
             android:text="Register"
             android:textAllCaps="false"
             android:textColor="@color/minimal_black"
-            android:textSize="16sp" />
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/gotham"
+            android:shadowColor="@color/pressed_bg"
+            android:shadowDx="20"
+            android:shadowDy="20"
+            android:shadowRadius="15"
             android:text="Log In"
             android:textAllCaps="false"
             android:textColor="@color/minimal_black"
-            android:textSize="16sp" />
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
 
     </com.google.android.material.tabs.TabLayout>
@@ -59,7 +69,8 @@
 
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
 
             <ImageView
                 android:id="@+id/header"
@@ -90,7 +101,7 @@
                         android:layout_height="100dp"
                         android:layout_gravity="center_horizontal"
                         android:src="@drawable/default_profile_picture"
-                        app:civ_border_color="#e7e7e7"
+                        app:civ_border_color="@color/colorPrimaryDark"
                         app:civ_border_width="1.5dp" />
 
                     <ProgressBar
@@ -101,7 +112,7 @@
                         android:layout_marginLeft="28dp"
                         android:elevation="4dp"
                         android:gravity="center_horizontal"
-                        android:indeterminateTint="@color/colorPrimary"
+                        android:indeterminateTint="@color/colorPrimaryDark"
                         tools:ignore="UnusedAttribute" />
 
                 </LinearLayout>
@@ -181,7 +192,7 @@
                     android:layout_marginBottom="20dp"
                     android:hint="Passord"
                     app:passwordToggleEnabled="true"
-                    app:passwordToggleTint="#c2c3c8">
+                    app:passwordToggleTint="@color/colorPrimaryDark">
 
                     <EditText
                         android:id="@+id/location"
@@ -201,6 +212,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="4dp"
+                        android:fontFamily="@font/gotham"
                         android:text="EaziBuy As"
                         android:textSize="18sp"
                         android:textStyle="normal" />
@@ -223,7 +235,7 @@
                         android:id="@+id/check_box_t_and_c"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:buttonTint="@color/colorAccentt" />
+                        android:buttonTint="@color/colorPrimaryDark" />
 
                     <TextView
                         android:id="@+id/text_t_and_c"
@@ -243,54 +255,65 @@
                     android:layout_marginTop="20dp"
                     android:orientation="horizontal">
 
-                    <androidx.appcompat.widget.AppCompatButton
-                        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    <Button
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="34dp"
                         android:layout_gravity="center"
+                        android:layout_marginEnd="8dp"
                         android:background="@drawable/et_ui"
                         android:fontFamily="@font/gotham"
                         android:text="Terms and Use"
                         android:textAllCaps="false"
-                        android:textColor="@color/textColor"
-                        android:textSize="16sp" />
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:text="&amp;" />
+                        android:fontFamily="@font/gotham"
+                        android:text="&amp;"
+                        android:textStyle="bold" />
 
-                    <androidx.appcompat.widget.AppCompatButton
-                        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    <Button
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="34dp"
                         android:layout_gravity="center"
+                        android:layout_marginStart="8dp"
                         android:background="@drawable/et_ui"
                         android:fontFamily="@font/gotham"
                         android:text="Privacy Policy"
                         android:textAllCaps="false"
-                        android:textColor="@color/textColor"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
 
                 </LinearLayout>
 
-                <androidx.appcompat.widget.AppCompatButton
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/button"
-                    style="@style/Widget.AppCompat.Button.Colored"
-                    android:layout_width="wrap_content"
+                    style="@style/Widget.Shrine.Button"
+                    android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
-                    android:background="@drawable/round_background"
+                    android:layout_marginEnd="12dp"
+                    android:background="@drawable/textview_tab_style_blue"
                     android:focusable="true"
                     android:fontFamily="@font/gotham"
                     android:padding="10dp"
-                    android:text="Sign Up"
-                    android:textAllCaps="true"
+                    android:shadowColor="@color/pressed_bg"
+                    android:shadowDx="20"
+                    android:shadowDy="20"
+                    android:shadowRadius="15"
+                    android:text="Continue"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
                     android:textSize="18sp"
-                    android:textStyle="bold" />
+                    android:textStyle="normal" />
 
             </LinearLayout>
 
