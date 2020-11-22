@@ -9,7 +9,6 @@
 
 
     <TextView
-        android:id="@+id/select_interest"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -41,7 +40,6 @@
             app:civ_border_width="1.5dp" />
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/buying_goods_service"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignStart="@+id/goods_promotions"
@@ -81,7 +79,6 @@
             app:civ_border_width="1.5dp" />
 
         <ImageView
-            android:id="@+id/self_help_thumb_interests"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignStart="@+id/self_help_img_interests"
@@ -120,7 +117,6 @@
             app:civ_border_width="1.5dp" />
 
         <ImageView
-            android:id="@+id/life_style_thumb_interests"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignStart="@+id/life_style_img_interests"
@@ -135,7 +131,6 @@
             tools:ignore="ContentDescription" />
 
         <TextView
-            android:id="@+id/trade"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignStart="@+id/life_style_img_interests"
@@ -159,7 +154,6 @@
             app:civ_border_width="1.5dp" />
 
         <ImageView
-            android:id="@+id/deliver"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignStart="@+id/render_service"
@@ -201,7 +195,6 @@
             app:civ_border_width="1.5dp" />
 
         <ImageView
-            android:id="@+id/non_fiction_thumb_interests"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignStart="@+id/non_fiction_img_interests"
@@ -242,7 +235,6 @@
             app:civ_border_width="1.5dp" />
 
         <ImageView
-            android:id="@+id/text_manufacture"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignStart="@+id/manufacture"
@@ -258,7 +250,6 @@
 
 
         <TextView
-            android:id="@+id/dummy_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignStart="@+id/manufacture"
@@ -271,7 +262,6 @@
     </RelativeLayout>
 
     <Button
-        android:id="@+id/fab_next_interests"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

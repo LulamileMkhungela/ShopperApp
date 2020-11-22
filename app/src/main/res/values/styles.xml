@@ -7,50 +7,12 @@
         <item name="actionBarPopupTheme">@style/AppTheme.PopupOverlay</item>
     </style>
 
-    <style name="AppTheme2" parent="Theme.MaterialComponents.Light.NoActionBar">
-        <item name="colorPrimary">#E0E0E0</item>
-        <item name="colorPrimaryDark">#FBB8AC</item>
-        <item name="colorAccent">#FEDBD0</item>
-        <item name="actionBarPopupTheme">@style/AppTheme.PopupOverlay</item>
-    </style>
-
-    <style name="BottomNavigationBarTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
-        <item name="colorPrimary">#E0E0E0</item>
-        <item name="colorPrimaryDark">#FBB8AC</item>
-        <item name="colorAccent">#FEDBD0</item>
-    </style>
-
-
-    <style name="LoginAppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
-        <item name="colorPrimary">#E0E0E0</item>
-        <item name="colorPrimaryDark">#FBB8AC</item>
-        <item name="colorAccent">#FEDBD0</item>
-    </style>
-
-
-    <style name="UpdateAppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
-        <item name="colorPrimary">#E0E0E0</item>
-        <item name="colorPrimaryDark">#FBB8AC</item>
-        <item name="colorAccent">#FEDBD0</item>
-    </style>
-
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
 
-    <style name="SplashAppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
-        <item name="colorPrimary">#E0E0E0</item>
-        <item name="colorPrimaryDark">#FBB8AC</item>
-        <item name="colorAccent">#FEDBD0</item>
-        <item name="android:windowBackground">@drawable/wolflogo</item>
-    </style>
-<!--heading -->
-    <style name="headingfonts">
-        <item name="android:textColor">#fff</item>
-        <item name="android:textSize">20sp</item>
-    </style>
+    <!--heading -->
 
-<!--    new style of  button-->
+    <!--    new style of  button-->
     <style name="Widget.Shrine.Button" parent="Widget.MaterialComponents.Button">
         <item name="android:textColor">@color/white</item>
         <item name="backgroundTint">#FBB8AC</item>

@@ -1,155 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="card_padding">16dp</dimen>
-    <dimen name="fab_margin">16dp</dimen>
-
-    <dimen name="margin_view_small">4dp</dimen>
-    <dimen name="margin_view_typical">8dp</dimen>
-    <dimen name="margin_view_large">16dp</dimen>
-    <dimen name="margin_view_xlarge">32dp</dimen>
-    <dimen name="horizontal_margin">16dp</dimen>
-    <dimen name="digit_button_text_size">22sp</dimen>
-    <dimen name="output_elevation">4dp</dimen>
-
-    <dimen name="title_padding_right">16dp</dimen>
-    <dimen name="title_padding_left">58dp</dimen>
-    <dimen name="list_padding">0dp</dimen>
-    <dimen name="tabs_padding">8dp</dimen>
-    <dimen name="card_view_margin">5dp</dimen>
-    <dimen name="view_header_padding_bottom">0dp</dimen>
-    <dimen name="create_scroll_view_padding">0dp</dimen>
-    <dimen name="toolbar_elevation">4dp</dimen>
-    <dimen name="toolbar_shadow_height">10dp</dimen>
-    <dimen name="toolbar_shadow_adjust">-10dp</dimen>
-    <dimen name="table_row_default_horizontal_padding">20dp</dimen>
-    <dimen name="table_row_default_padding_side">16dp</dimen>
-    <dimen name="line_separator_height">0.5dp</dimen>
-    <dimen name="line_separator_margin_side_large">64dp</dimen>
-    <dimen name="line_separator_margin_side">8dp</dimen>
-    <dimen name="image_margin_side">16dp</dimen>
-    <dimen name="view_image_margin_side">26dp</dimen>
-    <dimen name="text_margin_side">22dp</dimen>
-    <dimen name="fab_recycler_view_padding">88dp</dimen>
-    <dimen name="table_row_about_padding">18dp</dimen>
-    <dimen name="text_about_margin_side">22dp</dimen>
-    <dimen name="text_view_margin_side">20dp</dimen>
-    <dimen name="table_row_view_padding">15dp</dimen>
-    <dimen name="text_dialog_padding_side">16dp</dimen>
-    <dimen name="dialog_padding_side">24dp</dimen>
-    <dimen name="item_offset">5dp</dimen>
-    <dimen name="toolbar_placeholder_height">56dp</dimen>
 
     <!-- margin. -->
-    <dimen name="large_margin">20dp</dimen>
-    <dimen name="normal_margin">16dp</dimen>
-    <dimen name="little_margin">8dp</dimen>
-    <dimen name="small_margin">10dp</dimen>
 
     <!-- image. -->
-    <dimen name="current_weather_icon_size">80dp</dimen>
-    <dimen name="standard_weather_icon_size">56dp</dimen>
-    <dimen name="little_weather_icon_size">42dp</dimen>
-    <dimen name="material_icon_size">24dp</dimen>
 
     <!-- view. -->
-    <dimen name="spinner_drop_width">150dp</dimen>
-    <dimen name="share_view_height">260dp</dimen>
-    <dimen name="progress_view_size">36dp</dimen>
 
     <!-- text. -->
-    <dimen name="design_title_text_size">48sp</dimen>
-    <dimen name="large_title_text_size">20sp</dimen>
-    <dimen name="title_text_size">16sp</dimen>
-    <dimen name="subtitle_text_size">12sp</dimen>
-    <dimen name="content_text_size">14sp</dimen>
 
     <!-- widget. -->
-    <dimen name="widget_grid_1">40dp</dimen>
-    <dimen name="widget_grid_2">110dp</dimen>
-    <dimen name="widget_grid_3">180dp</dimen>
-    <dimen name="widget_grid_4">250dp</dimen>
 
-    <dimen name="widget_current_weather_icon_size">@dimen/standard_weather_icon_size</dimen>
-    <dimen name="widget_standard_weather_icon_size">48dp</dimen>
-    <dimen name="widget_little_weather_icon_size">36dp</dimen>
-    <dimen name="widget_mini_weather_icon_size">24dp</dimen>
-    <dimen name="widget_design_title_text_size">30sp</dimen>
-    <dimen name="widget_large_title_text_size">@dimen/large_title_text_size</dimen>
-    <dimen name="widget_title_text_size">@dimen/title_text_size</dimen>
-    <dimen name="widget_subtitle_text_size">@dimen/subtitle_text_size</dimen>
-    <dimen name="widget_content_text_size">@dimen/content_text_size</dimen>
-    <dimen name="widget_time_text_size">10sp</dimen>
-    <dimen name="widget_aa_text_size">14dp</dimen>
     <!-- Default screen margins, per the Android Design guidelines. -->
-    <dimen name="activity_horizontal_margin">16dp</dimen>
-    <dimen name="activity_vertical_margin">16dp</dimen>
-    <dimen name="appbar_padding_top">8dp</dimen>
-
-
-    <dimen name="grid_double">16dp</dimen>
-    <dimen name="grid_single">8dp</dimen>
-    <dimen name="grid_half">4dp</dimen>
-    <dimen name="icon_size">24dp</dimen>
-    <dimen name="padding_map">150dp</dimen>
-    <dimen name="touch_raise">6dp</dimen>
-    <dimen name="gallery_item_height">225dp</dimen>
-    <dimen name="detail_description_width">225dp</dimen>
-    <dimen name="description_title_end_margin">56dp</dimen>
-    <dimen name="description_elevation">2dp</dimen>
-    <item name="icon_viewport_size" type="fraction">24.0</item>
-    <integer name="max_lines_desc">8</integer>
-    <dimen name="app_bar_height">280dp</dimen>
-    <dimen name="text_margin">16dp</dimen>
-    <dimen name="nav_header_vertical_spacing">8dp</dimen>
-    <dimen name="nav_header_height">176dp</dimen>
 
 
     <!--    extras-->
-    <dimen name="first_card_width">176dp</dimen>
-    <dimen name="first_card_height">36dp</dimen>
-    <dimen name="first_card_radius">18dp</dimen>
-    <dimen name="first_card_radius_on_focus">6dp</dimen>
-    <dimen name="edit_text_width">150dp</dimen>
-    <dimen name="second_card_width">180dp</dimen>
-    <dimen name="second_card_height">40dp</dimen>
-    <dimen name="second_card_radius">20dp</dimen>
-    <dimen name="second_card_radius_on_focus">8dp</dimen>
 
-    <dimen name="dots_height">30dp</dimen>
-    <dimen name="dots_margin_bottom">20dp</dimen>
+    <!--    extra dimens2-->
 
-<!--    extra dimens2-->
-    <dimen name="medium">16dp</dimen>
-    <dimen name="small">8dp</dimen>
-    <dimen name="xsmall">4dp</dimen>
+    <!--    more extras-->
 
-<!--    more extras-->
-    <dimen name="text_size_xsmall">8dp</dimen>
-    <dimen name="text_size_small">10dp</dimen>
-    <dimen name="text_size_medium">12dp</dimen>
-    <dimen name="text_size_xmedium">14dp</dimen>
-    <dimen name="text_size_large">16dp</dimen>
-    <dimen name="view_width_small">1dp</dimen>
-    <dimen name="view_width_xsmall">0.5dp</dimen>
-    <dimen name="margin_small">4dp</dimen>
-    <dimen name="margin_medium">8dp</dimen>
-
-    <dimen name="img_width_height">120dp</dimen>
-    <dimen name="slide_title">30dp</dimen>
-    <dimen name="slide_desc">16dp</dimen>
-    <dimen name="desc_padding">40dp</dimen>
-
-<!--    bsh-->
-    <dimen name="shr_product_grid_reveal_height">200dp</dimen>
+    <!--    bsh-->
 
     <!-- Dimens for staggered asymmetric grid layout cards-->
-    <dimen name="shr_staggered_product_grid_spacing_large">30dp</dimen>
-    <dimen name="shr_staggered_product_grid_spacing_small">26dp</dimen>
-    <dimen name="shr_staggered_product_grid_margin_top_first">72dp</dimen>
-    <dimen name="shr_staggered_product_grid_margin_top_second">56dp</dimen>
-    <dimen name="shr_staggered_product_grid_margin_top_third">152dp</dimen>
-    <dimen name="shr_staggered_product_grid_card_width_portrait">165dp</dimen>
-    <dimen name="shr_staggered_product_grid_card_height_portrait">247dp</dimen>
-    <dimen name="shr_staggered_product_grid_card_width_landscape">188dp</dimen>
-    <dimen name="shr_staggered_product_grid_card_height_landscape">140dp</dimen>
 </resources>
