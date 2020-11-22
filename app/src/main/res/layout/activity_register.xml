@@ -19,51 +19,70 @@
     <!--        app:stpi_showLabels="true"-->
     <!--        app:stpi_stepCount="2" />-->
 
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tabLayout"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header_constraint_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/connect_bg"
-        app:tabBackground="@drawable/login_background"
-        app:tabIndicator="@drawable/btn_gradient_style"
-        app:tabRippleColor="@null"
-        app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
-        app:tabTextColor="@color/white">
+        android:layout_height="110dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
-        <com.google.android.material.tabs.TabItem
+        <TextView
+            android:id="@+id/login_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="59dp"
+            android:alpha="0.3"
             android:fontFamily="@font/gotham"
-            android:shadowColor="@color/pressed_bg"
-            android:shadowDx="20"
-            android:shadowDy="20"
-            android:shadowRadius="15"
-            android:text="Register"
-            android:textAllCaps="false"
-            android:textColor="@color/minimal_black"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            android:gravity="start"
+            android:text="Login"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="59dp" />
 
-        <com.google.android.material.tabs.TabItem
+        <TextView
+            android:id="@+id/signup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="59dp"
             android:fontFamily="@font/gotham"
-            android:shadowColor="@color/pressed_bg"
-            android:shadowDx="20"
-            android:shadowDy="20"
-            android:shadowRadius="15"
-            android:text="Log In"
-            android:textAllCaps="false"
-            android:textColor="@color/minimal_black"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            android:gravity="start"
+            android:text="Sign Up"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toRightOf="@+id/login_text_view"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="131dp"
+            tools:layout_editor_absoluteY="59dp" />
 
-
-    </com.google.android.material.tabs.TabLayout>
+        <View
+            android:id="@+id/view"
+            android:layout_width="10dp"
+            android:layout_height="3dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/signup"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="107dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
         android:overScrollMode="never"
         android:scrollbars="none">
 
@@ -71,14 +90,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp">
-
-            <ImageView
-                android:id="@+id/header"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="fitStart"
-                android:src="@mipmap/header"
-                android:visibility="gone" />
 
             <LinearLayout
                 android:layout_width="match_parent"
