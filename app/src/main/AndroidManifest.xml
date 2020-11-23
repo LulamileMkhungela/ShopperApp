@@ -10,7 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".BsSellActivity"></activity>
+        <activity android:name=".BsProfile"></activity>
+        <activity android:name=".BsSellActivity" />
         <activity android:name=".BsChatActivity" />
         <activity android:name=".RegisterVerifyProcess" />
         <activity android:name=".BsUpdateProfile" />
