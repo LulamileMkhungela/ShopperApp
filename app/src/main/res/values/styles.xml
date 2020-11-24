@@ -19,7 +19,9 @@
         <item name="android:stateListAnimator" tools:ignore="NewApi">
             @anim/shr_next_button_state_list_anim
         </item>
-
-
     </style>
+
+
+    <!--styles for education app-->
+
 </resources>

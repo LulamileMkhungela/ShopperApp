@@ -1,4 +1,4 @@
-package com.hosinc.shopperapp.shopper.app.welcome;
+package com.hosinc.shopperapp.shopper.app.welcomeProcess;
 
 public class ScreenItem {
 

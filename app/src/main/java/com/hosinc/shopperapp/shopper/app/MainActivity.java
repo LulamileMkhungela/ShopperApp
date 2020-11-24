@@ -10,7 +10,7 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.hosinc.shopperapp.shopper.app.welcome.IntroActivity;
+import com.hosinc.shopperapp.shopper.app.welcomeProcess.IntroActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

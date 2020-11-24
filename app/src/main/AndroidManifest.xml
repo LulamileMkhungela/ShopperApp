@@ -10,11 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".BsProfile"></activity>
+        <activity android:name=".biz.profile.BsProfileContact"></activity>
+        <activity android:name=".biz.profile.BsProfileGallery" />
+        <activity android:name=".biz.profile.BsProfileMainUpdateActivity" />
+        <activity android:name=".biz.profile.BsProfile" />
         <activity android:name=".BsSellActivity" />
         <activity android:name=".BsChatActivity" />
         <activity android:name=".RegisterVerifyProcess" />
-        <activity android:name=".BsUpdateProfile" />
+        <activity android:name=".biz.profile.BsUpdateProfile" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".BsProductDetail" />
         <activity android:name=".BsMyProduct" />
@@ -31,7 +34,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".welcome.IntroActivity" />
+        <activity android:name=".welcomeProcess.IntroActivity" />
         <activity
             android:name=".Register"
             android:screenOrientation="portrait"

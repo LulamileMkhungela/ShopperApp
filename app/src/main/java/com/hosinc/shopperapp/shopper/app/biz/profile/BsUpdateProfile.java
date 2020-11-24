@@ -1,8 +1,10 @@
-package com.hosinc.shopperapp.shopper.app;
+package com.hosinc.shopperapp.shopper.app.biz.profile;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.hosinc.shopperapp.shopper.app.R;
 
 public class BsUpdateProfile extends AppCompatActivity {
 

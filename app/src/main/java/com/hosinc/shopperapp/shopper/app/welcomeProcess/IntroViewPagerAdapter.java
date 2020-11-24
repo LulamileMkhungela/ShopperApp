@@ -1,4 +1,4 @@
-package com.hosinc.shopperapp.shopper.app.welcome;
+package com.hosinc.shopperapp.shopper.app.welcomeProcess;
 
 import android.content.Context;
 import android.view.LayoutInflater;
