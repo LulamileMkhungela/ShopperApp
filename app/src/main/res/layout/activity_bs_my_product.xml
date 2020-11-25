@@ -70,7 +70,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/gotham"
         android:text="R 15.00"
-        android:textColor="#FBB8AC"
+        android:textColor="@color/colorAccent"
         android:textSize="17sp"
         app:layout_constraintBottom_toBottomOf="@+id/prod_qty"
         app:layout_constraintEnd_toEndOf="@+id/textView9"

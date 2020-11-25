@@ -156,7 +156,42 @@
                             android:inputType="textEmailAddress" />
 
                     </com.google.android.material.textfield.TextInputLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Receive"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp"
+                        android:textSize="16sp"/>
+                    <RadioGroup
+                        android:id="@+id/rg_gender_get_started"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="7dp"
+                        android:orientation="horizontal">
 
+                        <RadioButton
+                            android:id="@+id/rb_female"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@drawable/radio_button_selector"
+                            android:fontFamily="@font/gotham"
+                            android:text="Choose"
+                            android:textColor="@drawable/radio_button_color_selector" />
+
+                        <RadioButton
+                            android:id="@+id/rb_male"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@drawable/radio_button_selector"
+                            android:fontFamily="@font/gotham"
+                            android:text="Choose"
+                            android:textColor="@drawable/radio_button_color_selector" />
+
+                    </RadioGroup>
                     <com.google.android.material.textfield.TextInputLayout
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="match_parent"
@@ -189,7 +224,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_marginTop="30dp"
-                            android:background="@drawable/textview_tab_style_blue"
+                            android:background="@drawable/button_main"
                             android:drawableEnd="@drawable/ic_arrow_forward_black_24dp"
                             android:focusable="true"
                             android:fontFamily="@font/gotham"

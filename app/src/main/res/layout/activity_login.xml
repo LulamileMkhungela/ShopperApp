@@ -4,20 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="logi"
     tools:context=".Register">
-    <!--    <com.rakshakhegde.stepperindicator.StepperIndicator-->
-    <!--        android:id="@+id/stepper_indicator"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="50dp"-->
-    <!--        android:background="@color/colorPrimary"-->
-    <!--        android:paddingTop="8dp"-->
-    <!--        app:stpi_circleColor="@color/white"-->
-    <!--        app:stpi_circleRadius="6dp"-->
-    <!--        app:stpi_labelColor="@color/white"-->
-    <!--        app:stpi_lineColor="@color/white"-->
-    <!--        app:stpi_showLabels="true"-->
-    <!--        app:stpi_stepCount="2" />-->
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -54,10 +41,10 @@
             android:layout_marginStart="40dp"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="59dp"
+            android:alpha="0.3"
             android:fontFamily="@font/gotham"
             android:gravity="start"
             android:text="Sign Up"
-            android:alpha="0.3"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
             app:layout_constraintLeft_toRightOf="@+id/login_text_view"
@@ -93,8 +80,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
+                android:layout_marginTop="200dp"
                 android:layout_marginEnd="20dp"
-                android:layout_marginTop="100dp"
                 android:orientation="vertical">
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -122,7 +109,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="20dp"
-                    android:hint="Passord"
+                    android:hint="Password"
                     app:passwordToggleEnabled="true"
                     app:passwordToggleTint="@color/colorPrimaryDark">
 
@@ -130,6 +117,21 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="textPostalAddress" />
+
+                    <TextView
+                        android:id="@+id/txt_forgot_password_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:fontFamily="@font/gotham"
+                        android:padding="0.5dp"
+                        android:text="forgot your password"
+                        android:textColor="@color/minimal_black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
 
                     <ProgressBar
                         android:layout_width="wrap_content"
@@ -148,15 +150,10 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
-                    android:layout_marginEnd="12dp"
-                    android:background="@drawable/textview_tab_style_blue"
+                    android:background="@drawable/button"
                     android:focusable="true"
                     android:fontFamily="@font/gotham"
                     android:padding="10dp"
-                    android:shadowColor="@color/pressed_bg"
-                    android:shadowDx="20"
-                    android:shadowDy="20"
-                    android:shadowRadius="15"
                     android:text="Log In"
                     android:textAllCaps="false"
                     android:textColor="@color/white"

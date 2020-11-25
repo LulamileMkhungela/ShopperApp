@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_send_feedback"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/login_background"
+    android:padding="20dp"
+    tools:context=".BsFeedback">
+
+
+    <TextView
+        android:id="@+id/compose_feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/gotham"
+        android:padding="10dp"
+        android:text="report_send_feedback"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        tools:ignore="SpUsage" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/gotham"
+        android:padding="10dp"
+        android:text="report_we_always_enjoy_hearing_any_feedback_queries_or_technical_problems_with_the_application"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        tools:ignore="SpUsage" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:fontFamily="@font/gotham"
+        android:hint="report_your_name"
+        android:textColor="#c2c3c8"
+        android:textColorHint="#c2c3c8">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etSendFeedbackSubject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="4dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:fontFamily="@font/gotham"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:paddingBottom="8dp"
+            android:textColor="#c2c3c8"
+            android:textSize="18sp"
+            tools:targetApi="o" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:fontFamily="@font/gotham"
+        android:hint="report_your_feedback"
+        android:maxLines="450"
+        android:minHeight="130dp"
+        android:textColor="#c2c3c8"
+        android:textColorHint="#c2c3c8">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etProvideDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="4dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:fontFamily="@font/gotham"
+            android:gravity="start"
+            android:inputType="text"
+            android:maxLines="450"
+            android:minHeight="130dp"
+            android:padding="6dp"
+            android:paddingStart="4dp"
+            android:paddingLeft="4dp"
+            android:paddingEnd="6dp"
+            android:paddingRight="6dp"
+            android:paddingBottom="8dp"
+            android:textColor="#c2c3c8"
+            android:textSize="18sp"
+            tools:targetApi="o" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="36dp"
+        android:baselineAligned="false"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_backTo_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_shape_white"
+                android:fontFamily="@font/gotham"
+                android:scaleType="fitCenter"
+                android:text="back"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_submit_feedBack"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:background="@drawable/button_shape_white"
+                android:fontFamily="@font/gotham"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

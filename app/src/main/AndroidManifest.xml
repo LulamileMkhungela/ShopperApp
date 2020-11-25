@@ -10,7 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".biz.profile.BsProfileContact"></activity>
+        <activity android:name=".BsFeedback"></activity>
+        <activity android:name=".BsSettings" />
+        <activity android:name=".BsMessages" />
+        <activity android:name=".biz.profile.BsProfileContact" />
         <activity android:name=".biz.profile.BsProfileGallery" />
         <activity android:name=".biz.profile.BsProfileMainUpdateActivity" />
         <activity android:name=".biz.profile.BsProfile" />
