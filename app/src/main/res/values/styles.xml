@@ -1,7 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
     <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
-        <item name="colorPrimary">#35495e</item>
+        <item name="colorPrimary">#135b6f</item>
         <item name="colorPrimaryDark">#454d66</item>
         <item name="colorAccent">#42B883</item>
         <item name="actionBarPopupTheme">@style/AppTheme.PopupOverlay</item>
@@ -15,7 +15,7 @@
     <!--    new style of  button-->
     <style name="Widget.Shrine.Button" parent="Widget.MaterialComponents.Button">
         <item name="android:textColor">@color/white</item>
-        <item name="backgroundTint">#f6d0c6</item>
+        <item name="backgroundTint">##ffd7d3</item>
         <item name="android:stateListAnimator" tools:ignore="NewApi">
             @anim/shr_next_button_state_list_anim
         </item>
