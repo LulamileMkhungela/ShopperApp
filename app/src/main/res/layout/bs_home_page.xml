@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BsHomePage">
+    tools:context=".homepage.BsHomePage">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -21,7 +21,6 @@
             android:id="@+id/textView3"
             android:layout_width="50dp"
             android:layout_height="100dp"
-            android:fontFamily="@font/gotham"
             android:gravity="center"
             android:rotation="270"
             android:text="Parts"
@@ -36,7 +35,6 @@
             android:id="@+id/textView4"
             android:layout_width="50dp"
             android:layout_height="100dp"
-            android:fontFamily="@font/gotham"
             android:gravity="center"
             android:rotation="270"
             android:text="Gears"
@@ -80,7 +78,6 @@
             android:layout_width="50dp"
             android:layout_height="100dp"
             android:layout_marginBottom="80dp"
-            android:fontFamily="@font/gotham"
             android:gravity="center"
             android:rotation="270"
             android:text="Cars"
@@ -164,7 +161,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imageView4"
         app:layout_constraintTop_toBottomOf="@+id/cat_recycler"
-        tools:listitem="@layout/activity_bs_my_product" />
+        tools:listitem="@layout/bs_my_products" />
 
     <Button
         android:layout_width="0dp"

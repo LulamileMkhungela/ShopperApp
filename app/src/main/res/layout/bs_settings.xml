@@ -3,8 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/login_background"
     android:layout_height="match_parent"
-    tools:context=".BsSettings">
+    tools:context=".biz.profile.BsSettings">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -32,7 +33,6 @@
 
 
                 <Button
-                    android:id="@+id/btn_manage_notifications"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@null"
@@ -54,7 +54,6 @@
                 tools:ignore="UseCompoundDrawables">
 
                 <Button
-                    android:id="@+id/btn_expandableTermsC"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@null"
@@ -76,7 +75,6 @@
                 tools:ignore="UseCompoundDrawables">
 
                 <Button
-                    android:id="@+id/btn_expandablePrivacyP"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@null"
@@ -106,7 +104,6 @@
                     tools:ignore="UselessParent">
 
                     <Button
-                        android:id="@+id/btn_expandableSendFeedback"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="@null"
@@ -140,7 +137,6 @@
                     tools:ignore="UselessParent">
 
                     <Button
-                        android:id="@+id/btn_expandableChangePassword"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="@null"
@@ -205,7 +201,6 @@
                 android:textColor="#fff" />
 
             <com.github.aakira.expandablelayout.ExpandableRelativeLayout
-                android:id="@+id/layout_expandableAbout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/colorPrimary"

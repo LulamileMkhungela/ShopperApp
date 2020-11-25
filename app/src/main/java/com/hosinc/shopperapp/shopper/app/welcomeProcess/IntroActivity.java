@@ -15,9 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.tabs.TabLayout;
-import com.hosinc.shopperapp.shopper.app.ActivityForgotPassword;
-import com.hosinc.shopperapp.shopper.app.LoginActivity;
-import com.hosinc.shopperapp.shopper.app.biz.profile.BsProfile;
+import com.hosinc.shopperapp.shopper.app.registrationProcess.Register;
 import com.hosinc.shopperapp.shopper.app.R;
 
 import java.util.ArrayList;
@@ -50,7 +48,7 @@ public class IntroActivity extends AppCompatActivity {
 
         if (restorePrefData()) {
 
-            Intent mainActivity = new Intent(getApplicationContext(), LoginActivity.class );
+            Intent mainActivity = new Intent(getApplicationContext(), Register.class );
             startActivity(mainActivity);
             finish();
 
@@ -144,7 +142,7 @@ public class IntroActivity extends AppCompatActivity {
 
                 //open main activity
 
-                Intent mainActivity = new Intent(getApplicationContext(), LoginActivity.class);
+                Intent mainActivity = new Intent(getApplicationContext(), Register.class);
                 startActivity(mainActivity);
                 // also we need to save a boolean value to storage so next time when the user run the app
                 // we could know that he is already checked the intro screen activity

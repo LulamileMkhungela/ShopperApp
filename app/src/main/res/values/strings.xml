@@ -1,10 +1,14 @@
 <resources>
     <string name="app_name">EaziBuy</string>
-    <string name="splash_app_name">EaziBuy App</string>
+    <string name="splash_app_name">ShopperZel</string>
     <string name="todo">TODO</string>
     <string name="intro_get_started">Get Started</string>
     <string name="intro_next">Next</string>
     <string name="sub_text">TextView</string>
     <string name="heading_textview">TextView</string>
+    <string name="title_activity_bs_services">BsServices</string>
+    <!-- Strings used for fragments for navigation -->
+
+    <string name="to_do_post">TODO</string>
 
 </resources>

@@ -11,6 +11,6 @@ public class BsProfileGallery extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bs_profile_gallery);
+        setContentView(R.layout.bs_profile_gallery);
     }
 }

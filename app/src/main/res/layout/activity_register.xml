@@ -4,19 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Register">
-    <!--    <com.rakshakhegde.stepperindicator.StepperIndicator-->
-    <!--        android:id="@+id/stepper_indicator"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="50dp"-->
-    <!--        android:background="@color/colorPrimary"-->
-    <!--        android:paddingTop="8dp"-->
-    <!--        app:stpi_circleColor="@color/white"-->
-    <!--        app:stpi_circleRadius="6dp"-->
-    <!--        app:stpi_labelColor="@color/white"-->
-    <!--        app:stpi_lineColor="@color/white"-->
-    <!--        app:stpi_showLabels="true"-->
-    <!--        app:stpi_stepCount="2" />-->
+    android:background="@color/transparent"
+    tools:context=".registrationProcess.Register">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -65,10 +54,9 @@
             tools:layout_editor_absoluteY="59dp" />
 
         <View
-            android:layout_width="10dp"
+            android:layout_width="22dp"
             android:layout_height="3dp"
-            android:layout_marginStart="40dp"
-            android:layout_marginLeft="40dp"
+            android:layout_marginStart="28dp"
             android:background="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="@id/signup"
@@ -79,7 +67,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="120dp"
         android:overScrollMode="never"
         android:scrollbars="none">
 
@@ -100,22 +88,21 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="2dp"
                     android:orientation="horizontal">
 
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:layout_width="80dp"
                         android:layout_height="100dp"
-                        android:layout_gravity="center_horizontal"
+                        android:layout_gravity="center"
                         android:src="@drawable/default_profile_picture"
-                        app:civ_border_color="@color/colorPrimary"
+                        app:civ_border_color="#e7e7e7"
                         app:civ_border_width="1.5dp" />
 
                     <ProgressBar
                         android:layout_width="wrap_content"
                         android:layout_height="100dp"
                         android:layout_marginStart="28dp"
-                        android:layout_marginLeft="28dp"
                         android:elevation="4dp"
                         android:gravity="center_horizontal"
                         android:indeterminateTint="@color/colorPrimaryDark"
@@ -127,20 +114,25 @@
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="5dp"
                     android:focusable="true"
                     android:focusableInTouchMode="true"
                     android:hint="Username"
-                    android:maxLines="1">
+                    android:maxLines="1"
+                    android:textColorHint="@android:color/background_dark"
+                    app:hintTextColor="@android:color/background_dark">
 
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:focusable="true"
                         android:focusableInTouchMode="true"
+                        android:fontFamily="@font/josefinslabregular"
                         android:inputType="text"
-                        android:maxLines="1" />
+                        android:maxLines="1"
+                        android:textColor="@android:color/background_dark"
+                        android:textColorHint="@android:color/background_dark"
+                        app:hintTextColor="@android:color/background_dark" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -148,19 +140,26 @@
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="5dp"
                     android:focusable="true"
                     android:focusableInTouchMode="true"
                     android:hint="Full Name"
-                    android:maxLines="1">
+                    android:maxLines="1"
+
+                    android:textColorHint="@android:color/background_dark"
+                    app:hintTextColor="@android:color/background_dark">
 
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:focusable="true"
                         android:focusableInTouchMode="true"
+                        android:fontFamily="@font/josefinslabregular"
                         android:inputType="text"
-                        android:maxLines="1" />
+                        android:maxLines="1"
+                        android:textColor="@android:color/background_dark"
+                        android:textColorHint="@android:color/background_dark"
+                        app:hintTextColor="@android:color/background_dark" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -168,19 +167,25 @@
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="5dp"
                     android:focusable="true"
                     android:focusableInTouchMode="true"
                     android:hint="Email"
-                    android:maxLines="1">
+                    android:maxLines="1"
+                    android:textColorHint="@android:color/background_dark"
+                    app:hintTextColor="@android:color/background_dark">
 
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:focusable="true"
                         android:focusableInTouchMode="true"
+                        android:fontFamily="@font/josefinslabregular"
                         android:inputType="textEmailAddress"
-                        android:maxLines="1" />
+                        android:maxLines="1"
+                        android:textColor="@android:color/background_dark"
+                        android:textColorHint="@android:color/background_dark"
+                        app:hintTextColor="@android:color/background_dark" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -188,32 +193,38 @@
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="20dp"
-                    android:hint="Passord"
+                    android:layout_marginTop="5dp"
+                    android:hint="Password"
+                    android:textColorHint="@android:color/background_dark"
+                    app:hintTextColor="@android:color/background_dark"
                     app:passwordToggleEnabled="true"
                     app:passwordToggleTint="@color/colorPrimaryDark">
 
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="textPostalAddress" />
+                        android:fontFamily="@font/josefinslabregular"
+                        android:inputType="textPostalAddress"
+                        android:textColor="@android:color/background_dark"
+                        android:textColorHint="@android:color/background_dark"
+                        app:hintTextColor="@android:color/background_dark" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="10dp"
                     android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="4dp"
-                        android:fontFamily="@font/gotham"
+                        android:fontFamily="@font/josefinslabregular"
                         android:text="EaziBuy As"
+                        android:textColor="@android:color/background_dark"
                         android:textSize="18sp"
-                        android:textStyle="normal" />
+                        android:textStyle="bold" />
 
                     <Spinner
                         android:layout_width="match_parent"
@@ -222,89 +233,49 @@
                         android:textSize="12sp" />
                 </LinearLayout>
 
-                <!--                <LinearLayout-->
-                <!--                    android:layout_width="match_parent"-->
-                <!--                    android:layout_height="30dp"-->
-                <!--                    android:layout_marginTop="20dp"-->
-                <!--                    android:orientation="horizontal">-->
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:orientation="horizontal">
 
-                <!--                    <CheckBox-->
-                <!--                        android:id="@+id/check_box_t_and_c"-->
-                <!--                        android:layout_width="wrap_content"-->
-                <!--                        android:layout_height="wrap_content"-->
-                <!--                        android:buttonTint="@color/colorPrimaryDark" />-->
+                                    <Button
+                                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="34dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginEnd="8dp"
+                                        android:background="@drawable/et_ui"
+                                        android:fontFamily="@font/josefinslabregular"
+                                        android:text="Terms and Use"
+                                        android:textAllCaps="false"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:textSize="12sp"
+                                        android:textStyle="normal" />
 
-                <!--                    <TextView-->
-                <!--                        android:id="@+id/text_t_and_c"-->
-                <!--                        android:layout_width="wrap_content"-->
-                <!--                        android:layout_height="wrap_content"-->
-                <!--                        android:fontFamily="@font/gotham"-->
-                <!--                        android:text="By Signing Up you agree all Terms and Conditions"-->
-                <!--                        android:textColor="@color/minimal_black"-->
-                <!--                        android:textSize="12sp" />-->
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/josefinslabregular"
+                                        android:text="&amp;"
+                                        android:textStyle="bold" />
 
-                <!--                </LinearLayout>-->
+                                    <Button
+                                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="34dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginStart="8dp"
+                                        android:background="@drawable/et_ui"
+                                        android:fontFamily="@font/josefinslabregular"
+                                        android:text="Privacy Policy"
+                                        android:textAllCaps="false"
+                                        android:textColor="@color/colorPrimaryDark"
+                                        android:textSize="12sp"
+                                        android:textStyle="normal" />
 
-                <!--                <LinearLayout-->
-                <!--                    android:layout_width="wrap_content"-->
-                <!--                    android:layout_height="wrap_content"-->
-                <!--                    android:layout_gravity="center"-->
-                <!--                    android:layout_marginTop="20dp"-->
-                <!--                    android:orientation="horizontal">-->
-
-                <!--                    <Button-->
-                <!--                        style="@style/Widget.MaterialComponents.Button.TextButton"-->
-                <!--                        android:layout_width="wrap_content"-->
-                <!--                        android:layout_height="34dp"-->
-                <!--                        android:layout_gravity="center"-->
-                <!--                        android:layout_marginEnd="8dp"-->
-                <!--                        android:background="@drawable/et_ui"-->
-                <!--                        android:fontFamily="@font/gotham"-->
-                <!--                        android:text="Terms and Use"-->
-                <!--                        android:textAllCaps="false"-->
-                <!--                        android:textColor="@color/colorPrimaryDark"-->
-                <!--                        android:textSize="12sp"-->
-                <!--                        android:textStyle="normal" />-->
-
-                <!--                    <TextView-->
-                <!--                        android:layout_width="wrap_content"-->
-                <!--                        android:layout_height="wrap_content"-->
-                <!--                        android:layout_gravity="center"-->
-                <!--                        android:fontFamily="@font/gotham"-->
-                <!--                        android:text="&amp;"-->
-                <!--                        android:textStyle="bold" />-->
-
-                <!--                    <Button-->
-                <!--                        style="@style/Widget.MaterialComponents.Button.TextButton"-->
-                <!--                        android:layout_width="wrap_content"-->
-                <!--                        android:layout_height="34dp"-->
-                <!--                        android:layout_gravity="center"-->
-                <!--                        android:layout_marginStart="8dp"-->
-                <!--                        android:background="@drawable/et_ui"-->
-                <!--                        android:fontFamily="@font/gotham"-->
-                <!--                        android:text="Privacy Policy"-->
-                <!--                        android:textAllCaps="false"-->
-                <!--                        android:textColor="@color/colorPrimaryDark"-->
-                <!--                        android:textSize="12sp"-->
-                <!--                        android:textStyle="normal" />-->
-
-                <!--                </LinearLayout>-->
-
-                <com.google.android.material.button.MaterialButton
-                    style="@style/Widget.Shrine.Button"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/button"
-                    android:focusable="true"
-                    android:fontFamily="@font/gotham"
-                    android:padding="10dp"
-                    android:text="Sign Up"
-                    android:textAllCaps="false"
-                    android:textColor="@color/white"
-                    android:textSize="18sp"
-                    android:textStyle="normal" />
+                                </LinearLayout>
 
             </LinearLayout>
 
@@ -313,4 +284,18 @@
 
     </ScrollView>
 
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.Shrine.Button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/button_blue"
+        android:focusable="true"
+        android:fontFamily="@font/gotham"
+        android:padding="10dp"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="normal" />
 </FrameLayout>

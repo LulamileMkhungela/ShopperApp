@@ -11,6 +11,6 @@ public class BsProfileContact extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bs_profile_contact);
+        setContentView(R.layout.bs_profile_contact);
     }
 }

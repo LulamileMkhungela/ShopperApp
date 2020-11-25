@@ -1,4 +1,4 @@
-package com.hosinc.shopperapp.shopper.app;
+package com.hosinc.shopperapp.shopper.app.registrationProcess;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,8 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import com.hosinc.shopperapp.shopper.app.R;
 
 public class Register extends AppCompatActivity {
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Register">
+    tools:context=".registrationProcess.Register">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -53,7 +53,7 @@
             tools:layout_editor_absoluteY="59dp" />
 
         <View
-            android:layout_width="10dp"
+            android:layout_width="20dp"
             android:layout_height="3dp"
             android:layout_marginStart="20dp"
             android:layout_marginLeft="40dp"
@@ -64,107 +64,98 @@
             tools:layout_editor_absoluteY="107dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="70dp"
-        android:overScrollMode="never"
-        android:scrollbars="none">
 
-        <FrameLayout
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/wolflogo"
+            app:civ_border_color="#e7e7e7"
+            app:civ_border_width="2dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp">
+            android:layout_marginTop="60dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="Email"
+            android:maxLines="1">
 
-            <LinearLayout
+            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="200dp"
-                android:layout_marginEnd="20dp"
-                android:orientation="vertical">
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:inputType="textEmailAddress"
+                android:maxLines="1" />
 
-                <com.google.android.material.textfield.TextInputLayout
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="20dp"
-                    android:focusable="true"
-                    android:focusableInTouchMode="true"
-                    android:hint="Email"
-                    android:maxLines="1">
+        </com.google.android.material.textfield.TextInputLayout>
 
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:focusable="true"
-                        android:focusableInTouchMode="true"
-                        android:inputType="textEmailAddress"
-                        android:maxLines="1" />
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Password"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/colorPrimaryDark">
 
-                </com.google.android.material.textfield.TextInputLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPostalAddress" />
 
-                <com.google.android.material.textfield.TextInputLayout
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="20dp"
-                    android:hint="Password"
-                    app:passwordToggleEnabled="true"
-                    app:passwordToggleTint="@color/colorPrimaryDark">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/poiretoneregular"
+                android:padding="0.5dp"
+                android:text="forgot your password"
+                android:textColor="@color/minimal_black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="textPostalAddress" />
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:elevation="4dp"
+                android:indeterminateTint="@color/colorPrimaryDark"
+                tools:ignore="UnusedAttribute" />
 
-                    <TextView
-                        android:id="@+id/txt_forgot_password_login"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="end"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginRight="8dp"
-                        android:fontFamily="@font/gotham"
-                        android:padding="0.5dp"
-                        android:text="forgot your password"
-                        android:textColor="@color/minimal_black"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-
-                    <ProgressBar
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="12dp"
-                        android:elevation="4dp"
-                        android:indeterminateTint="@color/colorPrimaryDark"
-                        tools:ignore="UnusedAttribute" />
-
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <com.google.android.material.button.MaterialButton
-                    style="@style/Widget.Shrine.Button"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/button"
-                    android:focusable="true"
-                    android:fontFamily="@font/gotham"
-                    android:padding="10dp"
-                    android:text="Log In"
-                    android:textAllCaps="false"
-                    android:textColor="@color/white"
-                    android:textSize="18sp"
-                    android:textStyle="normal" />
-
-            </LinearLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
 
-        </FrameLayout>
+    </LinearLayout>
 
-    </ScrollView>
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.Shrine.Button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/button_blue"
+        android:focusable="true"
+        android:fontFamily="@font/gotham"
+        android:padding="10dp"
+        android:text="Log In"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
 </FrameLayout>

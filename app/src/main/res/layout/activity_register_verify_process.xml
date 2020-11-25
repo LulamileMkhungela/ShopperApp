@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/login_bk"
-    tools:context=".RegisterVerifyProcess">
+    tools:context=".registrationProcess.RegisterVerifyProcess">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/login_status_toolbar"

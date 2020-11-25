@@ -1,14 +1,16 @@
-package com.hosinc.shopperapp.shopper.app;
+package com.hosinc.shopperapp.shopper.app.homepage;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class BsChatActivity extends AppCompatActivity {
+import com.hosinc.shopperapp.shopper.app.R;
+
+public class BsMessages extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bs_chat);
+        setContentView(R.layout.bs_your_messages);
     }
 }

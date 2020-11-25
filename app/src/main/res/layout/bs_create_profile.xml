@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/login_background"
     android:scrollbars="none"
     tools:context=".biz.profile.BsUpdateProfile">
 
@@ -38,12 +39,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginTop="16dp"
-                    android:background="@color/white"
+                    android:background="@color/transparent"
                     android:paddingTop="8dp"
                     app:stpi_circleColor="@color/white"
                     app:stpi_circleRadius="6dp"
                     app:stpi_labelColor="@color/colorPrimaryDark"
-                    app:stpi_lineColor="@color/colorPrimary"
+                    app:stpi_lineColor="@color/colorPrimaryDark"
                     app:stpi_showLabels="true"
                     app:stpi_stepCount="4" />
 
@@ -107,6 +108,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tabs"
                 android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/transparent"
                 app:cardCornerRadius="4dp"
                 app:cardUseCompatPadding="true">
 
@@ -120,12 +122,16 @@
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Business Name">
+                        android:hint="Business Name"
+                        android:textColorHint="@color/white">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:inputType="textPersonName" />
+                            android:inputType="textPersonName"
+                            android:textColor="@android:color/white"
+                            android:textColorHint="@android:color/white"
+                            app:hintTextColor="@android:color/white" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -134,12 +140,17 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:hint="Registration Number">
+                        android:hint="Registration Number"
+                        android:textColorHint="@android:color/white"
+                        app:hintTextColor="@android:color/white">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:inputType="text" />
+                            android:inputType="text"
+                            android:textColor="@android:color/white"
+                            android:textColorHint="@android:color/white"
+                            app:hintTextColor="@android:color/white" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -148,23 +159,30 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:hint="Email">
+                        android:hint="Email"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:inputType="textEmailAddress" />
+                            android:inputType="textEmailAddress"
+                            android:textColor="@android:color/white"
+                            android:textColorHint="@android:color/white"
+                            app:hintTextColor="@android:color/white" />
 
                     </com.google.android.material.textfield.TextInputLayout>
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Receive"
-                        android:textStyle="bold"
                         android:layout_marginTop="8dp"
-                        android:textSize="16sp"/>
+                        android:text="Receive"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
                     <RadioGroup
-                        android:id="@+id/rg_gender_get_started"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
@@ -172,7 +190,6 @@
                         android:orientation="horizontal">
 
                         <RadioButton
-                            android:id="@+id/rb_female"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -182,7 +199,6 @@
                             android:textColor="@drawable/radio_button_color_selector" />
 
                         <RadioButton
-                            android:id="@+id/rb_male"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -192,17 +208,23 @@
                             android:textColor="@drawable/radio_button_color_selector" />
 
                     </RadioGroup>
+
                     <com.google.android.material.textfield.TextInputLayout
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:hint="Bio">
+                        android:hint="Bio"
+                        android:textColorHint="@android:color/white"
+                        app:hintTextColor="@android:color/white">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:inputType="textCapSentences" />
+                            android:inputType="textCapSentences"
+                            android:textColor="@android:color/white"
+                            android:textColorHint="@android:color/white"
+                            app:hintTextColor="@android:color/white" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -211,33 +233,19 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:hint="Location">
+                        android:hint="Location"
+                        android:textColorHint="@android:color/white"
+                        app:hintTextColor="@android:color/white">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:inputType="textCapWords" />
+                            android:inputType="textCapWords"
+                            android:textColor="@android:color/white"
+                            android:textColorHint="@android:color/white"
+                            app:hintTextColor="@android:color/white" />
 
-                        <com.google.android.material.button.MaterialButton
-                            style="@style/Widget.Shrine.Button"
-                            android:layout_width="200dp"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginTop="30dp"
-                            android:background="@drawable/button_main"
-                            android:drawableEnd="@drawable/ic_arrow_forward_black_24dp"
-                            android:focusable="true"
-                            android:fontFamily="@font/gotham"
-                            android:padding="10dp"
-                            android:shadowColor="@color/pressed_bg"
-                            android:shadowDx="20"
-                            android:shadowDy="20"
-                            android:shadowRadius="15"
-                            android:text="Next"
-                            android:textAllCaps="false"
-                            android:textColor="@color/white"
-                            android:textSize="18sp"
-                            android:textStyle="normal" />
+
                     </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -248,6 +256,21 @@
 
         </RelativeLayout>
 
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.Shrine.Button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_blue"
+            android:focusable="true"
+            android:fontFamily="@font/gotham"
+            android:padding="10dp"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
 </ScrollView>

@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.hosinc.shopperapp.shopper.app.R;
 
-public class BsProfileMainUpdateActivity extends AppCompatActivity {
+public class ActivityForgotPassword extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bs_profile_main_update);
+        setContentView(R.layout.activity_forgot_password);
     }
 }

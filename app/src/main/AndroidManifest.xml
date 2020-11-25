@@ -10,23 +10,28 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".BsFeedback"></activity>
-        <activity android:name=".BsSettings" />
-        <activity android:name=".BsMessages" />
+        <activity android:name=".BsYourMessagesRecyclerV"></activity>
+        <activity
+            android:name=".biz.profile.BsServices"
+            android:label="@string/title_activity_bs_services"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".biz.profile.BsEditProfile" />
+        <activity android:name=".biz.profile.BsFeedback" />
+        <activity android:name=".biz.profile.BsSettings" />
+        <activity android:name=".homepage.BsMessages" />
         <activity android:name=".biz.profile.BsProfileContact" />
         <activity android:name=".biz.profile.BsProfileGallery" />
-        <activity android:name=".biz.profile.BsProfileMainUpdateActivity" />
         <activity android:name=".biz.profile.BsProfile" />
-        <activity android:name=".BsSellActivity" />
-        <activity android:name=".BsChatActivity" />
-        <activity android:name=".RegisterVerifyProcess" />
+        <activity android:name=".homepage.BsSellActivity" />
+        <activity android:name=".homepage.BsChatActivity" />
+        <activity android:name=".registrationProcess.RegisterVerifyProcess" />
         <activity android:name=".biz.profile.BsUpdateProfile" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".BsProductDetail" />
-        <activity android:name=".BsMyProduct" />
-        <activity android:name=".BsHomePage" />
-        <activity android:name=".ActivityForgotPassword" />
-        <activity android:name=".ChooseInterests" />
+        <activity android:name=".registrationProcess.LoginActivity" />
+        <activity android:name=".homepage.BsProductDetail" />
+        <activity android:name=".homepage.BsMyProduct" />
+        <activity android:name=".homepage.BsHomePage" />
+        <activity android:name=".biz.profile.ActivityForgotPassword" />
+        <activity android:name=".registrationProcess.ChooseInterests" />
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait"
@@ -39,7 +44,7 @@
         </activity>
         <activity android:name=".welcomeProcess.IntroActivity" />
         <activity
-            android:name=".Register"
+            android:name=".registrationProcess.Register"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity android:name=".HomeNavigation" />

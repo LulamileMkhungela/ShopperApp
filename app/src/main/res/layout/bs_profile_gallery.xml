@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/login_background"
     android:scrollbars="none"
-    tools:context=".biz.profile.BsProfileContact">
+    tools:context=".biz.profile.BsProfileGallery">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -34,55 +35,52 @@
                 android:layout_marginBottom="10dp"
                 android:scrollbars="none">
 
-                                <LinearLayout
-                                    android:id="@+id/options"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:gravity="center"
-                                    android:orientation="horizontal"
-                                    android:paddingStart="10dp"
-                                    android:paddingEnd="10dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp">
 
-                                    <TextView
-                                        android:id="@+id/update"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:background="@drawable/detail_page_cart_button_bg"
-                                        android:padding="10dp"
-                                        android:text=" Business details "
-                                        android:textColor="?android:textColorPrimary" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/detail_page_cart_button_bg"
+                        android:padding="10dp"
+                        android:text=" Business details "
+                        android:textColor="?android:textColorPrimary" />
 
-                                    <TextView
-                                        android:id="@+id/picture"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginStart="10dp"
-                                        android:background="@drawable/detail_page_cart_button_bg"
-                                        android:padding="10dp"
-                                        android:text=" Gallery "
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/detail_page_cart_button_bg"
+                        android:padding="10dp"
+                        android:text=" Gallery "
 
-                                        android:textColor="?android:textColorPrimary" />
+                        android:textColor="?android:textColorPrimary" />
 
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginStart="10dp"
-                                        android:layout_marginEnd="10dp"
-                                        android:background="@drawable/detail_page_cart_button_bg"
-                                        android:padding="10dp"
-                                        android:text=" Services "
-                                        android:textColor="?android:textColorPrimary" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/detail_page_cart_button_bg"
+                        android:padding="10dp"
+                        android:text=" Services "
+                        android:textColor="?android:textColorPrimary" />
 
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:background="@drawable/detail_page_cart_button_bg"
-                                        android:padding="10dp"
-                                        android:text=" Contact info "
-                                        android:textColor="?android:textColorPrimary" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/detail_page_cart_button_bg"
+                        android:padding="10dp"
+                        android:text=" Contact info "
+                        android:textColor="?android:textColorPrimary" />
 
 
-                                </LinearLayout>
+                </LinearLayout>
 
             </ScrollView>
 
@@ -102,11 +100,18 @@
                     android:orientation="vertical"
                     android:padding="16dp">
 
+                    <TextView
+                        style="@style/Base.TextAppearance.AppCompat.Title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Details" />
+
                     <com.google.android.material.textfield.TextInputLayout
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Business Name">
+                        android:layout_marginTop="15dp"
+                        android:hint="Name">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
@@ -120,9 +125,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:hint="Registration Number">
+                        android:hint="Username">
 
                         <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/username"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:inputType="text" />
@@ -169,28 +175,21 @@
                             android:layout_height="wrap_content"
                             android:inputType="textCapWords" />
 
-                        <com.google.android.material.button.MaterialButton
-                            style="@style/Widget.Shrine.Button"
-                            android:layout_width="200dp"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginTop="30dp"
-                            android:background="@drawable/button_main"
-                            android:drawableEnd="@drawable/ic_arrow_forward_black_24dp"
-                            android:focusable="true"
-                            android:fontFamily="@font/gotham"
-                            android:padding="10dp"
-                            android:shadowColor="@color/pressed_bg"
-                            android:shadowDx="20"
-                            android:shadowDy="20"
-                            android:shadowRadius="15"
-                            android:text="Save"
-                            android:textAllCaps="false"
-                            android:textColor="@color/white"
-                            android:textSize="18sp"
-                            android:textStyle="normal" />
                     </com.google.android.material.textfield.TextInputLayout>
 
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:hint="Password"
+                        android:visibility="gone">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="textPersonName" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
 
                 </LinearLayout>
 
@@ -201,4 +200,19 @@
 
     </LinearLayout>
 
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.Shrine.Button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_blue"
+        android:focusable="true"
+        android:fontFamily="@font/gotham"
+        android:padding="10dp"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 </ScrollView>
