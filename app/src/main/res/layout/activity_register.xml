@@ -114,7 +114,7 @@
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="15dp"
                     android:focusable="true"
                     android:focusableInTouchMode="true"
                     android:hint="Username"
@@ -140,12 +140,11 @@
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="15dp"
                     android:focusable="true"
                     android:focusableInTouchMode="true"
                     android:hint="Full Name"
                     android:maxLines="1"
-
                     android:textColorHint="@android:color/background_dark"
                     app:hintTextColor="@android:color/background_dark">
 
@@ -167,7 +166,7 @@
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="15dp"
                     android:focusable="true"
                     android:focusableInTouchMode="true"
                     android:hint="Email"
@@ -193,7 +192,7 @@
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="15dp"
                     android:hint="Password"
                     android:textColorHint="@android:color/background_dark"
                     app:hintTextColor="@android:color/background_dark"
@@ -233,49 +232,49 @@
                         android:textSize="12sp" />
                 </LinearLayout>
 
-                                <LinearLayout
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center"
-                                    android:orientation="horizontal">
+                <!--                                <LinearLayout-->
+                <!--                                    android:layout_width="wrap_content"-->
+                <!--                                    android:layout_height="wrap_content"-->
+                <!--                                    android:layout_gravity="center"-->
+                <!--                                    android:orientation="horizontal">-->
 
-                                    <Button
-                                        style="@style/Widget.MaterialComponents.Button.TextButton"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="34dp"
-                                        android:layout_gravity="center"
-                                        android:layout_marginEnd="8dp"
-                                        android:background="@drawable/et_ui"
-                                        android:fontFamily="@font/josefinslabregular"
-                                        android:text="Terms and Use"
-                                        android:textAllCaps="false"
-                                        android:textColor="@color/colorPrimaryDark"
-                                        android:textSize="12sp"
-                                        android:textStyle="normal" />
+                <!--                                    <Button-->
+                <!--                                        style="@style/Widget.MaterialComponents.Button.TextButton"-->
+                <!--                                        android:layout_width="wrap_content"-->
+                <!--                                        android:layout_height="34dp"-->
+                <!--                                        android:layout_gravity="center"-->
+                <!--                                        android:layout_marginEnd="8dp"-->
+                <!--                                        android:background="@drawable/et_ui"-->
+                <!--                                        android:fontFamily="@font/josefinslabregular"-->
+                <!--                                        android:text="Terms and Use"-->
+                <!--                                        android:textAllCaps="false"-->
+                <!--                                        android:textColor="@color/colorPrimaryDark"-->
+                <!--                                        android:textSize="12sp"-->
+                <!--                                        android:textStyle="normal" />-->
 
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_gravity="center"
-                                        android:fontFamily="@font/josefinslabregular"
-                                        android:text="&amp;"
-                                        android:textStyle="bold" />
+                <!--                                    <TextView-->
+                <!--                                        android:layout_width="wrap_content"-->
+                <!--                                        android:layout_height="wrap_content"-->
+                <!--                                        android:layout_gravity="center"-->
+                <!--                                        android:fontFamily="@font/josefinslabregular"-->
+                <!--                                        android:text="&amp;"-->
+                <!--                                        android:textStyle="bold" />-->
 
-                                    <Button
-                                        style="@style/Widget.MaterialComponents.Button.TextButton"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="34dp"
-                                        android:layout_gravity="center"
-                                        android:layout_marginStart="8dp"
-                                        android:background="@drawable/et_ui"
-                                        android:fontFamily="@font/josefinslabregular"
-                                        android:text="Privacy Policy"
-                                        android:textAllCaps="false"
-                                        android:textColor="@color/colorPrimaryDark"
-                                        android:textSize="12sp"
-                                        android:textStyle="normal" />
+                <!--                                    <Button-->
+                <!--                                        style="@style/Widget.MaterialComponents.Button.TextButton"-->
+                <!--                                        android:layout_width="wrap_content"-->
+                <!--                                        android:layout_height="34dp"-->
+                <!--                                        android:layout_gravity="center"-->
+                <!--                                        android:layout_marginStart="8dp"-->
+                <!--                                        android:background="@drawable/et_ui"-->
+                <!--                                        android:fontFamily="@font/josefinslabregular"-->
+                <!--                                        android:text="Privacy Policy"-->
+                <!--                                        android:textAllCaps="false"-->
+                <!--                                        android:textColor="@color/colorPrimaryDark"-->
+                <!--                                        android:textSize="12sp"-->
+                <!--                                        android:textStyle="normal" />-->
 
-                                </LinearLayout>
+                <!--                                </LinearLayout>-->
 
             </LinearLayout>
 
