@@ -270,7 +270,7 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/usernameTextView"
+                    android:id="@+id/usernameTextView2"
                     style="@style/viewParent.headerText"
                     android:layout_marginStart="10dp"
                     android:layout_marginEnd="10dp"
@@ -280,7 +280,7 @@
 
                 <TextView
                     style="@style/viewParent.headerText"
-                    android:layout_below="@id/usernameTextView"
+                    android:layout_below="@id/usernameTextView2"
                     android:layout_marginStart="10dp"
                     android:layout_marginEnd="10dp"
                     android:text="Joburg"

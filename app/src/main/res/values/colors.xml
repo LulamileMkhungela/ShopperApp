@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#135b6f</color>
-    <color name="colorPrimaryDark">#454d66</color>
-    <color name="colorAccent">#42B883</color>
-    <color name="appColor2">#f8f8f8</color>
-    <color name="transparent">#00000000</color>
+
+    <color name="colorPrimary">#1c2737</color>
+    <color name="colorPrimaryDark">#151e29</color>
+    <color name="colorBackground">#151e29</color>
+    <color name="colorWhite">#FFF</color>
+    <color name="colorDarkLine">#0c1217</color>
+    <color name="colorDarkLineDarker">#05080a</color>
+    <color name="colorLightGrey">#d4e9fc</color>
+    <color name="colorAccent">#248ff1</color>
 
     <!--colors for light mode-->
-    <color name="backgroundTint">#ffd7d3</color>
+
+<!--    <color name="colorPrimary">#135b6f</color>-->
+<!--    <color name="colorPrimaryDark">#454d66</color>-->
+<!--    <color name="colorAccent">#42B883</color>-->
+<!--    <color name="appColor2">#f8f8f8</color> -->
+
 
     <color name="textColor">#1B1B1B</color>
     <color name="white">#FFF</color>
@@ -15,4 +24,7 @@
     <color name="colorTextSubtitle">#4e4e4e</color>
     <color name="login_form_details_light">#1affffff</color>
     <color name="grey">#E9EAEE</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="backgroundTint">#248ff1</color>
 </resources>

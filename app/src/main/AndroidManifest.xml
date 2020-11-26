@@ -10,7 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".BsYourMessagesRecyclerV"></activity>
+        <activity android:name=".BsYouSellPostView"></activity>
+        <activity android:name=".BsYourMessagesRecyclerV" />
         <activity
             android:name=".biz.profile.BsServices"
             android:label="@string/title_activity_bs_services"
