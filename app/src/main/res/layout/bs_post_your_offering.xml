@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/login_background"
     android:orientation="vertical"
     tools:context=".homepage.BsSellActivity">
 
@@ -43,12 +44,19 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="10dp"
+                app:counterEnabled="true"
+                app:counterMaxLength="100"
                 android:layout_marginBottom="10dp"
+                app:errorEnabled="true"
+                app:hintTextColor="@color/colorLightGrey"
+                android:textColorHint="@color/colorLightGrey"
                 android:hint="What are you offering">
 
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/colorLightGrey"
+                    android:textColorHint="@color/colorLightGrey"
                     android:inputType="textCapSentences" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -59,6 +67,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
+                app:hintTextColor="@color/colorLightGrey"
+                android:textColorHint="@color/colorLightGrey"
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="10dp"
                 android:hint="Price(R)">
@@ -66,6 +76,8 @@
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/colorLightGrey"
+                    android:textColorHint="@color/colorLightGrey"
                     android:inputType="textCapSentences" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -78,6 +90,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="10dp"
                 android:text="Choose Category"
+                android:textColor="@color/colorLightGrey"
                 android:textSize="18sp"
                 android:textStyle="normal" />
 
@@ -261,6 +274,8 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="10dp"
                 android:text="EaziBuy As"
+                android:textColor="@color/colorLightGrey"
+
                 android:textSize="18sp"
                 android:textStyle="normal" />
 
@@ -275,7 +290,9 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginEnd="10dp"
                     android:text="Location"
+                    android:textColor="@color/colorLightGrey"
                     android:textSize="18sp"
+
                     android:textStyle="normal" />
 
                 <TextView
@@ -284,6 +301,8 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginEnd="10dp"
                     android:text="Joburg"
+
+                    android:textColor="@color/colorLightGrey"
                     android:textSize="16sp" />
 
                 <ImageView
@@ -291,13 +310,16 @@
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
                     android:layout_marginEnd="10dp"
-                    app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24" />
+                    app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24"
+                    app:tint="@color/colorLightGrey" />
             </RelativeLayout>
 
             <com.google.android.material.switchmaterial.SwitchMaterial
                 style="@style/settingsText"
                 android:drawableStart="@drawable/ic_location_on_white_24dp"
-                android:text="Show my contact on my Ads" />
+                android:drawableTint="@color/colorLightGrey"
+                android:text="Show my contact on my Ads"
+                android:textColor="@color/colorLightGrey" />
 
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -308,6 +330,8 @@
                 android:layout_marginEnd="10dp"
                 android:focusable="true"
                 android:focusableInTouchMode="true"
+                app:hintTextColor="@color/colorLightGrey"
+                android:textColorHint="@color/colorLightGrey"
                 android:hint="Description"
                 android:maxLines="11">
 
@@ -316,6 +340,8 @@
                     android:layout_height="wrap_content"
                     android:focusable="true"
                     android:focusableInTouchMode="true"
+                    android:textColor="@color/colorLightGrey"
+                    android:textColorHint="@color/colorLightGrey"
                     android:inputType="textEmailAddress"
                     android:maxLines="11" />
 
@@ -342,7 +368,8 @@
                     android:clickable="true"
                     android:focusable="true"
                     android:padding="10dp"
-                    app:srcCompat="@drawable/ic_delete_black_24dp" />
+                    app:srcCompat="@drawable/ic_delete_black_24dp"
+                    app:tint="@color/colorLightGrey" />
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -353,7 +380,8 @@
                     android:clickable="true"
                     android:focusable="true"
                     android:padding="10dp"
-                    app:srcCompat="@drawable/ic_add_black" />
+                    app:srcCompat="@drawable/ic_add_black"
+                    app:tint="@color/colorLightGrey" />
 
             </RelativeLayout>
 
@@ -370,7 +398,7 @@
                 android:layout_height="60dp"
                 android:layout_gravity="bottom"
                 android:layout_marginTop="22dp"
-                android:background="@drawable/button_blue"
+                android:background="@drawable/roundedbottomnav"
                 android:focusable="true"
                 android:fontFamily="@font/gotham"
                 android:padding="10dp"

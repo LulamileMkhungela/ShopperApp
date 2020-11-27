@@ -99,12 +99,12 @@
                         android:textSize="16sp" />
 
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:layout_alignParentEnd="true"
-                        android:src="@drawable/ic_retweet_green_svg"
-                        android:textColor="@color/colorLightGrey"
-                        android:textSize="16sp" />
+                        android:paddingStart="16dp"
+                        android:src="@drawable/tagfree"
+                        android:textColor="@color/colorLightGrey" />
                 </RelativeLayout>
 
                 <View

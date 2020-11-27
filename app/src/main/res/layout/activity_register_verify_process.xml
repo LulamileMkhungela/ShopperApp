@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login_bk"
+    android:background="@drawable/login_background"
     tools:context=".registrationProcess.RegisterVerifyProcess">
 
     <androidx.appcompat.widget.Toolbar
@@ -39,7 +39,7 @@
         android:layout_marginTop="18dp"
         android:fontFamily="@font/gotham"
         android:text="Email"
-        android:textColor="@color/minimal_black"
+        android:textColor="@color/colorLightGrey"
         android:textSize="22sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
@@ -53,7 +53,7 @@
         android:layout_marginBottom="120dp"
         android:fontFamily="@font/gotham"
         android:text="Status"
-        android:textColor="@color/minimal_black"
+        android:textColor="@color/colorLightGrey"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -68,7 +68,7 @@
         android:layout_marginTop="20dp"
         android:fontFamily="@font/gotham"
         android:text=""
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/colorLightGrey"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/login_status_email"
@@ -82,7 +82,7 @@
         android:layout_marginBottom="120dp"
         android:fontFamily="@font/gotham"
         android:text=""
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/colorLightGrey"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -90,4 +90,17 @@
         app:layout_constraintTop_toBottomOf="@+id/login_email_check"
         app:layout_constraintVertical_bias="0.083" />
 
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.Shrine.Button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/roundedbottomnav"
+        android:fontFamily="@font/gotham"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

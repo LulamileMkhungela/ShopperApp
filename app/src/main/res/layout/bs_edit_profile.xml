@@ -213,21 +213,21 @@
 
         </RelativeLayout>
 
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.Shrine.Button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/roundedbottomnav"
+            android:focusable="true"
+            android:fontFamily="@font/gotham"
+            android:padding="10dp"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
-    <com.google.android.material.button.MaterialButton
-        style="@style/Widget.Shrine.Button"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_gravity="bottom"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/button_blue"
-        android:focusable="true"
-        android:fontFamily="@font/gotham"
-        android:padding="10dp"
-        android:text="Save"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        android:textStyle="bold" />
 </ScrollView>
