@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="86.5dp"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:paddingLeft="14dp"
+    android:paddingRight="14dp"
+    tools:context=".messaging.BsMessageReceived">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_group_channel_list_cover"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_profile_picture"
+        app:civ_border_color="@color/colorLightGrey"
+        app:civ_border_width="1.5dp" />
+
+    <LinearLayout
+        android:id="@+id/container_group_channel_list_topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/image_group_channel_list_cover"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/image_group_channel_list_cover"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxWidth="160dp"
+            android:maxLines="1"
+            android:text="Mofasa John"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/ic_baseline_verified_24"
+            android:gravity="center"
+            android:maxLines="1"
+            android:minWidth="16dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:text="3"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/container_group_channel_list_topic"
+        android:layout_alignStart="@id/container_group_channel_list_topic"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="223dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="The roof you fixed still leaks when its raining,pls come fix it"
+            android:textColor="#8e8e8e"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/container_group_channel_list_topic"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="3dp"
+        android:maxLines="1"
+        android:text="3hrs ago"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/group_channel_list_unread_background"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="9+"
+        android:textColor="@color/colorLightGrey" />
+
+
+</RelativeLayout>

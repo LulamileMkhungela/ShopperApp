@@ -105,7 +105,9 @@
                         android:layout_marginStart="28dp"
                         android:elevation="4dp"
                         android:gravity="center_horizontal"
-                        android:indeterminateTint="@color/colorPrimaryDark"
+                        android:indeterminate="false"
+                        android:indeterminateDrawable="@drawable/progress"
+                        android:indeterminateDuration="720"
                         tools:ignore="UnusedAttribute" />
 
                 </LinearLayout>
@@ -115,8 +117,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
+                    android:background="@drawable/selector_edittext_background_with_focusable"
                     android:focusable="true"
                     android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
                     android:hint="Username"
                     android:maxLines="1"
                     android:textColorHint="@android:color/background_dark"
@@ -125,6 +129,7 @@
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
                         android:focusable="true"
                         android:focusableInTouchMode="true"
                         android:fontFamily="@font/josefinslabregular"
@@ -143,6 +148,7 @@
                     android:layout_marginTop="15dp"
                     android:focusable="true"
                     android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
                     android:hint="Full Name"
                     android:maxLines="1"
                     android:textColorHint="@android:color/background_dark"
@@ -169,6 +175,7 @@
                     android:layout_marginTop="15dp"
                     android:focusable="true"
                     android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
                     android:hint="Email"
                     android:maxLines="1"
                     android:textColorHint="@android:color/background_dark"
@@ -193,6 +200,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
+                    android:gravity="center_vertical"
                     android:hint="Password"
                     android:textColorHint="@android:color/background_dark"
                     app:hintTextColor="@android:color/background_dark"
@@ -214,6 +222,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
                     android:orientation="vertical">
 
                     <TextView

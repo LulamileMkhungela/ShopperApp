@@ -35,6 +35,7 @@
                     android:layout_alignParentEnd="true"
                     android:layout_marginTop="17dp"
                     android:layout_marginEnd="17dp"
+                    android:visibility="invisible"
                     android:background="@drawable/ic_picture_placeholder_svg" />
 
                 <RelativeLayout
@@ -57,26 +58,19 @@
                         android:layout_alignParentEnd="true"
                         android:layout_alignParentBottom="true"
                         android:layout_margin="4dp"
-                        app:srcCompat="@drawable/ic_picture_placeholder_svg"
+                        app:srcCompat="@drawable/star"
                         tools:ignore="ContentDescription" />
 
                 </RelativeLayout>
 
-                <Button
+                <androidx.core.widget.ContentLoadingProgressBar
                     style="@android:style/Widget.Button.Toggle"
                     android:layout_width="wrap_content"
-                    android:layout_height="40dp"
+                    android:layout_height="wrap_content"
                     android:layout_below="@+id/bannerImage"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginTop="6dp"
-                    android:layout_marginEnd="44dp"
-                    android:background="@drawable/button_follow"
-                    android:paddingStart="12dp"
-                    android:text="Profile not complete"
-                    android:textAlignment="center"
-                    android:textColor="@color/colorAccent"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="44dp"/>
 
                 <Button
                     style="@android:style/Widget.Button.Toggle"
@@ -393,7 +387,6 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:id="@+id/helpLay"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/settingsLay"
@@ -426,38 +419,38 @@
                 app:tint="@color/colorLightGrey" />
         </RelativeLayout>
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/helpLay"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="34dp"
-            android:layout_marginBottom="18dp">
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/helpLay"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="34dp"-->
+<!--            android:layout_marginBottom="18dp">-->
 
-            <ImageView
-                android:id="@+id/icon_ser"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                app:srcCompat="@drawable/ic_notifications" />
+<!--            <ImageView-->
+<!--                android:id="@+id/icon_ser"-->
+<!--                android:layout_width="25dp"-->
+<!--                android:layout_height="25dp"-->
+<!--                app:srcCompat="@drawable/ic_notifications" />-->
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginStart="16dp"
-                android:layout_toEndOf="@id/icon_ser"
-                android:text="Notifications"
-                android:textColor="@color/colorLightGrey"
-                android:textSize="20sp" />
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginStart="16dp"-->
+<!--                android:layout_toEndOf="@id/icon_ser"-->
+<!--                android:text="Notifications"-->
+<!--                android:textColor="@color/colorLightGrey"-->
+<!--                android:textSize="20sp" />-->
 
-            <ImageView
-                android:layout_width="16dp"
-                android:layout_height="16dp"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:layout_marginEnd="12dp"
-                android:src="@drawable/arrow_dark"
-                app:tint="@color/colorLightGrey" />
-        </RelativeLayout>
+<!--            <ImageView-->
+<!--                android:layout_width="16dp"-->
+<!--                android:layout_height="16dp"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginEnd="12dp"-->
+<!--                android:src="@drawable/arrow_dark"-->
+<!--                app:tint="@color/colorLightGrey" />-->
+<!--        </RelativeLayout>-->
     </RelativeLayout>
 </ScrollView>

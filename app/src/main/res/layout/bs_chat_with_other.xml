@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:gravity="center_vertical"
+    android:paddingStart="8dp"
+    android:paddingTop="8dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="8dp"
+    tools:context=".messaging.BsChatWithOther">
+
+    <TextView
+        android:id="@+id/text_open_chat_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="November 28th"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_open_chat_profile"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/text_open_chat_date"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/default_profile_picture"
+        app:civ_border_color="@color/colorLightGrey"
+        app:civ_border_width="1.5dp" />
+
+    <TextView
+        android:id="@+id/text_open_chat_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_open_chat_date"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/image_open_chat_profile"
+        android:text="John"
+        android:textColor="#3a414d"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_open_chat_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_open_chat_nickname"
+        android:layout_alignStart="@id/text_open_chat_nickname"
+        android:text="Uploaded a file:"
+        android:textColor="#999999"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/text_open_chat_nickname"
+        android:layout_alignParentEnd="true"
+        android:text="11:36"
+        android:textColor="#bebed1"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_open_chat_message"
+        android:layout_alignStart="@id/text_open_chat_message"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/chat_background"
+        android:gravity="center_vertical"
+        android:minWidth="240dp"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:src="@drawable/ic_play" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="4dp"
+                android:text="IMG_20140623_142311.jpg"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.3MB"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

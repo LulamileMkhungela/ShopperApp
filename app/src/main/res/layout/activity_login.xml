@@ -22,7 +22,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="40dp"
-            android:layout_marginLeft="40dp"
             android:layout_marginTop="59dp"
             android:fontFamily="@font/gotham"
             android:gravity="start"
@@ -39,7 +38,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="40dp"
-            android:layout_marginLeft="40dp"
             android:layout_marginTop="59dp"
             android:alpha="0.3"
             android:fontFamily="@font/gotham"
@@ -56,7 +54,6 @@
             android:layout_width="20dp"
             android:layout_height="3dp"
             android:layout_marginStart="20dp"
-            android:layout_marginLeft="40dp"
             android:background="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="@id/login_text_view"
@@ -121,7 +118,6 @@
                 android:layout_gravity="end"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
                 android:fontFamily="@font/poiretoneregular"
                 android:padding="0.5dp"
                 android:text="forgot your password"
@@ -135,7 +131,9 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="12dp"
                 android:elevation="4dp"
-                android:indeterminateTint="@color/colorPrimaryDark"
+                android:indeterminate="false"
+                android:indeterminateDrawable="@drawable/progress"
+                android:indeterminateDuration="720"
                 tools:ignore="UnusedAttribute" />
 
         </com.google.android.material.textfield.TextInputLayout>

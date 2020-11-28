@@ -10,9 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".BsViewMyProduct"></activity>
+        <activity android:name=".BsCustomerProfile"></activity>
+        <activity android:name=".BsMyItems" />
+        <activity android:name=".BsNotificationSettings" />
+        <activity android:name=".messaging.BsMessageReceived" />
+        <activity android:name=".messaging.BsMeChatInfo" />
+        <activity android:name=".messaging.BsChatWithOther" />
+        <activity android:name=".products.BsViewMyProduct" />
         <activity android:name=".BsYouSellPostView" />
-        <activity android:name=".BsYourMessagesRecyclerV" />
+        <activity android:name=".messaging.BsYourMessagesRecyclerV" />
         <activity
             android:name=".biz.profile.BsServices"
             android:label="@string/title_activity_bs_services"
