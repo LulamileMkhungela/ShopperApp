@@ -2,232 +2,246 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/login_background"
-    android:scrollbars="none"
     android:layout_width="match_parent"
-    tools:context=".biz.profile.BsEditProfile"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".biz.profile.BsProfile">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="wrap_content">
 
         <RelativeLayout
+            android:id="@+id/userHeadline"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            >
+            android:layout_height="wrap_content">
 
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/profile_pic"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="30dp"
-                android:src="@drawable/default_profile_picture"
-                app:civ_border_color="@color/grey"
-                app:civ_border_width="0dp" />
-            <TextView
-                style="@style/Base.TextAppearance.AppCompat.Title"
+            <RelativeLayout
+                android:id="@+id/banner"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="6dp"
-                android:fontFamily="@font/gotham"
-                android:gravity="center_horizontal"
-                android:layout_below="@+id/profile_pic"
-                android:text="profile"
-                android:textColor="@color/white"
-                android:textStyle="bold" />
+                android:layout_height="236dp">
 
-            <HorizontalScrollView
-                android:id="@+id/tabs"
-                android:layout_below="@id/profile_pic"
-                android:scrollbars="none"
-                android:layout_marginTop="15dp"
-                android:layout_marginBottom="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/bannerImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_post"
+                    tools:ignore="ContentDescription" />
 
-                <LinearLayout
-                    android:paddingEnd="10dp"
-                    android:paddingStart="10dp"
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginEnd="17dp"
+                    android:background="@drawable/ic_picture_placeholder_svg" />
+
+                <RelativeLayout
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="85dp"
+                    android:adjustViewBounds="true">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:src="@drawable/ic_person_v2_svg"
+                        app:civ_border_color="@color/white"
+                        app:civ_border_width="1dp" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_margin="4dp"
+                        app:srcCompat="@drawable/ic_picture_placeholder_svg"
+                        app:tint="@color/colorPrimaryDark"
+                        tools:ignore="ContentDescription" />
+
+                </RelativeLayout>
+
+                <Button
+                    style="@android:style/Widget.Button.Toggle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/bannerImage"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="44dp"
+                    android:background="@drawable/button_follow"
+                    android:paddingStart="12dp"
+                    android:text="Profile not complete"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    style="@android:style/Widget.Button.Toggle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:layout_marginTop="28dp"
-                    android:orientation="horizontal">
+                    android:layout_below="@+id/bannerImage"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="6dp"
+                    android:background="@drawable/bg"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="2dp"
+                    android:paddingRight="6dp"
+                    android:paddingBottom="2dp"
+                    android:text="Verified"
+                    android:visibility="visible" />
+            </RelativeLayout>
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/detail_page_cart_button_bg"
-                        android:padding="10dp"
-                        android:text=" Business details "
-                        android:textColor="?android:textColorPrimary" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:background="@drawable/detail_page_cart_button_bg"
-                        android:padding="10dp"
-                        android:text=" Gallery "
-
-                        android:textColor="?android:textColorPrimary" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginEnd="10dp"
-                        android:background="@drawable/detail_page_cart_button_bg"
-                        android:padding="10dp"
-                        android:text=" Services "
-                        android:textColor="?android:textColorPrimary" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/detail_page_cart_button_bg"
-                        android:padding="10dp"
-                        android:text=" Contact info "
-                        android:textColor="?android:textColorPrimary" />
-
-
-
-                </LinearLayout>
-
-            </HorizontalScrollView>
-
-
-            <androidx.cardview.widget.CardView
-                app:cardUseCompatPadding="true"
-                android:layout_margin="10dp"
-                app:cardCornerRadius="4dp"
-                android:layout_below="@+id/tabs"
-                style="@style/Widget.MaterialComponents.CardView"
+            <RelativeLayout
+                android:id="@+id/rlUserP"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_below="@id/banner"
+                android:paddingLeft="16dp"
+                android:paddingTop="4dp"
+                android:paddingRight="16dp">
 
-                <LinearLayout
-                    android:padding="16dp"
-                    android:orientation="vertical"
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tvUserNameP"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:hint="Username">
 
-                    <TextView
-                        style="@style/Base.TextAppearance.AppCompat.Title"
-                        android:text="Details"
+                    <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName" />
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_marginTop="15dp"
-                        android:hint="Name"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tvScreenNameP"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvUserNameP"
+
+                    android:layout_marginTop="15dp"
+                    android:hint="Company name">
+
+                    <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName" />
 
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:inputType="textPersonName" />
+                </com.google.android.material.textfield.TextInputLayout>
 
-                    </com.google.android.material.textfield.TextInputLayout>
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_marginTop="5dp"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                        android:hint="Username"
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tvUserDescription"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvScreenNameP"
+
+                    android:layout_marginTop="15dp"
+                    android:hint="Description">
+
+                    <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName" />
 
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
 
-                    </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvUserDescription"
+                    android:layout_marginTop="15dp"
+                    android:hint="Type of business is Partnership">
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_marginTop="5dp"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                        android:hint="Email"
+                    <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName" />
 
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:inputType="textEmailAddress" />
-
-                    </com.google.android.material.textfield.TextInputLayout>
-
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_marginTop="5dp"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                        android:hint="Bio"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:inputType="textCapSentences" />
-
-                    </com.google.android.material.textfield.TextInputLayout>
-
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_marginTop="5dp"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                        android:hint="Location"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:inputType="textCapWords" />
-
-                    </com.google.android.material.textfield.TextInputLayout>
-
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:visibility="gone"
-                        android:layout_marginTop="5dp"
-                        android:hint="Password"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:inputType="textPersonName" />
-
-                    </com.google.android.material.textfield.TextInputLayout>
-
-                </LinearLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
         </RelativeLayout>
 
-        <com.google.android.material.button.MaterialButton
-            style="@style/Widget.Shrine.Button"
+        <RelativeLayout
+            android:id="@+id/lMainSeparator"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_gravity="bottom"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/roundedbottomnav"
-            android:focusable="true"
-            android:fontFamily="@font/gotham"
-            android:padding="10dp"
-            android:text="Save"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-    </LinearLayout>
+            android:layout_height="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/userHeadline"
+            android:background="@color/colorDarkLine">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:background="@color/colorDarkLineDarker" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorDarkLineDarker" />
+        </RelativeLayout>
+jj
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_below="@+id/lMainSeparator"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/detail_page_cart_button_bg"
+                android:padding="10dp"
+                android:text=" Business details "
+                android:textColor="?android:textColorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/detail_page_cart_button_bg"
+                android:padding="10dp"
+                android:text=" Gallery "
+
+                android:textColor="?android:textColorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/detail_page_cart_button_bg"
+                android:padding="10dp"
+                android:text=" Services "
+                android:textColor="?android:textColorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/detail_page_cart_button_bg"
+                android:padding="10dp"
+                android:text=" Contact info "
+                android:textColor="?android:textColorPrimary" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
 </ScrollView>

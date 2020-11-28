@@ -103,7 +103,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Username"
-                    android:textColor="@color/normalColor"
+                    android:textColor="@color/colorLightGrey"
                     android:textSize="24sp"
                     android:textStyle="bold" />
 
@@ -128,8 +128,10 @@
                     android:paddingTop="2dp"
                     android:paddingRight="6dp"
                     android:paddingBottom="2dp"
+                    android:background="@drawable/bg"
+                    android:backgroundTint="@color/colorPrimary"
                     android:text="Verified"
-                    android:textColor="@color/colorWhite"
+                    android:textColor="@color/colorLightGrey"
                     android:textSize="14sp"
                     android:visibility="visible" />
 

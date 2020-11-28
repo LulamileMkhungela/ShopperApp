@@ -102,7 +102,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
@@ -113,31 +112,31 @@
         app:layout_constraintStart_toStartOf="@+id/textView5"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/imageView3"
-        android:layout_width="58dp"
-        android:layout_height="58dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="32dp"
-        android:src="@drawable/default_profile_picture"
-        app:civ_border_color="@color/colorPrimaryDark"
-        app:civ_border_width="1.5dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+<!--    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--        android:id="@+id/imageView3"-->
+<!--        android:layout_width="58dp"-->
+<!--        android:layout_height="58dp"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:layout_marginTop="12dp"-->
+<!--        android:layout_marginEnd="32dp"-->
+<!--        android:src="@drawable/default_profile_picture"-->
+<!--        app:civ_border_color="@color/colorPrimaryDark"-->
+<!--        app:civ_border_width="1.5dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
         app:srcCompat="@drawable/default_profile_picture" />
 
     <Button
         android:id="@+id/imageView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
         android:background="@drawable/ic_cat_bg"
+        android:layout_marginTop="5dp"
         android:text="My Items"
-        android:textColor="@color/minimal_black"
+        android:layout_marginStart="42dp"
+        android:textColor="@color/colorLightGrey"
         app:layout_constraintStart_toEndOf="@+id/constraintLayout"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/cat_recycler"
@@ -145,7 +144,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/ic_cat_bg"
         android:text="my ads"
-        android:textColor="@color/minimal_black"
+        android:textColor="@color/colorLightGrey"
         app:layout_constraintBottom_toBottomOf="@+id/imageView4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView4"

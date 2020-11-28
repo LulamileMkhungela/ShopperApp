@@ -262,7 +262,7 @@
             android:layout_height="60dp"
             android:layout_gravity="bottom"
             android:layout_marginTop="10dp"
-            android:background="@drawable/button_blue"
+            android:background="@drawable/roundedbottomnav"
             android:focusable="true"
             android:fontFamily="@font/gotham"
             android:padding="10dp"
