@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/login_background"
     android:scrollbars="none"
     tools:context=".biz.profile.BsProfileContact">
 
@@ -34,52 +35,51 @@
                 android:layout_marginBottom="10dp"
                 android:scrollbars="none">
 
-                                <LinearLayout
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:gravity="center"
-                                    android:orientation="horizontal"
-                                    android:paddingStart="10dp"
-                                    android:paddingEnd="10dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp">
 
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:background="@drawable/detail_page_cart_button_bg"
-                                        android:padding="10dp"
-                                        android:text=" Business details "
-                                        android:textColor="?android:textColorPrimary" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/detail_page_cart_button_bg"
+                        android:padding="10dp"
+                        android:text=" Business details "
+                        android:textColor="@color/colorLightGrey" />
 
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginStart="10dp"
-                                        android:background="@drawable/detail_page_cart_button_bg"
-                                        android:padding="10dp"
-                                        android:text=" Gallery "
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/detail_page_cart_button_bg"
+                        android:padding="10dp"
+                        android:text=" Gallery "
+                        android:textColor="@color/colorLightGrey" />
 
-                                        android:textColor="?android:textColorPrimary" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/detail_page_cart_button_bg"
+                        android:padding="10dp"
+                        android:text=" Services "
+                        android:textColor="@color/colorLightGrey" />
 
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginStart="10dp"
-                                        android:layout_marginEnd="10dp"
-                                        android:background="@drawable/detail_page_cart_button_bg"
-                                        android:padding="10dp"
-                                        android:text=" Services "
-                                        android:textColor="?android:textColorPrimary" />
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:background="@drawable/detail_page_cart_button_bg"
-                                        android:padding="10dp"
-                                        android:text=" Contact info "
-                                        android:textColor="?android:textColorPrimary" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/detail_page_cart_button_bg"
+                        android:padding="10dp"
+                        android:text=" Contact info "
+                        android:textColor="@color/colorLightGrey" />
 
 
-                                </LinearLayout>
+                </LinearLayout>
 
             </ScrollView>
 
@@ -90,12 +90,14 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tabs"
                 android:layout_margin="10dp"
+                android:background="@drawable/login_background"
                 app:cardCornerRadius="4dp"
                 app:cardUseCompatPadding="true">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/login_background"
                     android:orientation="vertical"
                     android:padding="16dp">
 
@@ -103,12 +105,17 @@
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Business Name">
+                        android:hint="Business Name"
+                        android:textColorHint="@color/colorLightGrey"
+                        app:hintTextColor="@color/colorLightGrey">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:inputType="textPersonName" />
+                            android:inputType="textPersonName"
+                            android:textColor="@color/colorLightGrey"
+                            android:textColorHint="@color/colorLightGrey"
+                            app:hintTextColor="@color/colorLightGrey" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -117,12 +124,18 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:hint="Registration Number">
+                        android:hint="Registration Number"
+                        android:textColor="@color/colorLightGrey"
+                        android:textColorHint="@color/colorLightGrey"
+                        app:hintTextColor="@color/colorLightGrey">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:inputType="text" />
+                            android:inputType="text"
+                            android:textColor="@color/colorLightGrey"
+                            android:textColorHint="@color/colorLightGrey"
+                            app:hintTextColor="@color/colorLightGrey" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -131,12 +144,18 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:hint="Email">
+                        android:hint="Email"
+                        android:textColor="@color/colorLightGrey"
+                        android:textColorHint="@color/colorLightGrey"
+                        app:hintTextColor="@color/colorLightGrey">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:inputType="textEmailAddress" />
+                            android:inputType="textEmailAddress"
+                            android:textColor="@color/colorLightGrey"
+                            android:textColorHint="@color/colorLightGrey"
+                            app:hintTextColor="@color/colorLightGrey" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -145,12 +164,18 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:hint="Bio">
+                        android:hint="Bio"
+                        android:textColor="@color/colorLightGrey"
+                        android:textColorHint="@color/colorLightGrey"
+                        app:hintTextColor="@color/colorLightGrey">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:inputType="textCapSentences" />
+                            android:inputType="textCapSentences"
+                            android:textColor="@color/colorLightGrey"
+                            android:textColorHint="@color/colorLightGrey"
+                            app:hintTextColor="@color/colorLightGrey" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -159,12 +184,18 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:hint="Location">
+                        android:hint="Location"
+                        android:textColor="@color/colorLightGrey"
+                        android:textColorHint="@color/colorLightGrey"
+                        app:hintTextColor="@color/colorLightGrey">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:inputType="textCapWords" />
+                            android:inputType="textCapWords"
+                            android:textColor="@color/colorLightGrey"
+                            android:textColorHint="@color/colorLightGrey"
+                            app:hintTextColor="@color/colorLightGrey" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -188,7 +219,7 @@
             android:padding="10dp"
             android:text="Save"
             android:textAllCaps="false"
-            android:textColor="@color/white"
+            android:textColor="@color/colorLightGrey"
             android:textSize="18sp"
             android:textStyle="bold" />
     </LinearLayout>

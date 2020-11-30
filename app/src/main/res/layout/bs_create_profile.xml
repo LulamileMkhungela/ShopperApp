@@ -41,9 +41,9 @@
                     android:layout_marginTop="16dp"
                     android:background="@color/transparent"
                     android:paddingTop="8dp"
-                    app:stpi_circleColor="@color/white"
+                    app:stpi_circleColor="@color/colorLightGrey"
                     app:stpi_circleRadius="6dp"
-                    app:stpi_labelColor="@color/colorPrimaryDark"
+                    app:stpi_labelColor="@color/colorLightGrey"
                     app:stpi_lineColor="@color/colorPrimaryDark"
                     app:stpi_showLabels="true"
                     app:stpi_stepCount="4" />
@@ -123,15 +123,16 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Business Name"
-                        android:textColorHint="@color/white">
+                        android:textColorHint="@color/colorLightGrey"
+                        app:hintTextColor="@color/colorLightGrey">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:inputType="textPersonName"
-                            android:textColor="@android:color/white"
-                            android:textColorHint="@android:color/white"
-                            app:hintTextColor="@android:color/white" />
+                            android:textColor="@color/colorLightGrey"
+                            android:textColorHint="@color/colorLightGrey"
+                            app:hintTextColor="@color/colorLightGrey" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -141,8 +142,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:hint="Registration Number"
-                        android:textColorHint="@android:color/white"
-                        app:hintTextColor="@android:color/white">
+                        android:textColor="@color/colorLightGrey"
+                        android:textColorHint="@color/colorLightGrey"
+                        app:hintTextColor="@color/colorLightGrey">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
@@ -160,16 +162,17 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:hint="Email"
-                        android:textColor="@color/white"
-                        android:textColorHint="@color/white">
+                        android:textColor="@color/colorLightGrey"
+                        android:textColorHint="@color/colorLightGrey"
+                        app:hintTextColor="@color/colorLightGrey">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:inputType="textEmailAddress"
-                            android:textColor="@android:color/white"
-                            android:textColorHint="@android:color/white"
-                            app:hintTextColor="@android:color/white" />
+                            android:textColor="@color/colorLightGrey"
+                            android:textColorHint="@color/colorLightGrey"
+                            app:hintTextColor="@color/colorLightGrey" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -178,9 +181,11 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:text="Receive"
-                        android:textColor="@color/white"
+                        android:textColor="@color/colorLightGrey"
+                        android:textColorHint="@color/colorLightGrey"
                         android:textSize="16sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        app:hintTextColor="@color/colorLightGrey" />
 
                     <RadioGroup
                         android:layout_width="match_parent"
@@ -215,16 +220,17 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:hint="Bio"
-                        android:textColorHint="@android:color/white"
-                        app:hintTextColor="@android:color/white">
+                        android:textColor="@color/colorLightGrey"
+                        android:textColorHint="@color/colorLightGrey"
+                        app:hintTextColor="@color/colorLightGrey">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:inputType="textCapSentences"
-                            android:textColor="@android:color/white"
-                            android:textColorHint="@android:color/white"
-                            app:hintTextColor="@android:color/white" />
+                            android:textColor="@color/colorLightGrey"
+                            android:textColorHint="@color/colorLightGrey"
+                            app:hintTextColor="@color/colorLightGrey" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -241,9 +247,9 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:inputType="textCapWords"
-                            android:textColor="@android:color/white"
-                            android:textColorHint="@android:color/white"
-                            app:hintTextColor="@android:color/white" />
+                            android:textColor="@color/colorLightGrey"
+                            android:textColorHint="@color/colorLightGrey"
+                            app:hintTextColor="@color/colorLightGrey" />
 
 
                     </com.google.android.material.textfield.TextInputLayout>

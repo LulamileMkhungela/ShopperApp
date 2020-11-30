@@ -72,7 +72,6 @@
                     android:layout_marginTop="6dp"
                     android:layout_marginEnd="44dp"
                     android:background="@drawable/button_follow"
-                    android:paddingStart="12dp"
                     android:text="Profile not complete"
                     android:textAlignment="center"
                     android:textColor="@color/colorAccent"
@@ -96,6 +95,7 @@
                     android:paddingRight="6dp"
                     android:paddingBottom="2dp"
                     android:text="Verified"
+                    android:textColor="@color/colorLightGrey"
                     android:visibility="visible" />
             </RelativeLayout>
 
@@ -115,12 +115,17 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
-                    android:hint="Username">
+                    android:hint="Username"
+                    android:textColorHint="@color/colorLightGrey"
+                    app:hintTextColor="@color/colorLightGrey">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="textPersonName" />
+                        android:inputType="textPersonName"
+                        android:textColor="@color/colorLightGrey"
+                        android:textColorHint="@color/colorLightGrey"
+                        app:hintTextColor="@color/colorLightGrey" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -130,14 +135,19 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/tvUserNameP"
-
                     android:layout_marginTop="15dp"
-                    android:hint="Company name">
+                    android:hint="Company name"
+                    android:textColor="@color/colorLightGrey"
+                    android:textColorHint="@color/colorLightGrey"
+                    app:hintTextColor="@color/colorLightGrey">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="textPersonName" />
+                        android:inputType="textPersonName"
+                        android:textColor="@color/colorLightGrey"
+                        android:textColorHint="@color/colorLightGrey"
+                        app:hintTextColor="@color/colorLightGrey" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -148,14 +158,19 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/tvScreenNameP"
-
                     android:layout_marginTop="15dp"
-                    android:hint="Description">
+                    android:hint="Description"
+                    android:textColor="@color/colorLightGrey"
+                    android:textColorHint="@color/colorLightGrey"
+                    app:hintTextColor="@color/colorLightGrey">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="textPersonName" />
+                        android:inputType="textPersonName"
+                        android:textColor="@color/colorLightGrey"
+                        android:textColorHint="@color/colorLightGrey"
+                        app:hintTextColor="@color/colorLightGrey" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -165,12 +180,18 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/tvUserDescription"
                     android:layout_marginTop="15dp"
-                    android:hint="Type of business is Partnership">
+                    android:hint="Type of business is Partnership"
+                    android:textColor="@color/colorLightGrey"
+                    android:textColorHint="@color/colorLightGrey"
+                    app:hintTextColor="@color/colorLightGrey">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="textPersonName" />
+                        android:inputType="textPersonName"
+                        android:textColor="@color/colorLightGrey"
+                        android:textColorHint="@color/colorLightGrey"
+                        app:hintTextColor="@color/colorLightGrey" />
 
                 </com.google.android.material.textfield.TextInputLayout>
             </RelativeLayout>
@@ -180,8 +201,8 @@
             android:id="@+id/lMainSeparator"
             android:layout_width="match_parent"
             android:layout_height="10dp"
-            android:layout_marginTop="20dp"
             android:layout_below="@id/userHeadline"
+            android:layout_marginTop="20dp"
             android:background="@color/colorDarkLine">
 
             <LinearLayout
@@ -195,13 +216,13 @@
                 android:layout_alignParentBottom="true"
                 android:background="@color/colorDarkLineDarker" />
         </RelativeLayout>
-jj
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/lMainSeparator"
             android:gravity="center"
             android:orientation="horizontal"
-            android:layout_below="@+id/lMainSeparator"
             android:paddingStart="10dp"
             android:paddingEnd="10dp">
 
@@ -211,7 +232,7 @@ jj
                 android:background="@drawable/detail_page_cart_button_bg"
                 android:padding="10dp"
                 android:text=" Business details "
-                android:textColor="?android:textColorPrimary" />
+                android:textColor="@color/colorLightGrey" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -220,8 +241,7 @@ jj
                 android:background="@drawable/detail_page_cart_button_bg"
                 android:padding="10dp"
                 android:text=" Gallery "
-
-                android:textColor="?android:textColorPrimary" />
+                android:textColor="@color/colorLightGrey" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -231,7 +251,7 @@ jj
                 android:background="@drawable/detail_page_cart_button_bg"
                 android:padding="10dp"
                 android:text=" Services "
-                android:textColor="?android:textColorPrimary" />
+                android:textColor="@color/colorLightGrey" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -239,7 +259,7 @@ jj
                 android:background="@drawable/detail_page_cart_button_bg"
                 android:padding="10dp"
                 android:text=" Contact info "
-                android:textColor="?android:textColorPrimary" />
+                android:textColor="@color/colorLightGrey" />
 
 
         </LinearLayout>

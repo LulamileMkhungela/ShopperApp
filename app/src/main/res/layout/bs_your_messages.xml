@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/login_background"
     tools:context=".homepage.BsMessages">
 
     <de.hdodenhof.circleimageview.CircleImageView
@@ -11,9 +12,7 @@
         android:layout_height="60dp"
         android:layout_alignTop="@+id/card_view_notifications_frag"
         android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
         android:layout_marginStart="6dp"
-        android:layout_marginLeft="6dp"
         android:layout_marginTop="20dp"
         android:clickable="true"
         android:elevation="2.5dp"
@@ -29,10 +28,8 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
         android:layout_marginTop="6dp"
         android:layout_marginEnd="6dp"
-        android:layout_marginRight="6dp"
         app:cardBackgroundColor="#d4e9fc"
         app:cardCornerRadius="4dp">
 
@@ -58,7 +55,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
                 android:layout_marginTop="-4dp"
                 app:srcCompat="@drawable/ic_baseline_keyboard_arrow_down_24"
                 tools:ignore="ContentDescription" />
@@ -69,7 +65,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/txt_userName_notification"
                 android:layout_marginStart="28dp"
-                android:layout_marginLeft="28dp"
                 android:layout_marginTop="5dp"
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp"
@@ -81,13 +76,11 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/txt_text_messages_frag"
                 android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
                 android:layout_marginStart="5dp"
-                android:layout_marginLeft="5dp"
-                android:textColor="@android:color/background_dark"
                 android:layout_marginTop="5dp"
                 android:text="11hrs_ago"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="@android:color/background_dark"
                 android:textSize="12sp" />
         </RelativeLayout>
     </androidx.cardview.widget.CardView>

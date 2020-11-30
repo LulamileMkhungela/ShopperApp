@@ -24,7 +24,6 @@
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
         android:layout_height="250dp"
-        android:elevation="12dp"
         android:scaleType="fitXY"
         android:src="@drawable/login_status"
         app:layout_constraintEnd_toEndOf="parent"

@@ -16,7 +16,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/search_bg"
-        android:drawableLeft="@drawable/ic_search_black_24dp"
+        android:drawableStart="@drawable/ic_search_black_24dp"
         android:drawablePadding="8dp"
         android:ems="10"
         android:hint="@android:string/search_go"
@@ -104,8 +104,8 @@
                 style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
                 android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
                 app:mbn_backgroundBottomColor="#ffffff"
                 app:mbn_circleColor="#ffffff"
                 app:mbn_countBackgroundColor="#ff6f00"
@@ -113,7 +113,7 @@
                 app:mbn_defaultIconColor="#90a4ae"
                 app:mbn_rippleColor="#2f424242"
                 app:mbn_selectedIconColor="#3c415e"
-                app:mbn_shadowColor="#1f212121"/>
+                app:mbn_shadowColor="#1f212121" />
 
         </androidx.coordinatorlayout.widget.CoordinatorLayout>
 

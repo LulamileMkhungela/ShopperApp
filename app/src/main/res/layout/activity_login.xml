@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
+    android:background="@drawable/login_background"
     tools:context=".registrationProcess.Register">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -26,7 +28,7 @@
             android:fontFamily="@font/gotham"
             android:gravity="start"
             android:text="Log In"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/colorLightGrey"
             android:textSize="20sp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -43,7 +45,7 @@
             android:fontFamily="@font/gotham"
             android:gravity="start"
             android:text="Sign Up"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/colorLightGrey"
             android:textSize="20sp"
             app:layout_constraintLeft_toRightOf="@+id/login_text_view"
             app:layout_constraintTop_toTopOf="parent"
@@ -75,7 +77,7 @@
             android:layout_height="150dp"
             android:layout_gravity="center"
             android:src="@drawable/wolflogo"
-            app:civ_border_color="#e7e7e7"
+            app:civ_border_color="@color/colorLightGrey"
             app:civ_border_width="2dp" />
 
         <com.google.android.material.textfield.TextInputLayout
@@ -86,7 +88,10 @@
             android:focusable="true"
             android:focusableInTouchMode="true"
             android:hint="Email"
-            android:maxLines="1">
+            android:maxLines="1"
+            android:textColor="@color/colorLightGrey"
+            android:textColorHint="@color/colorLightGrey"
+            app:hintTextColor="@color/colorLightGrey">
 
             <EditText
                 android:layout_width="match_parent"
@@ -94,7 +99,10 @@
                 android:focusable="true"
                 android:focusableInTouchMode="true"
                 android:inputType="textEmailAddress"
-                android:maxLines="1" />
+                android:maxLines="1"
+                android:textColor="@color/colorLightGrey"
+                android:textColorHint="@color/colorLightGrey"
+                app:hintTextColor="@color/colorLightGrey" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -104,13 +112,19 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:hint="Password"
+            android:textColor="@color/colorLightGrey"
+            android:textColorHint="@color/colorLightGrey"
+            app:hintTextColor="@color/colorLightGrey"
             app:passwordToggleEnabled="true"
-            app:passwordToggleTint="@color/colorPrimaryDark">
+            app:passwordToggleTint="@color/colorLightGrey">
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPostalAddress" />
+                android:inputType="textPostalAddress"
+                android:textColor="@color/colorLightGrey"
+                android:textColorHint="@color/colorLightGrey"
+                app:hintTextColor="@color/colorLightGrey" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -118,12 +132,10 @@
                 android:layout_gravity="end"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="8dp"
-                android:fontFamily="@font/poiretoneregular"
                 android:padding="0.5dp"
                 android:text="forgot your password"
-                android:textColor="@color/minimal_black"
-                android:textSize="16sp"
-                android:textStyle="bold" />
+                android:textColor="@color/colorLightGrey"
+                android:textSize="16sp" />
 
             <ProgressBar
                 android:layout_width="wrap_content"
@@ -149,10 +161,9 @@
         android:background="@drawable/roundedbottomnav"
         android:focusable="true"
         android:fontFamily="@font/gotham"
-        android:padding="10dp"
         android:text="Log In"
         android:textAllCaps="false"
-        android:textColor="@color/white"
+        android:textColor="@color/colorLightGrey"
         android:textSize="18sp"
         android:textStyle="bold" />
 

@@ -44,20 +44,22 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:hint="What are you offering"
+                android:textColorHint="@color/colorLightGrey"
                 app:counterEnabled="true"
                 app:counterMaxLength="100"
-                android:layout_marginBottom="10dp"
+                app:counterTextColor="@color/colorLightGrey"
                 app:errorEnabled="true"
-                app:hintTextColor="@color/colorLightGrey"
-                android:textColorHint="@color/colorLightGrey"
-                android:hint="What are you offering">
+                app:errorTextColor="@color/colorLightGrey"
+                app:hintTextColor="@color/colorLightGrey">
 
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:inputType="textCapSentences"
                     android:textColor="@color/colorLightGrey"
-                    android:textColorHint="@color/colorLightGrey"
-                    android:inputType="textCapSentences" />
+                    android:textColorHint="@color/colorLightGrey" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -67,18 +69,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                app:hintTextColor="@color/colorLightGrey"
-                android:textColorHint="@color/colorLightGrey"
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="10dp"
-                android:hint="Price(R)">
+                android:hint="Price(R)"
+                android:textColorHint="@color/colorLightGrey"
+                app:hintTextColor="@color/colorLightGrey">
 
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:inputType="textCapSentences"
                     android:textColor="@color/colorLightGrey"
-                    android:textColorHint="@color/colorLightGrey"
-                    android:inputType="textCapSentences" />
+                    android:textColorHint="@color/colorLightGrey" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -330,20 +332,20 @@
                 android:layout_marginEnd="10dp"
                 android:focusable="true"
                 android:focusableInTouchMode="true"
-                app:hintTextColor="@color/colorLightGrey"
-                android:textColorHint="@color/colorLightGrey"
                 android:hint="Description"
-                android:maxLines="11">
+                android:maxLines="11"
+                android:textColorHint="@color/colorLightGrey"
+                app:hintTextColor="@color/colorLightGrey">
 
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:focusable="true"
                     android:focusableInTouchMode="true"
-                    android:textColor="@color/colorLightGrey"
-                    android:textColorHint="@color/colorLightGrey"
                     android:inputType="textEmailAddress"
-                    android:maxLines="11" />
+                    android:maxLines="11"
+                    android:textColor="@color/colorLightGrey"
+                    android:textColorHint="@color/colorLightGrey" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -385,12 +387,12 @@
 
             </RelativeLayout>
 
-            <com.google.android.material.tabs.TabLayout
-                android:id="@+id/intro_tab_indicator"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                app:tabBackground="@drawable/indicator_selector" />
+            <!--            <com.google.android.material.tabs.TabLayout-->
+            <!--                android:id="@+id/intro_tab_indicator"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_gravity="center"-->
+            <!--                app:tabBackground="@drawable/indicator_selector" />-->
 
             <com.google.android.material.button.MaterialButton
                 style="@style/Widget.Shrine.Button"

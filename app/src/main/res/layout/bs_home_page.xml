@@ -89,17 +89,19 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <TextView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="14dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="9dp"
         android:layout_marginTop="32dp"
-        android:fontFamily="@font/gotham"
-        android:textSize="24sp"
-        app:drawableLeftCompat="@drawable/ic_notifications"
+        android:src="@drawable/default_profile_picture"
+        app:civ_border_color="@color/colorLightGrey"
+        app:civ_border_width="1.5dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/colorPrimaryDark" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -112,28 +114,15 @@
         app:layout_constraintStart_toStartOf="@+id/textView5"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
-<!--    <de.hdodenhof.circleimageview.CircleImageView-->
-<!--        android:id="@+id/imageView3"-->
-<!--        android:layout_width="58dp"-->
-<!--        android:layout_height="58dp"-->
-<!--        android:layout_gravity="center_horizontal"-->
-<!--        android:layout_marginTop="12dp"-->
-<!--        android:layout_marginEnd="32dp"-->
-<!--        android:src="@drawable/default_profile_picture"-->
-<!--        app:civ_border_color="@color/colorPrimaryDark"-->
-<!--        app:civ_border_width="1.5dp"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-        app:srcCompat="@drawable/default_profile_picture" />
 
     <Button
         android:id="@+id/imageView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/ic_cat_bg"
-        android:layout_marginTop="5dp"
-        android:text="My Items"
         android:layout_marginStart="42dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ic_cat_bg"
+        android:text="My Items"
         android:textColor="@color/colorLightGrey"
         app:layout_constraintStart_toEndOf="@+id/constraintLayout"
         app:layout_constraintTop_toTopOf="parent" />
@@ -155,7 +144,7 @@
         android:id="@+id/product_recycler"
         android:layout_width="0dp"
         android:layout_height="460dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="44dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imageView4"
@@ -163,21 +152,36 @@
         tools:listitem="@layout/bs_my_products" />
 
     <Button
-        android:layout_width="0dp"
+        android:id="@+id/post_btn"
+        android:layout_width="200dp"
         android:layout_height="55dp"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/cart_button_bg"
+        android:background="@drawable/bg"
         android:fontFamily="@font/gotham"
         android:padding="8dp"
         android:paddingEnd="24dp"
         android:text="Post Your Offering"
         android:textAllCaps="false"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/colorLightGrey"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.191"
         app:layout_constraintStart_toEndOf="@+id/constraintLayout"
-        app:layout_constraintTop_toBottomOf="@+id/product_recycler" />
+        app:layout_constraintTop_toBottomOf="@+id/product_recycler"
+        app:layout_constraintVertical_bias="0.588" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="58dp"
+        android:layout_height="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.733"
+        app:layout_constraintStart_toEndOf="@+id/post_btn"
+        app:layout_constraintTop_toTopOf="@+id/post_btn"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_notifications" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
