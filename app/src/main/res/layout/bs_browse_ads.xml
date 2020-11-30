@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BsMyItems">
+    tools:context=".BsBrowseAds">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -31,7 +31,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="My Items"
+                android:text="Categories"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -186,13 +186,78 @@
                     app:drawableRightCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
             </LinearLayout>
 
-            <androidx.recyclerview.widget.RecyclerView
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingStart="16dp"
-                android:paddingLeft="16dp"
-                tools:ignore="RtlSymmetry" />
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/colorLightGrey"
+                app:cardCornerRadius="10dp"
+                tools:ignore="ResourceName">
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:gravity="center_horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:contentDescription="@null"
+                            android:src="@drawable/poetry_drama" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="#607D8B"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="android book"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:contentDescription="@null"
+                            android:src="@drawable/poetry_drama" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="#607D8B"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Java"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
         </LinearLayout>
 
     </LinearLayout>

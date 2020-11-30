@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity android:name=".BsCustomerProfile"></activity>
-        <activity android:name=".BsMyItems" />
+        <activity android:name=".BsBrowseAds" />
         <activity android:name=".BsNotificationSettings" />
         <activity android:name=".messaging.BsMessageReceived" />
         <activity android:name=".messaging.BsMeChatInfo" />
