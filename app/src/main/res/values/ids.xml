@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="rb_female" type="id">Female</item>
+    <item name="rb_male" type="id">Male</item>
+    <item name="btn_privacyPolicy_get_started" type="id">Get Started</item>
+    <item name="btn_terms_get_started" type="id">Get Started</item>
+    <item name="txt_progress_get_started" type="id">Get Started ProgressB</item>
+    <item name="progress_bar_get_started" type="id">Get Started Progress Bar</item>
+    <item name="rg_gender_get_started" type="id">Get Started Gender</item>
+    <item name="image_layout_getting_started" type="id">Get Started Image</item>
+    <item name="et_location_get_started" type="id">Get Started Location</item>
+    <item name="et_date_of_birth_get_started" type="id">Get Started DOB</item>
+    <item name="et_cell_number_get_started" type="id">Get Started Cell</item>
+    <item name="et_fullname_get_started" type="id">Get Started Fullname</item>
+    <item name="image_getting_started" type="id">Get Started Profile image</item>
+    <item name="btn_create_profile_get_started" type="id">Get Started Profile Create</item>
+</resources>

@@ -6,10 +6,16 @@ import android.content.pm.PackageManager;
 
 import androidx.core.content.ContextCompat;
 
+import com.hosinc.shopperapp.shopper.app.UsGetStarted;
+
 
 public class Methods {
 
     private Context mContext;
+
+    public Methods(UsGetStarted usGetStarted) {
+
+    }
 
     public boolean checkIfAlreadyHavePermission() {
         int result = ContextCompat.checkSelfPermission(mContext, Manifest.permission.WRITE_EXTERNAL_STORAGE);
