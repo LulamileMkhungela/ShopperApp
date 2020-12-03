@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "648070355741",
+    "project_id": "eazibuy-app",
+    "storage_bucket": "eazibuy-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:648070355741:android:dfa28007d9e017d4165ff4",
+        "android_client_info": {
+          "package_name": "com.hosinc.shopperapp.shopper.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "648070355741-49if6lmg5t4jeu7hak20n0enq7p5mcp5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZ9b_e3joFX3fDJhKGyZJ1skpolFJxfm4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "648070355741-49if6lmg5t4jeu7hak20n0enq7p5mcp5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

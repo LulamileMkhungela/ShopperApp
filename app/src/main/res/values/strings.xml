@@ -10,5 +10,11 @@
     <!-- Strings used for fragments for navigation -->
 
     <string name="to_do_post">TODO</string>
+    <string name="minimum_password">your oassword must be atleast 6 characters</string>
+
+    <string name="register_swipe">Register</string>
+    <string name="register_button_text">Register</string>
+    <string name="login_swipe">Log In</string>
+    <string name="login_button_text">Log In</string>
 
 </resources>
