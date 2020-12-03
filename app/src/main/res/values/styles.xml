@@ -51,7 +51,4 @@
         <item name="android:background">@color/colorLightGrey</item>
     </style>
 
-    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
-        <item name="colorAccent">@color/colorLightGrey</item>
-    </style>
 </resources>

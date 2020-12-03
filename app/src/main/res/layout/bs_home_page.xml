@@ -1,187 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
-    tools:context=".homepage.BsHomePage">
+    android:background="#d4e9fc">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="top"
+        android:padding="2dp">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:background="@color/colorPrimary"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/write_post_home_nav"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="-2dp"
+            android:clickable="true"
+            android:drawablePadding="10dp"
+            android:focusable="true"
+            android:gravity="center_horizontal"
+            android:padding="12dp"
+            android:tint="@color/white"
+            app:srcCompat="@drawable/ic_edit"
+            tools:ignore="ContentDescription" />
 
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="50dp"
-            android:layout_height="100dp"
-            android:gravity="center"
-            android:rotation="270"
-            android:text="Parts"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toTopOf="@+id/textView"
-            app:layout_constraintEnd_toEndOf="@+id/textView"
-            app:layout_constraintHorizontal_bias="0.523"
-            app:layout_constraintStart_toStartOf="@+id/textView" />
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="50dp"
-            android:layout_height="100dp"
-            android:gravity="center"
-            android:rotation="270"
-            android:text="Gears"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toTopOf="@+id/textView2"
-            app:layout_constraintEnd_toEndOf="@+id/textView2"
-            app:layout_constraintHorizontal_bias="0.709"
-            app:layout_constraintStart_toStartOf="@+id/textView2" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="50dp"
-            android:layout_height="100dp"
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="8dp"
+            android:layout_toStartOf="@+id/write_post_home_nav"
+            android:layout_toEndOf="@+id/img_profile_image_home_nav"
+            android:background="@drawable/search_background"
+            android:focusableInTouchMode="true"
             android:fontFamily="@font/gotham"
             android:gravity="center"
-            android:rotation="270"
-            android:text="Body"
-            android:textColor="@color/colorAccent"
+            android:hint="Search"
+            android:inputType="textNoSuggestions"
+            android:textColor="@color/colorLightGrey"
             android:textSize="16sp"
-            app:layout_constraintBottom_toTopOf="@+id/textView3"
-            app:layout_constraintEnd_toEndOf="@+id/textView3"
-            app:layout_constraintHorizontal_bias="0.38"
-            app:layout_constraintStart_toStartOf="@+id/textView3" />
+            android:textStyle="normal"
+            tools:ignore="Autofill,HardcodedText,RelativeOverlap" />
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="32dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@drawable/ic_search"
-            app:tint="@color/colorPrimaryDark" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_profile_image_home_nav"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="6dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/default_profile_picture"
+            android:tint="@color/white"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="1.5dp"
+            tools:ignore="VectorDrawableCompat" />
+    </RelativeLayout>
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="50dp"
-            android:layout_height="100dp"
-            android:layout_marginBottom="80dp"
-            android:gravity="center"
-            android:rotation="270"
-            android:text="Cars"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toTopOf="@+id/imageView2"
-            app:layout_constraintEnd_toEndOf="@+id/imageView2"
-            app:layout_constraintStart_toStartOf="@+id/imageView2" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/textView5"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginStart="9dp"
-        android:layout_marginTop="32dp"
-        android:src="@drawable/default_profile_picture"
-        app:civ_border_color="@color/colorLightGrey"
-        app:civ_border_width="1.5dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:tint="@color/colorPrimaryDark" />
-
-    <TextView
-        android:layout_width="wrap_content"
+    <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+        android:id="@+id/bottomNavigation"
+        style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:fontFamily="@font/gotham"
-        android:textColor="@android:color/background_dark"
-        android:textSize="12sp"
-        android:visibility="invisible"
-        app:layout_constraintStart_toStartOf="@+id/textView5"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        app:mbn_backgroundBottomColor="#ffffff"
+        app:mbn_circleColor="#ffffff"
+        app:mbn_countBackgroundColor="#ff6f00"
+        app:mbn_countTextColor="#ffffff"
+        app:mbn_defaultIconColor="#90a4ae"
+        app:mbn_rippleColor="#2f424242"
+        app:mbn_selectedIconColor="#3c415e"
+        app:mbn_shadowColor="#1f212121" />
 
-
-    <Button
-        android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="42dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/ic_cat_bg"
-        android:text="Browse Ads"
-        android:textColor="@color/colorLightGrey"
-        app:layout_constraintStart_toEndOf="@+id/constraintLayout"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/cat_recycler"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/ic_cat_bg"
-        android:text="my ads"
-        android:textColor="@color/colorLightGrey"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
-        app:layout_constraintTop_toTopOf="@+id/imageView4" />
-
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/product_recycler"
-        android:layout_width="0dp"
-        android:layout_height="460dp"
-        android:layout_marginTop="44dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/imageView4"
-        app:layout_constraintTop_toBottomOf="@+id/cat_recycler"
-        tools:listitem="@layout/bs_my_products" />
-
-    <Button
-        android:id="@+id/post_btn"
-        android:layout_width="200dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/bg"
-        android:fontFamily="@font/gotham"
-        android:padding="8dp"
-        android:paddingEnd="24dp"
-        android:text="Post Your Offering"
-        android:textAllCaps="false"
-        android:textColor="@color/colorLightGrey"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.191"
-        app:layout_constraintStart_toEndOf="@+id/constraintLayout"
-        app:layout_constraintTop_toBottomOf="@+id/product_recycler"
-        app:layout_constraintVertical_bias="0.588" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="58dp"
-        android:layout_height="55dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.733"
-        app:layout_constraintStart_toEndOf="@+id/post_btn"
-        app:layout_constraintTop_toTopOf="@+id/post_btn"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/ic_notifications" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

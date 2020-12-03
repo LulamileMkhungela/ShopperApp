@@ -23,8 +23,6 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.hosinc.shopperapp.shopper.app.adapters.ShopperContract;
 import com.hosinc.shopperapp.shopper.app.biz.profile.ActivityForgotPassword;
-import com.hosinc.shopperapp.shopper.app.biz.profile.BsUpdateProfile;
-import com.hosinc.shopperapp.shopper.app.homepage.BsHomePage;
 
 public class BsUsLoginRegister extends AppCompatActivity {
 
@@ -119,7 +117,7 @@ public class BsUsLoginRegister extends AppCompatActivity {
                                                     }
                                                 });
                                     }
-                                    Intent i = new Intent(BsUsLoginRegister.this, HomeNavigation.class);
+                                    Intent i = new Intent(BsUsLoginRegister.this, UsGetStarted.class);
                                     startActivity(i);
                                     Snackbar snackbar = Snackbar
                                             .make(rootLayout, "Hooray,Welcome", Snackbar.LENGTH_LONG);
