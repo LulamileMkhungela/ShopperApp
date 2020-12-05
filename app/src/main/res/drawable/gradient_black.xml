@@ -4,5 +4,5 @@
         android:angle="270"
         android:startColor="#1a000000"
         android:centerColor="#1a000000"
-        android:endColor="@color/gray"/>
+        android:endColor="#e7e7e7"/>
 </shape>
