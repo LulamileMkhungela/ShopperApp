@@ -22,7 +22,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".UsGetStarted"></activity>
+        <activity android:name=".BsOthersPostedItem"></activity>
+        <activity android:name=".BsWelcomePopUp" />
+        <activity android:name=".UsGetStarted" />
         <activity android:name=".BsUsLoginRegister" />
         <activity android:name=".BsCustomerProfile" />
         <activity android:name=".BsBrowseAds" />

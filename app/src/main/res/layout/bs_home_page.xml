@@ -7,60 +7,89 @@
     android:background="#d4e9fc">
 
     <RelativeLayout
+        android:id="@+id/action_layout"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_gravity="top"
-        android:padding="2dp">
+        android:layout_height="55dp"
+        android:background="@color/colorPrimaryDark">
 
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/write_post_home_nav"
+        <ImageView
+            android:id="@+id/logo_dashboard"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_alignParentEnd="true"
-            android:layout_marginEnd="-2dp"
-            android:clickable="true"
-            android:drawablePadding="10dp"
-            android:focusable="true"
-            android:gravity="center_horizontal"
-            android:padding="12dp"
-            android:tint="@color/white"
-            app:srcCompat="@drawable/ic_edit"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:padding="4dp"
+            android:src="@drawable/ic_short"
+            app:tint="@color/colorLightGrey" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/page_dashboard"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingStart="8dp"
+            android:paddingEnd="6dp"
+            android:src="@drawable/default_profile_picture"
             tools:ignore="ContentDescription" />
 
         <EditText
+            android:id="@+id/et_search_home"
             android:layout_width="match_parent"
-            android:layout_height="34dp"
-            android:layout_centerVertical="true"
-            android:layout_marginStart="14dp"
-            android:layout_marginEnd="8dp"
-            android:layout_toStartOf="@+id/write_post_home_nav"
-            android:layout_toEndOf="@+id/img_profile_image_home_nav"
-            android:background="@drawable/search_background"
-            android:focusableInTouchMode="true"
-            android:fontFamily="@font/gotham"
-            android:gravity="center"
-            android:hint="Search"
-            android:inputType="textNoSuggestions"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="3dp"
+            android:background="@color/white"
+            android:hint="search"
+            android:inputType="textPersonName"
+            android:paddingStart="12dp"
+            android:paddingEnd="6dp"
             android:textColor="@color/colorLightGrey"
-            android:textSize="16sp"
-            android:textStyle="normal"
-            tools:ignore="Autofill,HardcodedText,RelativeOverlap" />
+            android:textColorHint="@color/colorLightGrey"
+            android:visibility="gone"
+            tools:ignore="Autofill" />
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/img_profile_image_home_nav"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:layout_alignParentStart="true"
-            android:layout_centerVertical="true"
-            android:layout_marginStart="15dp"
-            android:layout_marginEnd="6dp"
-            android:clickable="true"
-            android:focusable="true"
-            android:src="@drawable/default_profile_picture"
-            android:tint="@color/white"
-            app:civ_border_color="@color/white"
-            app:civ_border_width="1.5dp"
-            tools:ignore="VectorDrawableCompat" />
+        <LinearLayout
+            android:id="@+id/icons_layout_dashboard"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_toStartOf="@+id/logo_dashboard">
+
+<!--            <ImageView-->
+<!--                android:id="@+id/courses_button"-->
+<!--                android:layout_width="30dp"-->
+<!--                android:layout_height="25dp"-->
+<!--                android:layout_marginEnd="4dp"-->
+<!--                android:background="@drawable/ic_categories"-->
+<!--                android:visibility="visible"-->
+<!--                tools:ignore="ContentDescription" />-->
+
+            <ImageView
+                android:id="@+id/search_icon_home"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:visibility="visible"
+                app:srcCompat="@drawable/ic_search_black_24dp"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/close_icon_home"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignEnd="@+id/et_search_home"
+            android:layout_marginEnd="8dp"
+            android:paddingStart="12dp"
+            android:paddingTop="12dp"
+            android:paddingEnd="1dp"
+            android:paddingBottom="12dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_close_accent"
+            tools:ignore="ContentDescription" />
     </RelativeLayout>
 
     <com.etebarian.meowbottomnavigation.MeowBottomNavigation
@@ -70,10 +99,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_gravity="bottom"
-        app:mbn_backgroundBottomColor="#ffffff"
+        app:mbn_backgroundBottomColor="#d4e9fc"
         app:mbn_circleColor="#ffffff"
         app:mbn_countBackgroundColor="#ff6f00"
-        app:mbn_countTextColor="#ffffff"
+        app:mbn_countTextColor="@color/mdtp_dark_gray"
         app:mbn_defaultIconColor="#90a4ae"
         app:mbn_rippleColor="#2f424242"
         app:mbn_selectedIconColor="#3c415e"

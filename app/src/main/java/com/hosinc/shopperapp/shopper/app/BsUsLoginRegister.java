@@ -8,21 +8,35 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+//import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
+//import com.google.android.gms.auth.api.signin.GoogleSignInClient;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+import com.google.android.gms.common.SignInButton;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.android.material.snackbar.Snackbar;
+import com.google.firebase.auth.AuthCredential;
+import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.auth.GoogleAuthProvider;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.hosinc.shopperapp.shopper.app.adapters.ShopperContract;
 import com.hosinc.shopperapp.shopper.app.biz.profile.ActivityForgotPassword;
+
 
 public class BsUsLoginRegister extends AppCompatActivity {
 
@@ -36,21 +50,28 @@ public class BsUsLoginRegister extends AppCompatActivity {
     private RelativeLayout rootLayout;
     private ProgressBar progressBar;
     private Boolean isLogin = true;
+//    private CallbackManager mCallbackManager;
+//    GoogleSignInClient mGoogleSignInClient;
+//    LoginButton loginButton;
+//    SignInButton signInButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.us_bs_login_register);
+        //Get Firebase auth instance
+        auth = FirebaseAuth.getInstance();
 
         signIn = findViewById(R.id.sign_in);
         signUp = findViewById(R.id.sign_up);
-        signIn_signUp_txt = findViewById(R.id.signin_signup_txt);
+//        signIn_signUp_txt = findViewById(R.id.signin_signup_txt);
         forgot_password = findViewById(R.id.txt_forgot_password_login);
         signIn_signUp_btn = findViewById(R.id.sign_in_sign_up_btn);
         etEmail = findViewById(R.id.et_email_login);
         etPassword = findViewById(R.id.et_password_login);
         rootLayout = findViewById(R.id.root_login);
         progressBar = findViewById(R.id.progress_bar_login);
+        ImageView btnGooglelogin = findViewById(R.id.btSignInGoogleCustom);
 
         progressBar.setVisibility(View.GONE);
 
@@ -137,7 +158,7 @@ public class BsUsLoginRegister extends AppCompatActivity {
             signIn.setBackgroundColor(Color.parseColor("#42B883"));
             signUp.setTextColor(Color.parseColor("#E7E7E7"));
             signUp.setBackgroundResource(R.drawable.bordershape);
-            signIn_signUp_txt.setText(R.string.login_swipe);
+//            signIn_signUp_txt.setText(R.string.login_swipe);
             signIn_signUp_btn.setText(R.string.login_button_text);
             forgot_password.setVisibility(View.VISIBLE);
         });
@@ -146,7 +167,7 @@ public class BsUsLoginRegister extends AppCompatActivity {
             isLogin = false;
             signUp.setBackgroundColor(Color.parseColor("#42B883"));
             signIn.setBackgroundResource(R.drawable.bordershape);
-            signIn_signUp_txt.setText(R.string.register_swipe);
+//            signIn_signUp_txt.setText(R.string.register_swipe);
             signIn_signUp_btn.setText(R.string.register_button_text);
             forgot_password.setVisibility(View.INVISIBLE);
         });
@@ -182,6 +203,78 @@ public class BsUsLoginRegister extends AppCompatActivity {
             progressBar.setVisibility(View.GONE);
             return;
         }
+
+//        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+//                .requestIdToken(getString(R.string.default_web_client_id))
+//                .requestEmail()
+//                .build();
+//        btnGooglelogin.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent signInIntent = mGoogleSignInClient.getSignInIntent();
+//                startActivityForResult(signInIntent, 101);
+//            }
+//        });
+//
+//        mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
+//
+////        signInButton = findViewById(R.id.btSignInGoogle);
+//
+//        authListener = new FirebaseAuth.AuthStateListener() {
+//            @Override
+//            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+//                FirebaseUser user = firebaseAuth.getCurrentUser();
+//                if (user != null) {
+//                    // user auth state is changed - user is not null
+//                    startActivity(new Intent(BsUsLoginRegister.this, HomeNavigation.class));
+//                }
+//            }
+//        };
+//
+////        signInButton.setOnClickListener(new View.OnClickListener() {
+////            @Override
+////            public void onClick(View v) {
+////                Intent signInIntent = mGoogleSignInClient.getSignInIntent();
+////                startActivityForResult(signInIntent, 101);
+////            }
+////        });
+//
+//        private void firebaseAuthWithGoogle(GoogleSignInAccount acct) {
+//
+//            AuthCredential credential = GoogleAuthProvider.getCredential(acct.getIdToken(), null);
+//            auth.signInWithCredential(credential)
+//                    .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+//                        @Override
+//                        public void onComplete(@NonNull Task<AuthResult> task) {
+//                            if (task.isSuccessful()) {
+//
+//                                boolean newUser = task.getResult().getAdditionalUserInfo().isNewUser();
+//                                if (newUser) {
+//                                    startActivity(new Intent(BsUsLoginRegister.this, UsGetStarted.class));
+//                                } else {
+//                                    FirebaseUser user = auth.getCurrentUser();
+//                                    assert user != null;
+//                                    if (user.getDisplayName() != null) {
+//                                        Toast.makeText(getApplicationContext(), "Welcome back " + user.getDisplayName(), Toast.LENGTH_LONG).show();
+//                                    } else {
+//                                        Toast.makeText(getApplicationContext(), "Welcome back " + user.getEmail(), Toast.LENGTH_LONG).show();
+//                                    }
+//                                    // Sign in success, update UI with the signed-in user's information
+//                                    Intent intent = new Intent(BsUsLoginRegister.this, HomeNavigation.class);
+//
+//                                    intent.putExtra("user", user);
+//                                    startActivity(intent);
+//                                }
+//
+//                            } else {
+//                                // If sign in fails, display a message to the user.
+//                                Toast.makeText(getApplicationContext(), "Sign In Failed", Toast.LENGTH_LONG).show();
+//                            }
+//
+//                            // ...
+//                        }
+//                    });
+//        }
 
         //create user
         auth.createUserWithEmailAndPassword(email, password)

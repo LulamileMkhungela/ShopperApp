@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="6dp"
     tools:context=".HomeNavigation">
 
 
@@ -13,15 +12,12 @@
         android:layout_width="0dp"
         android:layout_height="40dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/search_bg"
         android:drawableStart="@drawable/ic_search_black_24dp"
         android:drawablePadding="8dp"
-        android:ems="10"
         android:hint="@android:string/search_go"
         android:inputType="textPersonName"
-        android:paddingStart="16dp"
         app:layout_constraintEnd_toStartOf="@+id/imageView3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
@@ -106,7 +102,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_gravity="bottom"
-                app:mbn_backgroundBottomColor="#ffffff"
+                app:mbn_backgroundBottomColor="#d4e9fc"
                 app:mbn_circleColor="#ffffff"
                 app:mbn_countBackgroundColor="#ff6f00"
                 app:mbn_countTextColor="#ffffff"

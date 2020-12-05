@@ -10,30 +10,29 @@
     <!-- Strings used for fragments for navigation -->
 
     <string name="to_do_post">TODO</string>
-    <string name="minimum_password">your oassword must be atleast 6 characters</string>
 
-    <string name="register_swipe">Register</string>
-    <string name="register_button_text">Register</string>
-    <string name="login_swipe">Log In</string>
-    <string name="login_button_text">Log In</string>
     <string name="report_we_always_enjoy_hearing_any_feedback_queries_or_technical_problems_with_the_application">We always enjoy hearing any Feedback,queries or technical problems with the Application.</string>
     <string name="report_your_name">Your name</string>
+    <string name="report_your_feedback">Your feedback</string>
+
     <string name="back_to_login_on_forgot">Back</string>
     <string name="submit_forgot_password">Submit</string>
-    <string name="report_your_feedback">Your feedback</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="minimum_password">please insert at least 6 digits password</string>
+    <string name="terms_amp_conditions_settings">Terms of Use</string>
+    <string name="register_button_text">Register</string>
+    <string name="login_button_text">Log In</string>
     <string name="feedback_heading">FeedBack</string>
-    <item name="rb_female" type="id">Female</item>
-    <item name="rb_male" type="id">Male</item>
-    <item name="btn_privacyPolicy_get_started" type="id">Get Started</item>
-    <item name="btn_terms_get_started" type="id">Get Started</item>
-    <item name="txt_progress_get_started" type="id">Get Started ProgressB</item>
-    <item name="progress_bar_get_started" type="id">Get Started Progress Bar</item>
-    <item name="rg_gender_get_started" type="id">Get Started Gender</item>
-    <item name="image_layout_getting_started" type="id">Get Started Image</item>
-    <item name="et_location_get_started" type="id">Get Started Location</item>
-    <item name="et_date_of_birth_get_started" type="id">Get Started DOB</item>
-    <item name="et_cell_number_get_started" type="id">Get Started Cell</item>
-    <item name="et_fullname_get_started" type="id">Get Started Fullname</item>
-    <item name="image_getting_started" type="id">Get Started Profile image</item>
-    <item name="btn_create_profile_get_started" type="id">Get Started Profile Create</item>
+    <string name="user_privacy_policy">Privacy Policy</string>
+    <string name="tex_getting_started">Getting Started</string>
+    <string name="txt_fullnames">FullNames</string>
+    <string name="txt_date_of_birth">Date of birth</string>
+    <string name="txt_cell_number">Cell Number</string>
+    <string name="txt_location">Location</string>
+    <string name="btn_save">Save</string>
+    <string name="txt_amp"><![CDATA[&]]></string>
+    <string name="we_need_your_registered_email_address_to_send_reset_password_instructions">We need your Registered Email address to send reset password instructions</string>
+    <string name="email_address_forgot_password">Email address</string>
+    <!-- TODO: Remove or change this placeholder text -->
 </resources>

@@ -37,18 +37,20 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/gotham"
                     android:gravity="center"
-                    android:text="Create Profile"
+                    android:text="@string/tex_getting_started"
                     android:textColor="@color/white"
                     android:textSize="32sp"
                     tools:ignore="MissingPrefix" />
 
                 <LinearLayout
+                    android:id="@+id/image_layout_getting_started"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:orientation="horizontal">
 
                     <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/image_getting_started"
                         android:layout_width="80dp"
                         android:layout_height="100dp"
                         android:layout_gravity="center_horizontal"
@@ -60,14 +62,19 @@
                         app:civ_border_width="1.5dp" />
 
                     <ProgressBar
+                        android:id="@+id/progress_bar_get_started"
                         android:layout_width="wrap_content"
                         android:layout_height="100dp"
                         android:layout_marginStart="28dp"
+                        android:layout_marginLeft="28dp"
+                        android:elevation="4dp"
                         android:indeterminate="false"
                         android:indeterminateDrawable="@drawable/progress"
-                        android:indeterminateDuration="720" />
+                        android:indeterminateDuration="720"
+                        tools:ignore="UnusedAttribute" />
 
                     <TextView
+                        android:id="@+id/txt_progress_get_started"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="33dp"
@@ -88,9 +95,10 @@
                     android:textColorHint="@color/white">
 
                     <EditText
+                        android:id="@+id/et_fullname_get_started"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Fullnames"
+                        android:hint="@string/txt_fullnames"
                         android:importantForAutofill="no"
                         android:inputType="text"
                         android:maxLength="25"
@@ -109,9 +117,10 @@
                     android:textColorHint="@color/white">
 
                     <EditText
+                        android:id="@+id/et_date_of_birth_get_started"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Date of birth"
+                        android:hint="@string/txt_date_of_birth"
                         android:importantForAutofill="no"
                         android:inputType="date"
                         android:maxLength="25"
@@ -125,14 +134,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="20dp"
-                    android:fontFamily="@font/gotham"
                     android:textColor="@color/white"
                     android:textColorHint="@color/white">
 
                     <EditText
+                        android:id="@+id/et_cell_number_get_started"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Cell number"
+                        android:hint="@string/txt_cell_number"
                         android:importantForAutofill="no"
                         android:inputType="number"
                         android:textColor="@color/white"
@@ -149,18 +158,19 @@
                     android:textColorHint="@color/white">
 
                     <EditText
+                        android:id="@+id/et_location_get_started"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/gotham"
-                        android:hint="location"
+                        android:hint="@string/txt_location"
                         android:importantForAutofill="no"
-                        android:inputType="textCapWords"
+                        android:inputType="textAutoComplete"
                         android:textColor="@color/white"
                         android:textColorHint="@color/white" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <RadioGroup
+                    android:id="@+id/rg_gender_get_started"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
@@ -169,19 +179,21 @@
                     android:orientation="horizontal">
 
                     <RadioButton
+                        android:id="@+id/rb_female"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:button="@drawable/radio_button_selector"
-                        android:text="Female"
+                        android:text="@string/female"
                         android:textColor="@drawable/radio_button_color_selector" />
 
                     <RadioButton
+                        android:id="@+id/rb_male"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:button="@drawable/radio_button_selector"
-                        android:text="Male"
+                        android:text="@string/male"
                         android:textColor="@drawable/radio_button_color_selector" />
 
                 </RadioGroup>
@@ -195,17 +207,19 @@
                     android:orientation="horizontal">
 
                     <Button
+                        android:id="@+id/btn_terms_get_started"
                         android:layout_width="wrap_content"
                         android:layout_height="38dp"
                         android:layout_gravity="center"
                         android:layout_marginEnd="8dp"
                         android:background="@drawable/et_ui"
+                        android:onClick="onClickTerms"
                         android:paddingStart="8dp"
                         android:paddingLeft="8dp"
                         android:paddingRight="8dp"
-                        android:text="Terms conditions"
+                        android:text="@string/terms_amp_conditions_settings"
                         android:textAllCaps="false"
-                        android:textColor="@color/white"
+                        android:textColor="@color/colorLightGrey"
                         android:textSize="16sp" />
 
                     <TextView
@@ -213,39 +227,43 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:fontFamily="@font/gotham"
-                        android:text="&amp;"
-                        android:textColor="@color/white" />
+                        android:text="@string/txt_amp"
+                        android:textColor="@color/colorLightGrey" />
 
                     <Button
+                        android:id="@+id/btn_privacyPolicy_get_started"
                         android:layout_width="wrap_content"
                         android:layout_height="38dp"
                         android:layout_gravity="center"
                         android:layout_marginStart="8dp"
                         android:background="@drawable/et_ui"
+                        android:onClick="buttonGetStartedPrivacyPolicy"
                         android:paddingStart="8dp"
                         android:paddingLeft="8dp"
                         android:paddingRight="8dp"
-                        android:text="Privacy policy"
+                        android:text="@string/user_privacy_policy"
                         android:textAllCaps="false"
-                        android:textColor="@color/white"
+                        android:textColor="@color/colorLightGrey"
                         android:textSize="16sp" />
 
                 </LinearLayout>
 
+
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_create_profile_get_started"
+                    style="@style/Widget.Shrine.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="28dp"
                     android:layout_marginBottom="12dp"
-                    android:background="@drawable/button_shape_white"
+                    android:background="@drawable/roundedbottomnav"
                     android:fontFamily="@font/gotham"
                     android:padding="10dp"
-                    android:text="save"
+                    android:text="@string/btn_save"
                     android:textAllCaps="false"
                     android:textColor="#FFF"
                     android:textSize="18sp" />
-
             </LinearLayout>
 
         </FrameLayout>

@@ -1,10 +1,5 @@
 package com.hosinc.shopperapp.shopper.app;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-
 import android.Manifest;
 import android.app.DatePickerDialog;
 import android.content.Context;
@@ -25,6 +20,11 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
 import com.bumptech.glide.Glide;
 import com.google.firebase.auth.FirebaseAuth;
@@ -50,7 +50,6 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class UsGetStarted extends AppCompatActivity {
 
 
-
     private static final String TAG = "ActivityGetStarted";
     private static final int REQUEST_CODE_ICON = 19;
     EditText etDateOfBirth;
@@ -70,6 +69,7 @@ public class UsGetStarted extends AppCompatActivity {
     private int lYear, lMonth, lDay;
     private Date limit, dob;
     private EditText etFullName, etCellphone, etLocated;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -316,6 +316,7 @@ public class UsGetStarted extends AppCompatActivity {
     public Double RoundOff(Double val, int decimals) {
         return new BigDecimal(val.toString()).setScale(decimals, RoundingMode.HALF_UP).doubleValue();
     }
+
     public void buttonGetStartedPrivacyPolicy(View view) {
         privacyButton = findViewById(R.id.btn_privacyPolicy_get_started);
         privacyButton.setOnClickListener(v -> {
