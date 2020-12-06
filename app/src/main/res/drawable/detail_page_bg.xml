@@ -2,8 +2,7 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
 
     <gradient android:startColor="@color/colorAccent"
-        android:endColor="@color/mdtp_accent_color
-"/>
+        android:endColor="@color/colorPrimaryDark"/>
 
     <corners android:topLeftRadius="50dp"
         android:topRightRadius="50dp"/>

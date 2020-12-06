@@ -6,7 +6,6 @@
     <string name="intro_next">Next</string>
     <string name="sub_text">TextView</string>
     <string name="heading_textview">TextView</string>
-    <string name="title_activity_bs_services">BsServices</string>
     <!-- Strings used for fragments for navigation -->
 
     <string name="to_do_post">TODO</string>
@@ -17,8 +16,8 @@
 
     <string name="back_to_login_on_forgot">Back</string>
     <string name="submit_forgot_password">Submit</string>
-    <string name="male">Male</string>
-    <string name="female">Female</string>
+    <string name="male">User</string>
+    <string name="female">Registered</string>
     <string name="minimum_password">please insert at least 6 digits password</string>
     <string name="terms_amp_conditions_settings">Terms of Use</string>
     <string name="register_button_text">Register</string>
@@ -34,5 +33,6 @@
     <string name="txt_amp"><![CDATA[&]]></string>
     <string name="we_need_your_registered_email_address_to_send_reset_password_instructions">We need your Registered Email address to send reset password instructions</string>
     <string name="email_address_forgot_password">Email address</string>
+    <string name="unregistered">Unregistered</string>
     <!-- TODO: Remove or change this placeholder text -->
 </resources>

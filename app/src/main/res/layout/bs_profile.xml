@@ -29,14 +29,13 @@
                     android:src="@drawable/img_post"
                     tools:ignore="ContentDescription" />
 
-                <Button
+                <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginTop="17dp"
-                    android:layout_marginEnd="17dp"
-                    android:background="@drawable/ic_picture_placeholder_svg"
-                    android:visibility="invisible" />
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/settings"/>
 
                 <RelativeLayout
                     android:layout_width="130dp"
@@ -72,16 +71,14 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="44dp" />
 
-                <Button
-                    style="@android:style/Widget.Button.Toggle"
+                <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_below="@+id/bannerImage"
                     android:layout_alignParentEnd="true"
                     android:layout_marginTop="12dp"
-                    android:layout_marginEnd="6dp"
-                    app:backgroundTint="@color/colorLightGrey"
-                    android:background="@drawable/ic_edit" />
+                    android:src="@drawable/ic_edit"
+                    android:layout_marginEnd="8dp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -261,7 +258,6 @@
 
 
         <LinearLayout
-            android:id="@+id/statsLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/lMainSeparator"
@@ -318,107 +314,107 @@
         </LinearLayout>
 
 
-        <RelativeLayout
-            android:id="@+id/collectionLay"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/statsLayout"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="34dp">
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/collectionLay"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/statsLayout"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="34dp">-->
 
-            <ImageView
-                android:id="@+id/icon_ar"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:src="@drawable/archive" />
+<!--            <ImageView-->
+<!--                android:id="@+id/icon_ar"-->
+<!--                android:layout_width="25dp"-->
+<!--                android:layout_height="25dp"-->
+<!--                android:src="@drawable/archive" />-->
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginStart="16dp"
-                android:layout_toEndOf="@id/icon_ar"
-                android:text="Colections"
-                android:textColor="@color/colorLightGrey"
-                android:textSize="20sp" />
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginStart="16dp"-->
+<!--                android:layout_toEndOf="@id/icon_ar"-->
+<!--                android:text="Colections"-->
+<!--                android:textColor="@color/colorLightGrey"-->
+<!--                android:textSize="20sp" />-->
 
-            <ImageView
-                android:layout_width="16dp"
-                android:layout_height="16dp"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:layout_marginEnd="12dp"
-                android:src="@drawable/arrow_dark"
-                app:tint="@color/colorLightGrey" />
+<!--            <ImageView-->
+<!--                android:layout_width="16dp"-->
+<!--                android:layout_height="16dp"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginEnd="12dp"-->
+<!--                android:src="@drawable/arrow_dark"-->
+<!--                app:tint="@color/colorLightGrey" />-->
 
-        </RelativeLayout>
+<!--        </RelativeLayout>-->
 
-        <RelativeLayout
-            android:id="@+id/settingsLay"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/collectionLay"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="34dp">
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/settingsLay"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/collectionLay"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="34dp">-->
 
-            <ImageView
-                android:id="@+id/icon_set"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:src="@drawable/settings" />
+<!--            <ImageView-->
+<!--                android:id="@+id/icon_set"-->
+<!--                android:layout_width="25dp"-->
+<!--                android:layout_height="25dp"-->
+<!--                android:src="@drawable/settings" />-->
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginStart="16dp"
-                android:layout_toEndOf="@id/icon_set"
-                android:text="Settings"
-                android:textColor="@color/colorLightGrey"
-                android:textSize="20sp" />
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginStart="16dp"-->
+<!--                android:layout_toEndOf="@id/icon_set"-->
+<!--                android:text="Settings"-->
+<!--                android:textColor="@color/colorLightGrey"-->
+<!--                android:textSize="20sp" />-->
 
-            <ImageView
-                android:layout_width="16dp"
-                android:layout_height="16dp"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:layout_marginEnd="12dp"
-                android:src="@drawable/arrow_dark"
-                app:tint="@color/colorLightGrey" />
-        </RelativeLayout>
+<!--            <ImageView-->
+<!--                android:layout_width="16dp"-->
+<!--                android:layout_height="16dp"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginEnd="12dp"-->
+<!--                android:src="@drawable/arrow_dark"-->
+<!--                app:tint="@color/colorLightGrey" />-->
+<!--        </RelativeLayout>-->
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/settingsLay"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="34dp">
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/settingsLay"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="34dp">-->
 
-            <ImageView
-                android:id="@+id/icon_sh"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:src="@drawable/shield" />
+<!--            <ImageView-->
+<!--                android:id="@+id/icon_sh"-->
+<!--                android:layout_width="25dp"-->
+<!--                android:layout_height="25dp"-->
+<!--                android:src="@drawable/shield" />-->
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginStart="16dp"
-                android:layout_toEndOf="@id/icon_sh"
-                android:text="Help&amp;Support"
-                android:textColor="@color/colorLightGrey"
-                android:textSize="20sp" />
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginStart="16dp"-->
+<!--                android:layout_toEndOf="@id/icon_sh"-->
+<!--                android:text="Help&amp;Support"-->
+<!--                android:textColor="@color/colorLightGrey"-->
+<!--                android:textSize="20sp" />-->
 
-            <ImageView
-                android:layout_width="16dp"
-                android:layout_height="16dp"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:layout_marginEnd="12dp"
-                android:src="@drawable/arrow_dark"
-                app:tint="@color/colorLightGrey" />
-        </RelativeLayout>
+<!--            <ImageView-->
+<!--                android:layout_width="16dp"-->
+<!--                android:layout_height="16dp"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginEnd="12dp"-->
+<!--                android:src="@drawable/arrow_dark"-->
+<!--                app:tint="@color/colorLightGrey" />-->
+<!--        </RelativeLayout>-->
 
         <!--        <RelativeLayout-->
         <!--            android:layout_width="match_parent"-->

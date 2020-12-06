@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BsBrowseAds">
+    tools:context=".BsBrowseAllAds">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,7 +17,7 @@
         <androidx.appcompat.widget.SearchView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:queryHint="Search for Title or Author" />
+            app:queryHint="Search" />
 
         <LinearLayout
             android:layout_width="match_parent"

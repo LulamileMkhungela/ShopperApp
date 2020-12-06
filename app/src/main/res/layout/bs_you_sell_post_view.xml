@@ -1,402 +1,248 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
-    android:background="@color/colorBackground"
+    android:background="@color/colorPrimary"
     tools:context=".BsYouSellPostView">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/tweet_detail_toolbar"
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardView1"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
-        android:elevation="4dp"
-        android:theme="@style/Widget.AppCompat.ActionBar"
-        app:popupTheme="@style/Theme.AppCompat.DayNight">
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardElevation="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="4dp"
+            android:elevation="8dp"
+            android:src="@drawable/ic_edit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/colorLightGrey" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="30dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/colorLightGrey" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="12dp"
+            android:layout_toEndOf="@+id/tweet_detail_toolbar_back_button"
+            android:gravity="center"
+            android:text="Your Offer Detail"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp">
 
             <ImageView
-                android:id="@+id/tweet_detail_toolbar_back_button"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:layout_alignParentStart="true"
-                android:layout_centerVertical="true"
-                android:adjustViewBounds="true"
-                android:gravity="center"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/ic_back_button_accent" />
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_post"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="4dp"
+                android:src="@drawable/default_profile_picture"
+                android:visibility="gone"
+                app:civ_border_color="@color/colorLightGrey"
+                app:civ_border_width="2dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_marginLeft="18dp"
-                android:layout_marginTop="18dp"
-                android:layout_toEndOf="@+id/tweet_detail_toolbar_back_button"
-                android:gravity="center"
-                android:text="Your Offer Detail"
-                android:textColor="@color/white"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                android:layout_marginEnd="8dp"
+                android:gravity="end"
+                android:text="21/12/2020"
+                android:textColor="@color/colorLightGrey"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
 
-            <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="6dp"
-                android:adjustViewBounds="true"
-                android:gravity="center"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/ic_edit" />
-        </RelativeLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
+    </com.google.android.material.card.MaterialCardView>
 
-    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="Clothing"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardView1" />
 
-    <RelativeLayout
+    <ImageView
+        android:id="@+id/plant_type"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginTop="1dp"
+        android:gravity="end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardView1"
+        app:srcCompat="@drawable/ic_baseline_more_vert_24"
+        app:tint="@color/colorLightGrey" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="48dp"
+        android:gravity="end"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardView1"
+        app:srcCompat="@drawable/ic_bookmark_border_black_24dp"
+        app:tint="@color/colorLightGrey" />
+
+    <TextView
+        android:id="@+id/plant_name_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Product Name"
+        android:textColor="@color/colorLightGrey"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/plant_type" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/button_shape_white"
+        android:fontFamily="@font/gotham"
+        android:text="Location : Johannesburg Area"
+        android:textColor="@color/colorLightGrey"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView3"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plant_name_view"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="R56"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/plant_name_view" />
+
+    <TextView
+        android:id="@+id/plant_desc"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/tweet_detail_toolbar">
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:ellipsize="end"
+        android:maxLines="5"
+        android:text="Here our in depth tutorial will teach you Android UI designing step by step starting with
+        XML basic, layout, widgets and attributes with examples. Following it you will learn different UI Design techniques, patterns  principles and finally we will show you lots of examples where we will discuss designing of
+         different Apps from scratch to finish."
+        android:textColor="@color/colorLightGrey"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="442dp" />
 
-        <ScrollView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true">
+    <View
+        style="@style/Divider"
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/colorLightGrey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/plant_desc" />
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
 
-                <!-- TWEET BODY -->
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/ic_cat_bg"
+        android:drawableTint="@color/colorLightGrey"
+        android:fontFamily="@font/gotham"
+        android:gravity="center"
+        android:text="pre-owned"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="15sp"
+        app:drawableEndCompat="@drawable/ic_baseline_verified_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/plant_desc" />
 
-                <RelativeLayout
-                    android:id="@+id/rlBody"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/ic_cat_bg"
+        android:drawableEnd="@drawable/ic_offline_pin_black_24dp"
+        android:drawableTint="@color/colorLightGrey"
+        android:elevation="8dp"
+        android:fontFamily="@font/gotham"
+        android:gravity="center"
+        android:text="available"
+        android:textColor="@android:color/background_dark"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView7"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="@+id/textView7" />
 
-                    <ImageView
-                        android:id="@+id/ivTweetedImageD"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:adjustViewBounds="true"
-                        android:scaleType="fitXY"
-                        app:srcCompat="@drawable/img_post" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/ic_cat_bg"
+        android:drawableEnd="@drawable/ic_offline_pin_black_24dp"
+        android:drawableTint="@color/colorLightGrey"
+        android:elevation="8dp"
+        android:fontFamily="@font/gotham"
+        android:gravity="center"
+        android:text="28/11/20"
+        android:textColor="@android:color/background_dark"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView10"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toTopOf="@+id/textView10" />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/ivTweetedImageD"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="6dp"
-                        android:text="11hrs ago"
-                        android:textColor="@color/colorLightGrey"
-                        android:textSize="16sp" />
 
-                    <ImageView
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
-                        android:layout_alignParentEnd="true"
-                        android:paddingStart="16dp"
-                        android:src="@drawable/tagfree"
-                        android:textColor="@color/colorLightGrey" />
-                </RelativeLayout>
-
-                <View
-                    android:id="@+id/vtSeparator1"
-                    android:layout_width="match_parent"
-                    android:layout_height="0.075dp"
-                    android:layout_below="@+id/rlBody"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:background="@color/colorLightGrey" />
-
-                <!--  INFO -->
-
-                <RelativeLayout
-                    android:id="@+id/rlTweetsInfo1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/vtSeparator1">
-
-                    <TextView
-                        android:id="@+id/usernameTextView1"
-                        style="@style/viewParent.headerText"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginEnd="10dp"
-                        android:text="What are you offering"
-                        android:textColor="@color/white"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        style="@style/viewParent.headerText"
-                        android:layout_below="@id/usernameTextView1"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginEnd="10dp"
-                        android:text="Clothes"
-
-                        android:textColor="@color/colorLightGrey"
-                        android:textSize="16sp" />
-
-                    <ImageView
-                        style="@style/viewParent"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginEnd="10dp"
-                        app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24"
-                        app:tint="@color/colorLightGrey" />
-                </RelativeLayout>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0.075dp"
-                    android:layout_below="@+id/rlTweetsInfo1"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:background="@color/colorLightGrey" />
-                <!--  INFO -->
-
-                <RelativeLayout
-                    android:id="@+id/rlTweetsInfo2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/rlTweetsInfo1"
-                    android:layout_marginTop="10dp">
-
-                    <TextView
-                        android:id="@+id/usernameTextView2"
-                        style="@style/viewParent.headerText"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginEnd="10dp"
-                        android:text="Description"
-                        android:textColor="@color/white"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        style="@style/viewParent.headerText"
-                        android:layout_below="@id/usernameTextView2"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginEnd="10dp"
-                        android:text="Joburg"
-                        android:textColor="@color/colorLightGrey"
-
-                        android:textSize="16sp" />
-
-                    <ImageView
-                        style="@style/viewParent"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginEnd="10dp"
-                        app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24"
-                        app:tint="@color/colorLightGrey" />
-
-                </RelativeLayout>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0.075dp"
-                    android:layout_below="@+id/rlTweetsInfo2"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:background="@color/colorLightGrey" />
-
-                <!--  INFO -->
-
-                <RelativeLayout
-                    android:id="@+id/rlTweetsInfo3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/rlTweetsInfo2"
-                    android:layout_marginTop="10dp">
-
-                    <TextView
-                        android:id="@+id/usernameTextView3"
-                        style="@style/viewParent.headerText"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginEnd="10dp"
-                        android:text="Price"
-                        android:textColor="@color/white"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        style="@style/viewParent.headerText"
-                        android:layout_below="@id/usernameTextView3"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginEnd="10dp"
-                        android:text="R200"
-
-                        android:textColor="@color/colorLightGrey"
-                        android:textSize="16sp" />
-
-                    <ImageView
-                        style="@style/viewParent"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginEnd="10dp"
-                        app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24"
-                        app:tint="@color/colorLightGrey" />
-
-                </RelativeLayout>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_below="@+id/rlTweetsInfo3"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:background="@color/colorDarkLine" />
-
-                <!--  INFO -->
-
-                <RelativeLayout
-                    android:id="@+id/rlTweetsInfo4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/rlTweetsInfo3"
-                    android:layout_marginTop="10dp">
-
-                    <TextView
-                        android:id="@+id/usernameTextView4"
-                        style="@style/viewParent.headerText"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginEnd="10dp"
-                        android:text="Location"
-                        android:textColor="@color/white"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        style="@style/viewParent.headerText"
-                        android:layout_below="@id/usernameTextView4"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginEnd="10dp"
-                        android:text="Joburg"
-
-                        android:textColor="@color/colorLightGrey"
-                        android:textSize="16sp" />
-
-                    <ImageView
-                        style="@style/viewParent"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginEnd="10dp"
-                        app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24"
-                        app:tint="@color/colorLightGrey" />
-
-                </RelativeLayout>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0.075dp"
-                    android:layout_below="@+id/rlTweetsInfo3"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:background="@color/colorLightGrey" />
-
-                <RelativeLayout
-                    android:id="@+id/rlTweetsInfo5"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/rlTweetsInfo4"
-                    android:layout_marginTop="10dp">
-
-                    <TextView
-                        android:id="@+id/usernameTextView5"
-                        style="@style/viewParent.headerText"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginEnd="10dp"
-                        android:text="Cell number"
-                        android:textColor="@color/white"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        style="@style/viewParent.headerText"
-                        android:layout_below="@id/usernameTextView5"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginEnd="10dp"
-                        android:text="0678997677"
-
-                        android:textColor="@color/colorLightGrey"
-                        android:textSize="16sp" />
-
-                    <ImageView
-                        style="@style/viewParent"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginEnd="10dp"
-                        app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24"
-                        app:tint="@color/colorLightGrey" />
-
-                </RelativeLayout>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0.075dp"
-                    android:layout_below="@+id/rlTweetsInfo4"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:background="@color/colorLightGrey" />
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/rlTweetsInfo5"
-                    android:layout_marginTop="10dp">
-
-                    <TextView
-                        android:id="@+id/usernameTextView6"
-                        style="@style/viewParent.headerText"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginEnd="10dp"
-                        android:text="Category"
-                        android:textColor="@color/white"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        style="@style/viewParent.headerText"
-                        android:layout_below="@id/usernameTextView6"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginEnd="10dp"
-                        android:text="Clothing"
-                        android:textColor="@color/colorLightGrey"
-                        android:textSize="16sp" />
-
-                    <ImageView
-                        style="@style/viewParent"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginEnd="10dp"
-                        app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24"
-                        app:tint="@color/colorLightGrey" />
-                </RelativeLayout>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0.075dp"
-                    android:layout_below="@+id/rlTweetsInfo5"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginTop="9dp"
-                    android:layout_marginEnd="0dp"
-                    android:layout_marginBottom="8dp"
-                    android:background="@color/colorLightGrey" />
-            </RelativeLayout>
-
-        </ScrollView>
-    </RelativeLayout>
-</RelativeLayout>
-
+</androidx.constraintlayout.widget.ConstraintLayout>

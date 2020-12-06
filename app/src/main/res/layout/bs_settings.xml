@@ -37,89 +37,269 @@
                     android:gravity="center_vertical"
                     android:text="Notifications"
                     android:textColor="@color/colorLightGrey"
+
+                    android:textSize="18sp"
                     android:textStyle="bold" />
 
             </LinearLayout>
 
+            <!--  INFO -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:id="@+id/usernameTextView1"
+                    style="@style/viewParent.headerText"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="What are "
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/viewParent.headerText"
+                    android:layout_below="@id/usernameTextView1"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="Text"
+                    android:textColor="@color/colorLightGrey"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    style="@style/viewParent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24"
+                    app:tint="@color/colorLightGrey" />
+            </RelativeLayout>
+
             <View
                 android:layout_width="match_parent"
-                android:layout_height="0.75dp"
-                android:layout_margin="6dp"
+                android:layout_height="0.075dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorLightGrey" />
+            <!--  INFO -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/usernameTextView2"
+                    style="@style/viewParent.headerText"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="Description"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/viewParent.headerText"
+                    android:layout_below="@id/usernameTextView2"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="Text"
+                    android:textColor="@color/colorLightGrey"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    style="@style/viewParent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24"
+                    app:tint="@color/colorLightGrey" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.075dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
                 android:background="@color/colorLightGrey" />
 
-            <LinearLayout
+            <!--  INFO -->
+
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="2dp"
-                android:orientation="vertical">
+                android:layout_marginTop="10dp">
 
+                <TextView
+                    android:id="@+id/usernameTextView3"
+                    style="@style/viewParent.headerText"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="Text"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/viewParent.headerText"
+                    android:layout_below="@id/usernameTextView3"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="Text"
+                    android:textColor="@color/colorLightGrey"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    style="@style/viewParent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24"
+                    app:tint="@color/colorLightGrey" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorDarkLine" />
+
+            <!--  INFO -->
+
+            <RelativeLayout
+                android:id="@+id/rlTweetsInfo4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/usernameTextView4"
+                    style="@style/viewParent.headerText"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="Enable Location"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/viewParent.headerText"
+                    android:layout_below="@id/usernameTextView4"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="Text"
+                    android:textColor="@color/colorLightGrey"
+                    android:textSize="12sp" />
 
                 <com.google.android.material.switchmaterial.SwitchMaterial
-                    style="@style/settingsText"
-                    android:checked="true"
-                    android:text="Notifications"
-                    android:textColor="@color/white"
-                    android:textSize="15sp"
-                    android:textStyle="italic" />
-            </LinearLayout>
+                    style="@style/viewParent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:checked="true" />
 
-            <LinearLayout
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.075dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorLightGrey" />
+
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="2dp"
-                android:orientation="vertical">
+                android:layout_marginTop="10dp">
 
-
-                <com.google.android.material.switchmaterial.SwitchMaterial
-                    style="@style/settingsText"
-                    android:checked="false"
-                    android:text="Notifications"
+                <TextView
+                    android:id="@+id/usernameTextView5"
+                    style="@style/viewParent.headerText"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="Show Cell number"
                     android:textColor="@color/white"
-                    android:textSize="15sp"
-                    android:textStyle="italic" />
-            </LinearLayout>
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="2dp"
-                android:orientation="vertical">
-
+                <TextView
+                    style="@style/viewParent.headerText"
+                    android:layout_below="@id/usernameTextView5"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="0678997677"
+                    android:textColor="@color/colorLightGrey"
+                    android:textSize="12sp" />
 
                 <CheckBox
-                    style="@style/settingsText"
-                    android:checked="false"
-                    android:text="Notifications"
-                    android:textColor="@color/white"
-                    android:textSize="15sp"
-                    android:textStyle="italic" />
-            </LinearLayout>
+                    style="@style/viewParent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:checked="true"
+                    app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24"
+                    app:tint="@color/colorLightGrey" />
 
-            <LinearLayout
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.075dp"
+                android:layout_below="@+id/rlTweetsInfo4"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorLightGrey" />
+
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="2dp"
-                android:orientation="vertical">
+                android:layout_marginTop="10dp">
 
-
-                <CheckBox
-                    style="@style/settingsText"
-                    android:checked="true"
-                    android:text="Notifications"
+                <TextView
+                    android:id="@+id/usernameTextView6"
+                    style="@style/viewParent.headerText"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="Category"
                     android:textColor="@color/white"
-                    android:textSize="15sp"
-                    android:textStyle="italic" />
-            </LinearLayout>
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/viewParent.headerText"
+                    android:layout_below="@id/usernameTextView6"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="Clothing"
+                    android:textColor="@color/colorLightGrey"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    style="@style/viewParent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24"
+                    app:tint="@color/colorLightGrey" />
+            </RelativeLayout>
 
             <!--            2nd layout-->
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
                 android:orientation="vertical"
                 android:padding="6dp">
 
@@ -140,80 +320,175 @@
                         android:gravity="center_vertical"
                         android:text="Legal agreements"
                         android:textColor="@color/colorLightGrey"
+                        android:textSize="18sp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
+                <!--legal-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16sp">
+
+                    <TextView
+                        android:id="@+id/usernameTextView01"
+                        style="@style/viewParent.headerText"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="Terms &amp; conditions"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        style="@style/viewParent.headerText"
+                        android:layout_below="@id/usernameTextView01"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="Text"
+                        android:textColor="@color/colorLightGrey"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        style="@style/viewParent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="10dp"
+                        app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24"
+                        app:tint="@color/colorLightGrey" />
+                </RelativeLayout>
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="0.75dp"
-                    android:layout_margin="6dp"
+                    android:layout_height="0.075dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
                     android:background="@color/colorLightGrey" />
+                <!--  INFO -->
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginTop="15dp"
-                    android:orientation="vertical">
-
+                    android:layout_marginTop="10dp">
 
                     <TextView
-                        style="@style/settingsText"
-                        android:text="Terms &amp; conditions"
-                        android:textColor="@color/white"
-                        android:textSize="15sp"
-                        android:textStyle="italic" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginTop="15dp"
-                    android:orientation="vertical">
-
-
-                    <TextView
-                        style="@style/settingsText"
+                        android:id="@+id/usernameTextView02"
+                        style="@style/viewParent.headerText"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="10dp"
                         android:text="Privacy policy"
                         android:textColor="@color/white"
-                        android:textSize="15sp"
-                        android:textStyle="italic" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginTop="15dp"
-                    android:orientation="vertical">
-
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
 
                     <TextView
-                        style="@style/settingsText"
+                        style="@style/viewParent.headerText"
+                        android:layout_below="@id/usernameTextView02"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="Text"
+                        android:textColor="@color/colorLightGrey"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        style="@style/viewParent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="10dp"
+                        app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24"
+                        app:tint="@color/colorLightGrey" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.075dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/colorLightGrey" />
+
+                <!--  INFO -->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/usernameTextView04"
+                        style="@style/viewParent.headerText"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="10dp"
                         android:text="Safety Guidelines"
                         android:textColor="@color/white"
-                        android:textSize="15sp"
-                        android:textStyle="italic" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginTop="15dp"
-                    android:orientation="vertical">
-
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
 
                     <TextView
-                        style="@style/settingsText"
+                        style="@style/viewParent.headerText"
+                        android:layout_below="@id/usernameTextView04"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="Text"
+                        android:textColor="@color/colorLightGrey"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        style="@style/viewParent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="10dp"
+                        app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24"
+                        app:tint="@color/colorLightGrey" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.075dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/colorLightGrey" />
+
+                <!--  INFO -->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/usernameTextView05"
+                        style="@style/viewParent.headerText"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="10dp"
                         android:text="Send Feedback"
                         android:textColor="@color/white"
-                        android:textSize="15sp"
-                        android:textStyle="italic" />
-                </LinearLayout>
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
 
+                    <TextView
+                        style="@style/viewParent.headerText"
+                        android:layout_below="@id/usernameTextView05"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="Text"
+                        android:textColor="@color/colorLightGrey"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        style="@style/viewParent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="10dp"
+                        app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24"
+                        app:tint="@color/colorLightGrey" />
+
+                </RelativeLayout>
 
             </LinearLayout>
         </LinearLayout>

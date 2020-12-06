@@ -35,7 +35,6 @@
             android:textSize="18sp" />
 
         <Button
-            android:id="@+id/save_bio_profile"
             style="@style/Widget.Shrine.Button"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"

@@ -15,14 +15,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.tabs.TabLayout;
-import com.hosinc.shopperapp.shopper.app.BsBrowseAds;
 import com.hosinc.shopperapp.shopper.app.BsUsLoginRegister;
-import com.hosinc.shopperapp.shopper.app.HomeNavigation;
-import com.hosinc.shopperapp.shopper.app.biz.profile.BsProfile;
 import com.hosinc.shopperapp.shopper.app.R;
-import com.hosinc.shopperapp.shopper.app.messaging.BsChatWithOther;
-import com.hosinc.shopperapp.shopper.app.messaging.BsMeChatInfo;
-import com.hosinc.shopperapp.shopper.app.registrationProcess.Register;
 
 import java.util.ArrayList;
 import java.util.List;
