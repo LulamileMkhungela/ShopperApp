@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login_background"
+    android:background="@color/colorBackground"
     tools:context=".biz.profile.BsSettings">
 
     <androidx.cardview.widget.CardView
@@ -37,7 +37,7 @@
                     android:gravity="center_vertical"
                     android:text="Notifications"
                     android:textColor="@color/colorLightGrey"
-                    android:textStyle="italic" />
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -140,7 +140,7 @@
                         android:gravity="center_vertical"
                         android:text="Legal agreements"
                         android:textColor="@color/colorLightGrey"
-                        android:textStyle="italic" />
+                        android:textStyle="bold" />
 
                 </LinearLayout>
 

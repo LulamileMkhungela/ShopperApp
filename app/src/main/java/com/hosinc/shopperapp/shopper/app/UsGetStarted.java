@@ -134,7 +134,7 @@ public class UsGetStarted extends AppCompatActivity {
                                 rgGender.findViewById(R.id.rb_male).performClick();
                             }
                             url = userInfo.getImageUrl();
-                            Picasso.get().load(url).error(R.drawable.ic_person_v2_svg).into(profileImage);
+                            Picasso.get().load(url).error(R.drawable.default_profile_picture).into(profileImage);
                         }
                     }
                 });
@@ -252,7 +252,7 @@ public class UsGetStarted extends AppCompatActivity {
             imageUri = data.getData();
             Log.d(TAG, "onActivityResult: " + imageUri.toString());
             Glide.with(UsGetStarted.this.getApplicationContext()).load(imageUri)
-                    .thumbnail(0.2f).error(R.drawable.ic_person_v2_svg).into(profileImage);
+                    .thumbnail(0.2f).error(R.drawable.default_profile_picture).into(profileImage);
         }
         super.onActivityResult(requestCode, resultCode, data);
     }

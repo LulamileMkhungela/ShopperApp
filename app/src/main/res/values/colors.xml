@@ -12,7 +12,7 @@
     <!--colors for light mode-->
 
     <color name="buttonsigninColor">#35495e</color>
-    <color name="iconsborderColor">#FF2E7979</color>
+    <color name="iconsborderColor">#1e90ff</color>
 
 
     <color name="textColor">#1B1B1B</color>

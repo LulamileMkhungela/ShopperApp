@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login_background"
+    android:background="@drawable/login_btn_theme"
     tools:context=".UsGetStarted">
 
     <ScrollView
@@ -59,7 +59,7 @@
                         android:src="@drawable/default_profile_picture"
                         android:tint="@color/colorLightGrey"
                         app:civ_border_color="@color/colorLightGrey"
-                        app:civ_border_width="1.5dp" />
+                        app:civ_border_width="2dp" />
 
                     <ProgressBar
                         android:id="@+id/progress_bar_get_started"
@@ -207,6 +207,7 @@
                     android:orientation="horizontal">
 
                     <Button
+                        style="@style/Widget.Shrine.Button"
                         android:id="@+id/btn_terms_get_started"
                         android:layout_width="wrap_content"
                         android:layout_height="38dp"
@@ -231,6 +232,7 @@
                         android:textColor="@color/colorLightGrey" />
 
                     <Button
+                        style="@style/Widget.Shrine.Button"
                         android:id="@+id/btn_privacyPolicy_get_started"
                         android:layout_width="wrap_content"
                         android:layout_height="38dp"

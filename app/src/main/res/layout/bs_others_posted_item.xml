@@ -1,416 +1,277 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark">
+    android:background="@color/colorPrimary"
+    tools:context=".BsOthersPostedItem">
 
-    <RelativeLayout
-        android:id="@+id/action_bar_cluster_desc"
-        android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:background="@color/colorPrimaryDark">
-
-        <ImageView
-            android:id="@+id/back_button_clustered"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_alignParentStart="true"
-            android:paddingStart="12dp"
-            android:paddingEnd="12dp"
-            android:src="@drawable/ic_back"
-            tools:ignore="ContentDescription" />
-
-        <TextView
-            android:id="@+id/action_title_clustered"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_toEndOf="@+id/back_button_clustered"
-            android:gravity="center_vertical"
-            android:paddingStart="12dp"
-            android:paddingEnd="12dp"
-            android:text="Item"
-            android:textColor="@color/white"
-            android:textSize="18sp" />
-
-        <androidx.appcompat.widget.SearchView
-            android:id="@+id/bt_save_clustered"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:layout_marginBottom="6dp"
-            android:textColor="@color/colorLightGrey" />
-    </RelativeLayout>
-
-    <ScrollView
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardView1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/action_bar_cluster_desc">
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardElevation="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        <androidx.appcompat.widget.SearchView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/colorLightGrey" />
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="28dp"
-                android:layout_alignTop="@+id/icon_clustered"
-                android:background="@drawable/gradient_top_black"
-                android:elevation="3dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="30dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/colorLightGrey" />
 
-                <ImageView
-                    android:id="@+id/bt_add_clustered"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_alignParentStart="true"
-                    android:elevation="3dp"
-                    android:padding="5dp"
-                    android:src="@drawable/tagfree"
-                    tools:ignore="ContentDescription" />
 
-                <ImageView
-                    android:id="@+id/bt_change_icon_clustered"
-                    android:layout_width="wrap_content"
-                    android:layout_height="28dp"
-                    android:layout_alignParentEnd="true"
-                    android:src="@drawable/ic_baseline_more_vert_24"
-                    tools:ignore="ContentDescription" />
-            </RelativeLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp">
 
             <ImageView
-                android:id="@+id/icon_clustered"
+                android:id="@+id/layout_image"
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
-                android:scaleType="centerCrop"
+                android:scaleType="fitXY"
                 android:src="@drawable/img_post"
-                tools:ignore="ContentDescription,UnusedAttribute" />
-
-            <LinearLayout
-                android:id="@+id/bts_layout_clustered"
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:layout_below="@+id/description_clustered"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/et_ui"
-                android:baselineAligned="false"
-                android:gravity="center">
-
-                <LinearLayout
-                    android:id="@+id/poll_layout_clustered"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center">
-
-                    <ImageView
-                        android:id="@+id/bt_like_img"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:adjustViewBounds="true"
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/ic_heart"
-                        tools:ignore="ContentDescription" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/quiz_layout_clustered"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center">
-
-                    <ImageView
-                        android:id="@+id/bt_pollz"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:adjustViewBounds="true"
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/ic_location_on_white_24dp"
-                        tools:ignore="ContentDescription" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/docs_layout_clustered"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center">
-
-                    <ImageView
-                        android:id="@+id/bt_comment_img"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:adjustViewBounds="true"
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/ic_heart"
-                        tools:ignore="ContentDescription" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/images_layout_clustered"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center">
-
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:adjustViewBounds="true"
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/ic_heart"
-                        tools:ignore="ContentDescription" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <ProgressBar
-                android:id="@+id/progress_clustered"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_centerInParent="true"
-                android:elevation="2dp"
-                android:visibility="gone" />
-
-            <TextView
-                android:id="@+id/progress_view_clustered"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:visibility="gone"
-                tools:ignore="RelativeOverlap" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="15dp"
-                android:layout_alignBottom="@+id/icon_clustered"
-                android:background="@drawable/gradient_black" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/privacy_text_clustered"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:layout_alignStart="@+id/icon_clustered"
-                android:layout_alignTop="@+id/created_text_clustered"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="8dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="4dp"
                 android:src="@drawable/default_profile_picture"
                 app:civ_border_color="@color/colorLightGrey"
-                app:civ_border_width="1.5dp" />
+                app:civ_border_width="2dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/created_text_clustered"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="171dp"
-                android:layout_marginTop="1dp"
-                android:layout_marginEnd="104dp"
-                android:layout_toStartOf="@+id/created_text_clustered"
-                android:ellipsize="end"
-                android:maxLines="1"
-                android:text="Counter dots"
-                android:textColor="@color/white"
-                android:textStyle="normal" />
-
-            <TextView
-                android:id="@+id/created_text_clustered"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/icon_clustered"
-                android:layout_alignParentEnd="true"
                 android:layout_marginEnd="8dp"
-                android:maxLines="1"
-                android:text="8/11/2020"
-                android:textColor="@color/white"
-                tools:ignore="RelativeOverlap" />
-
-            <EditText
-                android:id="@+id/title_clustered"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/icon_clustered"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="6dp"
-                android:layout_marginTop="28dp"
-                android:layout_marginEnd="6dp"
-                android:background="@null"
-                android:ellipsize="end"
-                android:fontFamily="sans-serif-light"
-                android:inputType="textPersonName"
-                android:maxLines="3"
-                android:text="Item "
+                android:gravity="end"
+                android:text="21/12/2020"
                 android:textColor="@color/colorLightGrey"
-                android:textSize="18sp"
                 android:textStyle="bold"
-                tools:ignore="Autofill,LabelFor" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
 
-            <View
-                style="@style/Divider"
-                android:layout_width="wrap_content"
-                android:layout_height="0.5dp"
-                android:layout_below="@+id/title_clustered"
-                android:layout_marginTop="12dp"
-                android:background="@color/colorLightGrey" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
+    </com.google.android.material.card.MaterialCardView>
 
-            <EditText
-                android:id="@+id/description_clustered"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/title_clustered"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="6dp"
-                android:layout_marginTop="23dp"
-                android:layout_marginEnd="6dp"
-                android:background="@null"
-                android:ellipsize="end"
-                android:fontFamily="sans-serif-light"
-                android:inputType="textPersonName"
-                android:maxLines="3"
-                android:text="Item "
-                android:textColor="@color/colorLightGrey"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+    <TextView
+        android:id="@+id/plant_type0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="2dp"
+        android:text="Clothing"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardView1" />
 
-            <TextView
-                android:id="@+id/edit_name_clustered"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/title_clustered"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="6dp"
-                android:layout_marginBottom="16dp"
-                android:padding="6dp"
-                android:text="Price: R 900"
-                android:textColor="@color/colorLightGrey"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                tools:ignore="ContentDescription" />
+    <ImageView
+        android:id="@+id/plant_type"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginTop="1dp"
+        android:gravity="end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardView1"
+        app:srcCompat="@drawable/ic_baseline_more_vert_24"
+        app:tint="@color/colorLightGrey" />
 
 
-            <!--            <TextView-->
-            <!--                android:id="@+id/members_number_clustered"-->
-            <!--                android:layout_width="wrap_content"-->
-            <!--                android:layout_height="wrap_content"-->
-            <!--                android:layout_alignParentEnd="true"-->
-            <!--                android:layout_marginTop="18dp"-->
-            <!--                android:layout_marginEnd="30dp"-->
-            <!--                android:fontFamily="sans-serif-medium"-->
-            <!--                android:text="Zero"-->
-            <!--                android:textColor="@color/colorLightGrey"-->
-            <!--                android:textSize="13sp" />-->
+    <TextView
+        android:id="@+id/plant_name_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Product Name"
+        android:textColor="@color/colorLightGrey"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/plant_type" />
 
 
-            <TextView
-                android:id="@+id/admin_text_clustered"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/bts_layout_clustered"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="18dp"
-                android:fontFamily="sans-serif-medium"
-                android:text="Pre-Owned"
-                android:textColor="@color/colorLightGrey"
-                android:textSize="13sp" />
+    <ImageView
+        android:id="@+id/minus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/ic_minus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/plant_name_view" />
 
-            <TextView
-                android:id="@+id/admin_number_clustered"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/bts_layout_clustered"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="27dp"
-                android:layout_marginTop="18dp"
-                android:layout_marginEnd="10dp"
-                android:fontFamily="sans-serif-medium"
-                android:text="Still available"
-                android:textColor="@color/colorLightGrey"
-                android:textSize="13sp" />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_plus"
+        app:layout_constraintTop_toBottomOf="@id/plant_name_view"
+        tools:layout_editor_absoluteX="80dp" />
 
 
-            <View
-                android:id="@+id/line_admin_number"
-                style="@style/Divider"
-                android:layout_width="wrap_content"
-                android:layout_height="0.5dp"
-                android:layout_below="@+id/admin_number_clustered"
-                android:layout_marginTop="2dp"
-                android:background="#000" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="R56"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/plant_name_view" />
 
-            <com.google.android.gms.maps.MapView
-                android:id="@+id/recycler_members_clustered"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/line_admin_number"
-                android:layout_marginTop="4dp"
-                android:layout_marginBottom="8dp" />
+    <TextView
+        android:id="@+id/plant_desc"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginEnd="20dp"
+        android:ellipsize="end"
+        android:maxLines="5"
+        android:text="Here our in depth tutorial will teach you Android UI designing step by step starting with
+        XML basic, layout, widgets and attributes with examples. Following it you will learn different UI Design techniques, patterns  principles and finally we will show you lots of examples where we will discuss designing of
+         different Apps from scratch to finish."
+        android:textColor="@color/colorLightGrey"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="442dp" />
 
-            <TextView
-                android:id="@+id/item_condition"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/recycler_members_clustered"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="18dp"
-                android:fontFamily="sans-serif-medium"
-                android:text="R900 ZAR"
-                android:textColor="@color/colorLightGrey"
-                android:textSize="13sp" />
+    <View
+        style="@style/Divider"
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/colorLightGrey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/plant_desc" />
 
-            <TextView
-                android:id="@+id/condition_answer"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/recycler_members_clustered"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="27dp"
-                android:layout_marginTop="18dp"
-                android:layout_marginEnd="10dp"
-                android:fontFamily="sans-serif-medium"
-                android:text="Still available"
-                android:textColor="@color/colorLightGrey"
-                android:textSize="13sp" />
+    <ImageView
+        android:id="@+id/logo0"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/plant_desc"
+        app:srcCompat="@drawable/ic_baseline_nights_stay_24" />
 
+    <TextView
+        android:id="@+id/logo_text0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:text="Pre-owned"
+        android:textAlignment="center"
+        android:textColor="@color/colorLightGrey"
+        app:layout_constraintEnd_toStartOf="@+id/logo_text1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo0" />
 
-            <View
-                android:id="@+id/lay_divider"
-                style="@style/Divider"
-                android:layout_width="wrap_content"
-                android:layout_height="0.5dp"
-                android:layout_below="@+id/condition_answer"
-                android:layout_marginTop="4dp"
-                android:background="@color/colorLightGrey" />
+    <ImageView
+        android:id="@+id/logo1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="194dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/plant_desc"
+        app:srcCompat="@drawable/ic_baseline_nights_stay_24" />
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/lay_divider"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="18dp"
-                android:fontFamily="sans-serif-medium"
-                android:text="Make Offer"
-                android:textColor="@color/colorLightGrey"
-                android:textSize="13sp" />
+    <TextView
+        android:id="@+id/logo_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="182dp"
+        android:text="Available"
+        android:textAlignment="center"
+        android:textColor="@color/colorLightGrey"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo0" />
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/lay_divider"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="27dp"
-                android:layout_marginTop="18dp"
-                android:layout_marginEnd="10dp"
-                android:fontFamily="sans-serif-medium"
-                android:text="Buy Now"
-                android:textColor="@color/colorLightGrey"
-                android:textSize="13sp" />
-        </RelativeLayout>
+    <ImageView
+        android:id="@+id/logo2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/plant_desc"
+        app:srcCompat="@drawable/ic_baseline_nights_stay_24" />
 
-    </ScrollView>
+    <TextView
+        android:id="@+id/logo_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="316dp"
+        android:text="Share"
+        android:textAlignment="center"
+        android:textColor="@color/colorLightGrey"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo1" />
 
-</RelativeLayout>
+    <!--    <com.google.android.gms.maps.MapView-->
+    <!--        android:id="@+id/recycler_members_clustered"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="8dp"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/materialButton"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.0"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/plant_desc"-->
+    <!--        app:layout_constraintVertical_bias="0.926" />-->
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/detail_page_cart_button_bg"
+        android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
+        android:text="Buy Now"
+        app:backgroundTint="@color/colorAccent"
+        app:iconGravity="textStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton"
+        style="@style/Widget.Shrine.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Make Offer"
+        app:backgroundTint="@color/colorAccent"
+        android:background="@drawable/detail_page_cart_button_bg"
+        android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
+        app:iconGravity="textStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

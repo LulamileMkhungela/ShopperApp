@@ -48,7 +48,7 @@
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:layout_width="130dp"
                         android:layout_height="130dp"
-                        android:src="@drawable/ic_person_v2_svg"
+                        android:src="@drawable/default_profile_picture"
                         app:civ_border_color="@color/white"
                         app:civ_border_width="1dp" />
 
@@ -80,6 +80,7 @@
                     android:layout_alignParentEnd="true"
                     android:layout_marginTop="12dp"
                     android:layout_marginEnd="6dp"
+                    app:backgroundTint="@color/colorLightGrey"
                     android:background="@drawable/ic_edit" />
             </RelativeLayout>
 
@@ -177,8 +178,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:background="@drawable/ic_heart"
-                        android:textSize="22sp" />
+                        android:background="@drawable/ic_baseline_nights_stay_24"
+                        />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -200,8 +201,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:background="@drawable/ic_heart"
-                        android:textSize="22sp" />
+                        android:background="@drawable/ic_baseline_verified_24"
+                        />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -224,8 +225,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:background="@drawable/ic_heart"
-                        android:textSize="22sp" />
+                        android:background="@drawable/ic_outline_brightness_7_24"
+                      />
 
                     <TextView
                         android:layout_width="wrap_content"

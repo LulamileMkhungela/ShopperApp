@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login_background"
+    android:background="@color/colorBackground"
     android:orientation="vertical"
     tools:context=".homepage.BsSellActivity">
 
@@ -18,8 +18,8 @@
             android:id="@+id/back_button_profile"
             android:layout_width="45dp"
             android:layout_height="match_parent"
-            app:srcCompat="@drawable/ic_back"
             android:padding="12dp"
+            app:srcCompat="@drawable/ic_back"
             tools:ignore="ContentDescription" />
 
         <TextView
@@ -27,32 +27,33 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_toEndOf="@+id/back_button_profile"
+            android:gravity="center"
             android:paddingStart="4dp"
             android:paddingEnd="4dp"
             android:text="New Post"
-            android:gravity="center"
-            android:textSize="18sp"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white"
+            android:textSize="18sp" />
 
         <Button
-            style="@style/Widget.Shrine.Button"
             android:id="@+id/save_bio_profile"
+            style="@style/Widget.Shrine.Button"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_alignParentEnd="true"
             android:layout_marginStart="165dp"
             android:layout_toEndOf="@+id/logo_profile"
-            android:background="@null"
-            android:text="Post"
-            android:textAlignment="center"
+            android:background="@drawable/et_ui"
             android:gravity="center"
             android:paddingStart="2dp"
             android:paddingEnd="8dp"
+            android:text="Post"
+            android:textAlignment="center"
             android:textAllCaps="false"
             android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
             android:visibility="visible" />
     </RelativeLayout>
-
 
     <ScrollView
         android:layout_width="match_parent"
@@ -304,7 +305,6 @@
                 android:layout_marginEnd="10dp"
                 android:text="EaziBuy As"
                 android:textColor="@color/colorLightGrey"
-
                 android:textSize="18sp"
                 android:textStyle="normal" />
 
@@ -321,7 +321,6 @@
                     android:text="Location"
                     android:textColor="@color/colorLightGrey"
                     android:textSize="18sp"
-
                     android:textStyle="normal" />
 
                 <TextView
@@ -330,7 +329,6 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginEnd="10dp"
                     android:text="Joburg"
-
                     android:textColor="@color/colorLightGrey"
                     android:textSize="16sp" />
 
@@ -345,9 +343,9 @@
 
             <com.google.android.material.switchmaterial.SwitchMaterial
                 style="@style/settingsText"
+                android:checked="true"
                 android:drawableStart="@drawable/ic_location_on_white_24dp"
                 android:drawableTint="@color/colorLightGrey"
-                android:checked="true"
                 android:text="Show my contact on my Ads"
                 android:textColor="@color/colorLightGrey" />
 
@@ -380,7 +378,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="6dp"
                 android:scaleType="fitXY"
                 app:srcCompat="@drawable/select_image" />
 
