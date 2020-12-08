@@ -88,7 +88,6 @@ dependencies {
 
     implementation 'com.daimajia.androidanimations:library:2.3@aar'
 
-    implementation 'com.squareup.picasso:picasso:2.71828'
 
     implementation 'com.airbnb.android:lottie:2.2.5'
     implementation 'com.github.florent37:materialtextfield:1.0.7'
@@ -98,7 +97,13 @@ dependencies {
 
     //ticker textview
     implementation 'com.tomer:fadingtextview:2.5'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    implementation 'com.hbb20:ccp:2.2.9'
 
+
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.hbb20:ccp:2.2.9'
 
 //    today plugin
     implementation 'com.android.volley:volley:1.1.1'
@@ -118,7 +123,10 @@ dependencies {
     implementation 'com.google.firebase:firebase-firestore:22.0.0'
     implementation 'com.google.android.gms:play-services-auth:19.0.0'
     implementation 'com.firebaseui:firebase-ui-firestore:5.0.0'
+    implementation 'com.facebook.android:facebook-login:5.0.1'
 
+    implementation 'com.shobhitpuri.custombuttons:google-signin:1.0.0'
+    implementation 'com.google.firebase:firebase-core:17.2.1'
 
     apply plugin: 'com.google.gms.google-services'
 

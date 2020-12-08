@@ -6,13 +6,16 @@
     <string name="intro_next">Next</string>
     <string name="sub_text">TextView</string>
     <string name="heading_textview">TextView</string>
-    <!-- Strings used for fragments for navigation -->
+    <!-- facebook -->
+    <string name="facebook_app_id">448799305906551</string>
+    <string name="fb_login_protocol_scheme">fb448799305906551</string>
 
     <string name="to_do_post">TODO</string>
 
     <string name="report_we_always_enjoy_hearing_any_feedback_queries_or_technical_problems_with_the_application">We always enjoy hearing any Feedback,queries or technical problems with the Application.</string>
     <string name="report_your_name">Your name</string>
     <string name="report_your_feedback">Your feedback</string>
+
 
     <string name="back_to_login_on_forgot">Back</string>
     <string name="submit_forgot_password">Submit</string>
