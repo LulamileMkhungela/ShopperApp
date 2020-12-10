@@ -16,7 +16,9 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.tabs.TabLayout;
 import com.hosinc.shopperapp.shopper.app.BsUsLoginRegister;
+import com.hosinc.shopperapp.shopper.app.BsYouSellPostView;
 import com.hosinc.shopperapp.shopper.app.R;
+import com.hosinc.shopperapp.shopper.app.homepage.BsHomePage;
 
 import java.util.ArrayList;
 import java.util.List;

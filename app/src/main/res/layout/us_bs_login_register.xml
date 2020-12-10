@@ -59,7 +59,6 @@
                 android:layout_height="80dp"
                 android:layout_marginTop="40dp"
                 android:layout_weight="50"
-                android:alpha="0.3"
                 android:fontFamily="@font/gotham"
                 android:gravity="center_horizontal"
                 android:paddingTop="12dp"
@@ -247,12 +246,12 @@
 
     </LinearLayout>
 
-    <com.facebook.login.widget.LoginButton
-        android:id="@+id/buttonFacebookLogin"
-        android:layout_width="0dp"
-        android:layout_height="67dp"
-        android:layout_gravity="center_horizontal"
-        android:visibility="gone" />
+<!--    <com.facebook.login.widget.LoginButton-->
+<!--        android:id="@+id/buttonFacebookLogin"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="67dp"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:visibility="gone" />-->
 </RelativeLayout>
 
 

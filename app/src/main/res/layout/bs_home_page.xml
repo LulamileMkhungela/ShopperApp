@@ -1,106 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#d4e9fc">
+    android:background="#d4e9fc"
+    tools:context=".HomeNavigation">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:background="@color/colorPrimaryDark">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profilePic"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="2dp"
+        android:src="@drawable/default_profile_picture"
+         />
 
-        <ImageView
-            android:id="@+id/logo_dashboard"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:padding="4dp"
-            android:src="@drawable/ic_short"
-            app:tint="@color/colorLightGrey" />
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="46dp"
+        android:background="@drawable/et_ui"
+        android:drawableStart="@drawable/ic_search_black_24dp"
+        android:drawablePadding="8dp"
+        android:hint="@android:string/search_go"
+        android:layout_marginEnd="8dp"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UnknownId" />
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="60dp"
-            android:layout_height="match_parent"
-            android:gravity="center_vertical"
-            android:paddingStart="8dp"
-            android:paddingEnd="6dp"
-            android:src="@drawable/default_profile_picture"
-            tools:ignore="ContentDescription" />
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editText"
+        app:srcCompat="@drawable/ic_short" />
 
-        <EditText
-            android:id="@+id/et_search_home"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="4dp"
-            android:layout_marginBottom="3dp"
-            android:background="@color/white"
-            android:hint="search"
-            android:inputType="textPersonName"
-            android:paddingStart="12dp"
-            android:paddingEnd="6dp"
-            android:textColor="@color/colorLightGrey"
-            android:textColorHint="@color/colorLightGrey"
-            android:visibility="gone"
-            tools:ignore="Autofill" />
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:gravity="center_vertical"
-            android:layout_toStartOf="@+id/logo_dashboard">
 
-<!--            <ImageView-->
-<!--                android:id="@+id/courses_button"-->
-<!--                android:layout_width="30dp"-->
-<!--                android:layout_height="25dp"-->
-<!--                android:layout_marginEnd="4dp"-->
-<!--                android:background="@drawable/ic_categories"-->
-<!--                android:visibility="visible"-->
-<!--                tools:ignore="ContentDescription" />-->
+            <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+                android:id="@+id/bottomNavigation"
+                style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                app:mbn_backgroundBottomColor="#d4e9fc"
+                app:mbn_circleColor="#ffffff"
+                app:mbn_countBackgroundColor="#ff6f00"
+                app:mbn_countTextColor="#ffffff"
+                app:mbn_defaultIconColor="#90a4ae"
+                app:mbn_rippleColor="#2f424242"
+                app:elevation="18dp"
+                app:itemTextColor="#e7e7e7"
+                app:mbn_selectedIconColor="#3c415e"
+                app:mbn_shadowColor="#1f212121" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="end"
-                android:paddingStart="8dp"
-                android:paddingEnd="8dp"
-                android:visibility="visible"
-                app:srcCompat="@drawable/ic_search_black_24dp"
-                tools:ignore="ContentDescription" />
-        </LinearLayout>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_alignEnd="@+id/et_search_home"
-            android:layout_marginEnd="8dp"
-            android:paddingStart="12dp"
-            android:paddingTop="12dp"
-            android:paddingEnd="1dp"
-            android:paddingBottom="12dp"
-            android:visibility="gone"
-            app:srcCompat="@drawable/ic_close_accent"
-            tools:ignore="ContentDescription" />
-    </RelativeLayout>
-
-    <com.etebarian.meowbottomnavigation.MeowBottomNavigation
-        android:id="@+id/bottomNavigation"
-        style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_gravity="bottom"
-        app:mbn_backgroundBottomColor="#d4e9fc"
-        app:mbn_circleColor="#ffffff"
-        app:mbn_countBackgroundColor="#ff6f00"
-        app:mbn_countTextColor="@color/mdtp_dark_gray"
-        app:mbn_defaultIconColor="#90a4ae"
-        app:mbn_rippleColor="#2f424242"
-        app:mbn_selectedIconColor="#3c415e"
-        app:mbn_shadowColor="#1f212121" />
-
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>

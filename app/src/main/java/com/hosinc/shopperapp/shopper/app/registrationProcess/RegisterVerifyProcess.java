@@ -106,7 +106,7 @@ public class RegisterVerifyProcess extends AppCompatActivity {
     }
 
     private void sendToMain() {
-        Intent mainIntent = new Intent(RegisterVerifyProcess.this,  com.hosinc.shopperapp.shopper.app.registrationProcess.ChooseInterests.class);
+        Intent mainIntent = new Intent(RegisterVerifyProcess.this,  com.hosinc.shopperapp.shopper.app.homepage.BsHomePage.class);
         mainIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(mainIntent);
     }

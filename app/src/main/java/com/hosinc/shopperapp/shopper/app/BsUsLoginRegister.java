@@ -29,6 +29,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 //import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -46,18 +47,19 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.hosinc.shopperapp.shopper.app.adapters.ShopperContract;
 import com.hosinc.shopperapp.shopper.app.biz.profile.ActivityForgotPassword;
+import com.hosinc.shopperapp.shopper.app.registrationProcess.RegisterVerifyProcess;
 
 
 public class BsUsLoginRegister extends AppCompatActivity {
 
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
-    private FirebaseAuth auth;
     private TextView signIn, signUp, signIn_signUp_txt, forgot_password;
     private Button signIn_signUp_btn;
     private EditText etEmail, etPassword;
     private String email, password;
     private RelativeLayout rootLayout;
     private ProgressBar progressBar;
+    private FirebaseAuth auth;
     private Boolean isLogin = true;
     private CallbackManager mCallbackManager;
     private static final String TAG = "FACEBOOK LOG";
@@ -70,8 +72,6 @@ public class BsUsLoginRegister extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.us_bs_login_register);
         //Get Firebase auth instance
-        auth = FirebaseAuth.getInstance();
-
         signIn = findViewById(R.id.sign_in);
         signUp = findViewById(R.id.sign_up);
 //        signIn_signUp_txt = findViewById(R.id.signin_signup_txt);
@@ -80,7 +80,7 @@ public class BsUsLoginRegister extends AppCompatActivity {
         etEmail = findViewById(R.id.et_email_login);
         etPassword = findViewById(R.id.et_password_login);
         rootLayout = findViewById(R.id.root_login);
-        ImageView btFBSignIn = findViewById(R.id.fb_sign_in);
+//        ImageView btFBSignIn = findViewById(R.id.fb_sign_in);
         progressBar = findViewById(R.id.progress_bar_login);
         ImageView btnGooglelogin = findViewById(R.id.btSignInGoogleCustom);
 
@@ -88,7 +88,7 @@ public class BsUsLoginRegister extends AppCompatActivity {
 
         auth = FirebaseAuth.getInstance();
 
-        if (auth.getCurrentUser() != null) {
+        if (((FirebaseAuth) auth).getCurrentUser() != null) {
             Intent i = new Intent(BsUsLoginRegister.this, UsGetStarted.class);
             startActivity(i);
         }
@@ -119,7 +119,7 @@ public class BsUsLoginRegister extends AppCompatActivity {
                 }
 
                 //authenticate user
-                auth.signInWithEmailAndPassword(email, password)
+                ((FirebaseAuth) auth).signInWithEmailAndPassword(email, password)
                         .addOnCompleteListener(BsUsLoginRegister.this, task -> {
                             // If sign in fails, display a message to the user. If sign in succeeds
                             // the auth state listener will be notified and logic to handle the
@@ -135,7 +135,7 @@ public class BsUsLoginRegister extends AppCompatActivity {
                                     snackbar.show();
                                 }
                             } else {
-                                FirebaseUser user = auth.getCurrentUser();
+                                FirebaseUser user = ((FirebaseAuth) auth).getCurrentUser();
                                 if (user != null) {
                                     if (user.getEmail() != null) {
                                         final String email = user.getEmail();
@@ -149,7 +149,7 @@ public class BsUsLoginRegister extends AppCompatActivity {
                                                     }
                                                 });
                                     }
-                                    Intent i = new Intent(BsUsLoginRegister.this, UsGetStarted.class);
+                                    Intent i = new Intent(BsUsLoginRegister.this, RegisterVerifyProcess.class);
                                     startActivity(i);
                                     Snackbar snackbar = Snackbar
                                             .make(rootLayout, "Hooray,Welcome", Snackbar.LENGTH_LONG);
@@ -217,78 +217,6 @@ public class BsUsLoginRegister extends AppCompatActivity {
             return;
         }
 
-//        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-//                .requestIdToken(getString(R.string.default_web_client_id))
-//                .requestEmail()
-//                .build();
-//        btnGooglelogin.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent signInIntent = mGoogleSignInClient.getSignInIntent();
-//                startActivityForResult(signInIntent, 101);
-//            }
-//        });
-//
-//        mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
-//
-////        signInButton = findViewById(R.id.btSignInGoogle);
-//
-//        authListener = new FirebaseAuth.AuthStateListener() {
-//            @Override
-//            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
-//                FirebaseUser user = firebaseAuth.getCurrentUser();
-//                if (user != null) {
-//                    // user auth state is changed - user is not null
-//                    startActivity(new Intent(BsUsLoginRegister.this, HomeNavigation.class));
-//                }
-//            }
-//        };
-//
-////        signInButton.setOnClickListener(new View.OnClickListener() {
-////            @Override
-////            public void onClick(View v) {
-////                Intent signInIntent = mGoogleSignInClient.getSignInIntent();
-////                startActivityForResult(signInIntent, 101);
-////            }
-////        });
-//
-//        private void firebaseAuthWithGoogle(GoogleSignInAccount acct) {
-//
-//            AuthCredential credential = GoogleAuthProvider.getCredential(acct.getIdToken(), null);
-//            auth.signInWithCredential(credential)
-//                    .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-//                        @Override
-//                        public void onComplete(@NonNull Task<AuthResult> task) {
-//                            if (task.isSuccessful()) {
-//
-//                                boolean newUser = task.getResult().getAdditionalUserInfo().isNewUser();
-//                                if (newUser) {
-//                                    startActivity(new Intent(BsUsLoginRegister.this, UsGetStarted.class));
-//                                } else {
-//                                    FirebaseUser user = auth.getCurrentUser();
-//                                    assert user != null;
-//                                    if (user.getDisplayName() != null) {
-//                                        Toast.makeText(getApplicationContext(), "Welcome back " + user.getDisplayName(), Toast.LENGTH_LONG).show();
-//                                    } else {
-//                                        Toast.makeText(getApplicationContext(), "Welcome back " + user.getEmail(), Toast.LENGTH_LONG).show();
-//                                    }
-//                                    // Sign in success, update UI with the signed-in user's information
-//                                    Intent intent = new Intent(BsUsLoginRegister.this, HomeNavigation.class);
-//
-//                                    intent.putExtra("user", user);
-//                                    startActivity(intent);
-//                                }
-//
-//                            } else {
-//                                // If sign in fails, display a message to the user.
-//                                Toast.makeText(getApplicationContext(), "Sign In Failed", Toast.LENGTH_LONG).show();
-//                            }
-//
-//                            // ...
-//                        }
-//                    });
-//        }
-
         //create user
         auth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, task -> {
@@ -311,154 +239,9 @@ public class BsUsLoginRegister extends AppCompatActivity {
                         Snackbar snackbar = Snackbar.make(rootLayout, "User Created With This Email Address", Snackbar.LENGTH_LONG);
                         snackbar.show();
 
-                        Intent intent = new Intent(BsUsLoginRegister.this, HomeNavigation.class);
+                        Intent intent = new Intent(BsUsLoginRegister.this, RegisterVerifyProcess.class);
                         startActivity(intent);
                     }
                 });
-        // Initialize Facebook Login btn_free_trial
-        mCallbackManager = CallbackManager.Factory.create();
-        loginButton = findViewById(R.id.buttonFacebookLogin);
-        loginButton.setReadPermissions("email", "public_profile");
-        loginButton.registerCallback(mCallbackManager, new FacebookCallback<LoginResult>() {
-            @Override
-            public void onSuccess(LoginResult loginResult) {
-                Log.d(TAG, "facebook:onSuccess:" + loginResult);
-                handleFacebookAccessToken(loginResult.getAccessToken());
-            }
-
-            @Override
-            public void onCancel() {
-                Log.d(TAG, "facebook:onCancel");
-                // ...
-            }
-
-            @Override
-            public void onError(FacebookException error) {
-                Log.d(TAG, "facebook:onError", error);
-                // ...
-            }
-        });
-
-        View btFBSignIn = null;
-        btFBSignIn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                loginButton.performClick();
-            }
-        });
     }
-
-    @Override
-    public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        // Pass the activity result back to the Facebook SDK
-        mCallbackManager.onActivityResult(requestCode, resultCode, data);
-
-        // Result returned from launching the Intent from GoogleSignInApi.getSignInIntent(...);
-        if (requestCode == 101) {
-            Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
-            try {
-                // Google Sign In was successful, authenticate with Firebase
-                GoogleSignInAccount account = task.getResult(ApiException.class);
-                firebaseAuthWithGoogle(account);
-            } catch (ApiException e) {
-                // Google Sign In failed, update UI appropriately
-                Toast.makeText(getApplicationContext(), "Sign In Failed: " + e.getMessage(), Toast.LENGTH_LONG).show();
-                // ...
-            }
-        }
-    }
-
-    private void firebaseAuthWithGoogle(GoogleSignInAccount acct) {
-
-        AuthCredential credential = GoogleAuthProvider.getCredential(acct.getIdToken(), null);
-        auth.signInWithCredential(credential)
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-
-                            boolean newUser = task.getResult().getAdditionalUserInfo().isNewUser();
-                            if (newUser) {
-                                startActivity(new Intent(BsUsLoginRegister.this, UsGetStarted.class));
-                            } else {
-                                FirebaseUser user = auth.getCurrentUser();
-                                assert user != null;
-                                if (user.getDisplayName() != null) {
-                                    Toast.makeText(getApplicationContext(), "Welcome back " + user.getDisplayName(), Toast.LENGTH_LONG).show();
-                                } else {
-                                    Toast.makeText(getApplicationContext(), "Welcome back " + user.getEmail(), Toast.LENGTH_LONG).show();
-                                }
-                                // Sign in success, update UI with the signed-in user's information
-                                Intent intent = new Intent(BsUsLoginRegister.this, HomeNavigation.class);
-
-                                intent.putExtra("user", user);
-                                startActivity(intent);
-                            }
-
-                        } else {
-                            // If sign in fails, display a message to the user.
-                            Toast.makeText(getApplicationContext(), "Sign In Failed", Toast.LENGTH_LONG).show();
-                        }
-
-                        // ...
-                    }
-                });
-    }
-
-    private void handleFacebookAccessToken(AccessToken token) {
-        Log.d(TAG, "handleFacebookAccessToken:" + token);
-
-        AuthCredential credential = FacebookAuthProvider.getCredential(token.getToken());
-        auth.signInWithCredential(credential)
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-                            boolean newUser = task.getResult().getAdditionalUserInfo().isNewUser();
-                            if (newUser) {
-                                startActivity(new Intent(BsUsLoginRegister.this, UsGetStarted.class));
-                            } else {
-                                FirebaseUser user = auth.getCurrentUser();
-                                assert user != null;
-                                if (user.getDisplayName() != null) {
-                                    Toast.makeText(getApplicationContext(), "Welcome back " + user.getDisplayName(), Toast.LENGTH_LONG).show();
-                                } else {
-                                    Toast.makeText(getApplicationContext(), "Welcome back " + user.getEmail(), Toast.LENGTH_LONG).show();
-                                }
-                                // Sign in success, update UI with the signed-in user's information
-                                Intent intent = new Intent(BsUsLoginRegister.this, HomeNavigation.class);
-
-                                intent.putExtra("user", user);
-                                startActivity(intent);
-                            }
-                        } else {
-                            // If sign in fails, display a message to the user.
-                            Log.w(TAG, "signInWithCredential:failure", task.getException());
-                            Toast.makeText(BsUsLoginRegister.this, "Authentication failed.",
-                                    Toast.LENGTH_SHORT).show();
-                        }
-
-                        // ...
-                    }
-                });
-    }
-
-    // this listener will be called when there is change in firebase user session
-    FirebaseAuth.AuthStateListener authListener = new FirebaseAuth.AuthStateListener() {
-        @SuppressLint("SetTextI18n")
-        @Override
-        public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
-            FirebaseUser user = firebaseAuth.getCurrentUser();
-            if (user != null) {
-                // user auth state is changed - user is not null
-                startActivity(new Intent(BsUsLoginRegister.this, HomeNavigation.class));
-                finish();
-            }
-        }
-
-
-    };
 }
-
-
